@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workforce Intelligence Executive Dashboard</title>
+    <title>Employee Headcount & Tenure Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <style>
@@ -29,49 +29,117 @@
                 radial-gradient(at 20% 88%, rgba(209, 250, 229, 0.35) 0px, transparent 45%);
             background-attachment: fixed;
             color: #0F172A;
-            padding: 2.2rem;
+            padding: 2rem;
         }
 
-        /* Focus rings for keyboard accessibility */
         :focus-visible {
             outline: 3.5px solid var(--purple-main) !important;
             outline-offset: 3px !important;
             border-radius: 10px !important;
         }
 
-        .header-banner {
+        /* Hero Header Banner */
+        .command-hero-header {
             background: linear-gradient(135deg, #4A1D75 0%, #5E2D91 40%, #7B4BB3 75%, #3B1C63 100%);
-            padding: 2.4rem 3.2rem;
+            padding: 2.2rem 3rem;
             border-radius: 20px;
             color: white;
             box-shadow: 0 20px 50px rgba(94, 45, 145, 0.38);
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             position: relative;
             overflow: hidden;
+            border: 1.5px solid rgba(255, 255, 255, 0.28);
         }
 
-        .header-banner h1 {
-            font-size: 2.4rem;
+        .command-hero-header h1 {
+            font-size: 2.5rem;
             font-weight: 900;
             letter-spacing: -0.5px;
         }
 
-        .header-banner p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-top: 0.4rem;
-        }
-
-        .kpi-container {
+        /* 4-Category Scope Filter Header Bar */
+        .filter-header-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.2rem;
             margin-bottom: 2rem;
         }
 
-        .kpi-card {
+        @media (max-width: 900px) {
+            .filter-header-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        .filter-card-trigger {
+            background: radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.8) 0%, transparent 60%), linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+            border: 1.5px solid #CBD5E1;
+            border-top: 5px solid #1E293B;
+            border-radius: 16px;
+            padding: 0.95rem 1.2rem;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: #0F172A;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            position: relative;
+        }
+
+        .filter-card-trigger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+        }
+
+        /* Popover Dropdown Bodies */
+        .popover-menu {
+            display: none;
+            position: absolute;
+            top: 105%;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: white;
+            border: 2px solid var(--purple-main);
+            border-top: 5px solid var(--purple-light);
+            border-radius: 18px;
+            box-shadow: 0 16px 40px rgba(94, 45, 145, 0.25);
+            padding: 1.2rem;
+        }
+
+        .popover-menu.open { display: block; }
+
+        .popover-option {
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: background 0.2s ease;
+            margin-bottom: 4px;
+        }
+
+        .popover-option:hover {
+            background: #F3E8FF;
+            color: var(--purple-main);
+        }
+
+        /* KPI Executive Metric Cards */
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .kpi-container { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        .kpi-card-exec {
             border-radius: 20px;
-            padding: 1.6rem;
+            padding: 1.6rem 1.4rem 1.4rem 1.6rem;
             background: white;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
             position: relative;
@@ -79,104 +147,119 @@
             transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.32s ease;
         }
 
-        .kpi-card::before {
+        .kpi-card-exec::before {
             content: '';
             position: absolute;
-            top: -30px;
-            right: -30px;
-            width: 120px;
-            height: 120px;
+            top: -30px; right: -30px;
+            width: 120px; height: 120px;
             border-radius: 50%;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 75%);
             pointer-events: none;
         }
 
-        .kpi-card:hover {
+        .kpi-card-exec:hover {
             transform: translateY(-6px) scale(1.02);
             box-shadow: 0 16px 36px rgba(94, 45, 145, 0.18);
         }
 
-        .kpi-card.hc { border-top: 5px solid var(--cyan-accent); background: linear-gradient(135deg, #FFF 35%, #E0F2FE 100%); }
-        .kpi-card.jda { border-top: 5px solid var(--emerald-accent); background: linear-gradient(135deg, #FFF 35%, #D1FAE5 100%); }
-        .kpi-card.me { border-top: 5px solid var(--amber-accent); background: linear-gradient(135deg, #FFF 35%, #FEF3C7 100%); }
-        .kpi-card.tme { border-top: 5px solid var(--rose-accent); background: linear-gradient(135deg, #FFF 35%, #F3E8FF 100%); }
+        .kpi-card-exec.hc { border: 1.5px solid #7DD3FC; border-top: 5px solid var(--cyan-accent); background: linear-gradient(135deg, #FFF 35%, #E0F2FE 80%, #BAE6FD 100%); }
+        .kpi-card-exec.jda { border: 1.5px solid #6EE7B7; border-top: 5px solid var(--emerald-accent); background: linear-gradient(135deg, #FFF 35%, #D1FAE5 80%, #A7F3D0 100%); }
+        .kpi-card-exec.me { border: 1.5px solid #FCD34D; border-top: 5px solid var(--amber-accent); background: linear-gradient(135deg, #FFF 35%, #FEF3C7 80%, #FDE68A 100%); }
+        .kpi-card-exec.tme { border: 1.5px solid #C084FC; border-top: 5px solid var(--rose-accent); background: linear-gradient(135deg, #FFF 35%, #F3E8FF 80%, #E9D5FF 100%); }
 
-        .kpi-val {
+        .metric-val {
             font-size: 3.2rem;
             font-weight: 900;
-            line-height: 1.1;
+            line-height: 1.05;
             margin-bottom: 0.4rem;
         }
 
-        .kpi-card.hc .kpi-val { color: var(--cyan-accent); }
-        .kpi-card.jda .kpi-val { color: var(--emerald-accent); }
-        .kpi-card.me .kpi-val { color: var(--amber-accent); }
-        .kpi-card.tme .kpi-val { color: var(--rose-accent); }
+        .kpi-card-exec.hc .metric-val { color: var(--cyan-accent); }
+        .kpi-card-exec.jda .metric-val { color: var(--emerald-accent); }
+        .kpi-card-exec.me .metric-val { color: var(--amber-accent); }
+        .kpi-card-exec.tme .metric-val { color: var(--rose-accent); }
 
-        .kpi-title {
+        .kpi-lbl {
             font-size: 0.95rem;
-            font-weight: 800;
+            font-weight: 850;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
             color: #475569;
+            margin-bottom: 0.6rem;
         }
 
+        .badge-pill {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 850;
+        }
+
+        .kpi-card-exec.hc .badge-pill { background: rgba(224, 242, 254, 0.9); color: var(--cyan-accent); border: 1px solid #7DD3FC; }
+        .kpi-card-exec.jda .badge-pill { background: rgba(209, 250, 229, 0.9); color: var(--emerald-accent); border: 1px solid #6EE7B7; }
+        .kpi-card-exec.me .badge-pill { background: rgba(254, 243, 199, 0.9); color: var(--amber-accent); border: 1px solid #FCD34D; }
+        .kpi-card-exec.tme .badge-pill { background: rgba(243, 232, 255, 0.9); color: var(--rose-accent); border: 1px solid #C084FC; }
+
+        /* Master Parent Navigation Tabs (Refined 1.05rem scale) */
         .parent-tabs {
             display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
             flex-wrap: wrap;
         }
 
         .parent-tab-btn {
-            font-size: 1.85rem;
-            font-weight: 900;
-            padding: 16px 36px;
-            min-height: 64px;
-            border-radius: 18px;
+            font-size: 1.05rem;
+            font-weight: 850;
+            padding: 8px 18px;
+            min-height: 38px;
+            border-radius: 10px;
             border: 2px solid #D8B4FE;
             background: white;
             color: var(--purple-main);
             cursor: pointer;
-            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease;
+            box-shadow: 0 4px 12px rgba(94, 45, 145, 0.08);
+            transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease;
         }
 
         .parent-tab-btn.active {
             background: var(--purple-main);
             color: white;
             border-color: var(--purple-main);
-            box-shadow: 0 10px 28px rgba(94, 45, 145, 0.4);
+            box-shadow: 0 6px 20px rgba(94, 45, 145, 0.38);
             transform: translateY(-2px) scale(1.015);
         }
 
+        /* Child Segmented Control Bar (Refined 0.78rem scale) */
         .child-filter-bar {
             display: flex;
-            gap: 6px;
+            gap: 4px;
             background: var(--purple-main);
-            padding: 6px 8px;
-            border-radius: 14px;
+            padding: 3px 4px;
+            border-radius: 9px;
             width: fit-content;
-            margin-bottom: 1.5rem;
-            transition: margin-left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 8px rgba(94, 45, 145, 0.22);
+            transition: margin-left 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         .child-pill {
-            font-size: 1.12rem;
+            font-size: 0.78rem;
             font-weight: 800;
-            padding: 6px 18px;
-            border-radius: 8.5px;
-            color: white;
+            padding: 4px 11px;
+            border-radius: 5.5px;
+            color: rgba(255, 255, 255, 0.95);
             background: transparent;
             border: none;
             cursor: pointer;
-            transition: all 0.28s ease;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.28s ease;
         }
 
         .child-pill.active {
             background: white;
             color: var(--purple-main);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-            transform: translateY(-1.5px) scale(1.025);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+            transform: translateY(-1px) scale(1.02);
         }
 
         .tab-panel {
@@ -187,8 +270,8 @@
         .tab-panel.active { display: block; }
 
         @keyframes panelSlideIn {
-            from { opacity: 0; transform: translateX(24px); }
-            to { opacity: 1; transform: translateX(0); }
+            from { opacity: 0; transform: translateX(32px) scale(0.98); }
+            to { opacity: 1; transform: translateX(0) scale(1.0); }
         }
 
         .card-box {
@@ -204,19 +287,19 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 1rem;
-            font-size: 1.05rem;
+            font-size: 1.08rem;
         }
 
         th {
             background: linear-gradient(90deg, #5E2D91 0%, #0F172A 100%);
             color: white;
-            padding: 14px 16px;
+            padding: 14px 18px;
             text-align: left;
             font-weight: 800;
         }
 
         td {
-            padding: 12px 16px;
+            padding: 12px 18px;
             border-bottom: 1px solid #E2E8F0;
             font-weight: 600;
         }
@@ -227,45 +310,95 @@
 </head>
 <body>
 
-    <div class="header-banner">
-        <h1>⚡ Workforce Intelligence Executive Command</h1>
-        <p>Real-time Employee Headcount, Active ME/TME/JDA Analytics & Tenure Intelligence</p>
+    <!-- Executive Hero Banner -->
+    <div class="command-hero-header">
+        <h1>Employee Headcount & Tenure Dashboard</h1>
+    </div>
+
+    <!-- 4 Scope Filter Header Cards -->
+    <div class="filter-header-grid">
+        <div class="filter-card-trigger" onclick="togglePopover('pop-time')">
+            <span>🗓️ <span id="txt-time">Time Period (Aug 2026)</span></span> <span>▾</span>
+            <div class="popover-menu" id="pop-time">
+                <div class="popover-option" onclick="selectFilter('time', 'Aug 2026')">🗓️ Aug 2026 (MTD)</div>
+                <div class="popover-option" onclick="selectFilter('time', 'Q3 2026')">📊 Q3 2026 (QTD)</div>
+                <div class="popover-option" onclick="selectFilter('time', 'YTD 2026')">📅 YTD 2026</div>
+                <div class="popover-option" onclick="selectFilter('time', 'Custom Calendar')">📆 Custom Date Range</div>
+            </div>
+        </div>
+
+        <div class="filter-card-trigger" onclick="togglePopover('pop-emp')">
+            <span>👤 <span id="txt-emp">Employee (All EmpTypes)</span></span> <span>▾</span>
+            <div class="popover-menu" id="pop-emp">
+                <div class="popover-option" onclick="selectFilter('emp', 'All EmpTypes')">👥 All EmpTypes</div>
+                <div class="popover-option" onclick="selectFilter('emp', 'JDA Only')">🌱 JDA Only</div>
+                <div class="popover-option" onclick="selectFilter('emp', 'ME Only')">⚡ ME Only</div>
+                <div class="popover-option" onclick="selectFilter('emp', 'TME Only')">🔥 TME Only</div>
+            </div>
+        </div>
+
+        <div class="filter-card-trigger" onclick="togglePopover('pop-branch')">
+            <span>🏢 <span id="txt-branch">Branch (All 11 Cities)</span></span> <span>▾</span>
+            <div class="popover-menu" id="pop-branch">
+                <div class="popover-option" onclick="selectFilter('branch', 'All 11 Cities')">🌐 All 11 Cities</div>
+                <div class="popover-option" onclick="selectFilter('branch', 'Bangalore')">🏢 Bangalore</div>
+                <div class="popover-option" onclick="selectFilter('branch', 'Mumbai')">🏢 Mumbai</div>
+                <div class="popover-option" onclick="selectFilter('branch', 'Delhi')">🏢 Delhi</div>
+                <div class="popover-option" onclick="selectFilter('branch', 'Hyderabad')">🏢 Hyderabad</div>
+                <div class="popover-option" onclick="selectFilter('branch', 'Pune')">🏢 Pune</div>
+            </div>
+        </div>
+
+        <div class="filter-card-trigger" onclick="togglePopover('pop-team')">
+            <span>👥 <span id="txt-team">Team (All Teams)</span></span> <span>▾</span>
+            <div class="popover-menu" id="pop-team">
+                <div class="popover-option" onclick="selectFilter('team', 'All Teams')">🚀 All Teams</div>
+                <div class="popover-option" onclick="selectFilter('team', 'Field Sales')">💼 Field Sales</div>
+                <div class="popover-option" onclick="selectFilter('team', 'Corporate')">🏛️ Corporate</div>
+                <div class="popover-option" onclick="selectFilter('team', 'Merchant Onboarding')">🛍️ Merchant Onboarding</div>
+                <div class="popover-option" onclick="selectFilter('team', 'Key Accounts')">⭐ Key Accounts</div>
+            </div>
+        </div>
     </div>
 
     <!-- Executive KPI Cards -->
     <div class="kpi-container">
-        <div class="kpi-card hc">
-            <div class="kpi-val" id="kpi-hc">350</div>
-            <div class="kpi-title">TOTAL HEADCOUNT</div>
+        <div class="kpi-card-exec hc">
+            <div class="metric-val" id="kpi-hc">599</div>
+            <div class="kpi-lbl">HEADCOUNT</div>
+            <div class="badge-pill">■ Total Active</div>
         </div>
-        <div class="kpi-card jda">
-            <div class="kpi-val" id="kpi-jda">120</div>
-            <div class="kpi-title">ACTIVE JDA</div>
+        <div class="kpi-card-exec jda">
+            <div class="metric-val" id="kpi-jda">162</div>
+            <div class="kpi-lbl">ACTIVE JDA</div>
+            <div class="badge-pill">■ Active JDA</div>
         </div>
-        <div class="kpi-card me">
-            <div class="kpi-val" id="kpi-me">145</div>
-            <div class="kpi-title">ACTIVE ME</div>
+        <div class="kpi-card-exec me">
+            <div class="metric-val" id="kpi-me">190</div>
+            <div class="kpi-lbl">ACTIVE ME</div>
+            <div class="badge-pill">■ Active ME</div>
         </div>
-        <div class="kpi-card tme">
-            <div class="kpi-val" id="kpi-tme">85</div>
-            <div class="kpi-title">ACTIVE TME</div>
+        <div class="kpi-card-exec tme">
+            <div class="metric-val" id="kpi-tme">247</div>
+            <div class="kpi-lbl">ACTIVE TME</div>
+            <div class="badge-pill">■ Active TME</div>
         </div>
     </div>
 
     <!-- Master Parent Navigation Tabs -->
     <div class="parent-tabs" role="tablist">
-        <button class="parent-tab-btn active" onclick="switchTab('headcount', this)" tabindex="0">📊 Employee Headcount</button>
-        <button class="parent-tab-btn" onclick="switchTab('tenure', this)" tabindex="0">⏳ Tenure Breakdown</button>
-        <button class="parent-tab-btn" onclick="switchTab('drilldown', this)" tabindex="0">🔍 Employee Drill-Down</button>
+        <button class="parent-tab-btn active" id="tab-btn-headcount" onclick="switchTab('headcount', this)" tabindex="0">📊 Employee Headcount</button>
+        <button class="parent-tab-btn" id="tab-btn-tenure" onclick="switchTab('tenure', this)" tabindex="0">⏳ Tenure Breakdown</button>
+        <button class="parent-tab-btn" id="tab-btn-drilldown" onclick="switchTab('drilldown', this)" tabindex="0">🔍 Employee Drill-Down</button>
     </div>
 
-    <!-- Child Filter Bar -->
+    <!-- Child Segmented Control Bar -->
     <div class="child-filter-bar" id="child-filter-bar">
         <button class="child-pill active" onclick="switchChildFilter('pan_india', this)">Pan India / Branch Summary</button>
         <button class="child-pill" onclick="switchChildFilter('team_type', this)">Team Type Summary</button>
     </div>
 
-    <!-- Tab Panels -->
+    <!-- Tab Panel 1: Headcount -->
     <div id="panel-headcount" class="tab-panel active">
         <div class="card-box">
             <h2>🏢 City & Branch Headcount Summary</h2>
@@ -280,48 +413,76 @@
                         <th>Share %</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr><td><b>Bangalore</b></td><td>64</td><td>22</td><td>26</td><td>16</td><td><b>18.3%</b></td></tr>
-                    <tr><td><b>Mumbai</b></td><td>58</td><td>20</td><td>24</td><td>14</td><td><b>16.6%</b></td></tr>
-                    <tr><td><b>Delhi</b></td><td>52</td><td>18</td><td>22</td><td>12</td><td><b>14.9%</b></td></tr>
-                    <tr><td><b>Hyderabad</b></td><td>44</td><td>15</td><td>18</td><td>11</td><td><b>12.6%</b></td></tr>
-                    <tr><td><b>Pune</b></td><td>38</td><td>13</td><td>16</td><td>9</td><td><b>10.9%</b></td></tr>
-                    <tr><td><b>Chennai</b></td><td>34</td><td>11</td><td>14</td><td>9</td><td><b>9.7%</b></td></tr>
-                    <tr><td><b>Ahmedabad</b></td><td>30</td><td>10</td><td>13</td><td>7</td><td><b>8.6%</b></td></tr>
-                    <tr style="background:#E0F2FE; font-weight:800; color:#0284C7;"><td>TOTAL (Pan India)</td><td>350</td><td>120</td><td>145</td><td>85</td><td>100.0%</td></tr>
+                <tbody id="branch-table-body">
+                    <tr><td><b>Bangalore</b></td><td>110</td><td>30</td><td>35</td><td>45</td><td><b>18.3%</b></td></tr>
+                    <tr><td><b>Mumbai</b></td><td>98</td><td>26</td><td>31</td><td>41</td><td><b>16.3%</b></td></tr>
+                    <tr><td><b>Delhi</b></td><td>89</td><td>24</td><td>28</td><td>37</td><td><b>14.8%</b></td></tr>
+                    <tr><td><b>Hyderabad</b></td><td>75</td><td>20</td><td>24</td><td>31</td><td><b>12.5%</b></td></tr>
+                    <tr><td><b>Pune</b></td><td>65</td><td>18</td><td>21</td><td>26</td><td><b>10.8%</b></td></tr>
+                    <tr><td><b>Chennai</b></td><td>58</td><td>15</td><td>19</td><td>24</td><td><b>9.6%</b></td></tr>
+                    <tr><td><b>Ahmedabad</b></td><td>52</td><td>14</td><td>16</td><td>22</td><td><b>8.6%</b></td></tr>
+                    <tr><td><b>Jaipur</b></td><td>52</td><td>15</td><td>16</td><td>21</td><td><b>8.6%</b></td></tr>
+                    <tr style="background:#E0F2FE; font-weight:800; color:#0284C7;"><td>TOTAL (Pan India)</td><td>599</td><td>162</td><td>190</td><td>247</td><td>100.0%</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
+    <!-- Tab Panel 2: Tenure Breakdown -->
     <div id="panel-tenure" class="tab-panel">
         <div class="card-box">
             <h2>⏳ Tenure Distribution & Experience Metrics</h2>
-            <div id="tenureChart" style="height:400px;"></div>
+            <div id="tenureChart" style="height:420px;"></div>
         </div>
     </div>
 
+    <!-- Tab Panel 3: Drill-Down -->
     <div id="panel-drilldown" class="tab-panel">
+        <!-- Sub-child Drill-Down Filter Bar -->
+        <div class="child-filter-bar" style="margin-bottom:1.5rem;">
+            <button class="child-pill active" onclick="switchDrillView('list', this)">🔍 Searchable Employee List</button>
+            <button class="child-pill" onclick="switchDrillView('branch', this)">🏢 Branch List</button>
+            <button class="child-pill" onclick="switchDrillView('team', this)">👥 Team List</button>
+            <button class="child-pill" onclick="switchDrillView('exited', this)">🚪 Exited Employees</button>
+        </div>
+
         <div class="card-box">
-            <h2>🔍 Active Employee Roster (Searchable)</h2>
+            <h2>🔍 Active Employee Roster</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Emp Code</th><th>Employee Name</th><th>Branch</th><th>Type</th><th>Team</th><th>Designation</th><th>Status</th>
+                        <th>Emp Code</th><th>Employee Name</th><th>Branch</th><th>Type</th><th>Team</th><th>DOJ</th><th>Designation</th><th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><b>EMP1001</b></td><td>Aarav Sharma</td><td>Bangalore</td><td><b>JDA</b></td><td>Field Sales</td><td>Senior Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
-                    <tr><td><b>EMP1002</b></td><td>Priya Patel</td><td>Mumbai</td><td><b>ME</b></td><td>Corporate</td><td>Manager</td><td style="color:#059669; font-weight:800;">Active</td></tr>
-                    <tr><td><b>EMP1003</b></td><td>Rohan Verma</td><td>Delhi</td><td><b>TME</b></td><td>Merchant Onboarding</td><td>Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
-                    <tr><td><b>EMP1004</b></td><td>Ananya Iyer</td><td>Chennai</td><td><b>JDA</b></td><td>Key Accounts</td><td>Senior Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
-                    <tr><td><b>EMP1005</b></td><td>Vikram Singh</td><td>Hyderabad</td><td><b>ME</b></td><td>B2B BDE</td><td>Associate</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td style="font-weight:700; color:#7B4BB3;">EMP1001</td><td style="color:#172033;">Aarav Sharma</td><td style="color:#5E2D91;">Bangalore</td><td><b>JDA</b></td><td>Field Sales</td><td>2021-04-12</td><td>Senior Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td style="font-weight:700; color:#7B4BB3;">EMP1002</td><td style="color:#172033;">Priya Patel</td><td style="color:#5E2D91;">Mumbai</td><td><b>ME</b></td><td>Corporate</td><td>2020-08-19</td><td>Manager</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td style="font-weight:700; color:#7B4BB3;">EMP1003</td><td style="color:#172033;">Rohan Verma</td><td style="color:#5E2D91;">Delhi</td><td><b>TME</b></td><td>Merchant Onboarding</td><td>2022-01-15</td><td>Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td style="font-weight:700; color:#7B4BB3;">EMP1004</td><td style="color:#172033;">Ananya Iyer</td><td style="color:#5E2D91;">Chennai</td><td><b>JDA</b></td><td>Key Accounts</td><td>2019-11-03</td><td>Senior Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td style="font-weight:700; color:#7B4BB3;">EMP1005</td><td style="color:#172033;">Vikram Singh</td><td style="color:#5E2D91;">Hyderabad</td><td><b>ME</b></td><td>B2B BDE</td><td>2023-05-20</td><td>Associate</td><td style="color:#059669; font-weight:800;">Active</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 
     <script>
+        function togglePopover(popId) {
+            event.stopPropagation();
+            document.querySelectorAll('.popover-menu').forEach(m => {
+                if (m.id !== popId) m.classList.remove('open');
+            });
+            document.getElementById(popId).classList.toggle('open');
+        }
+
+        function selectFilter(type, val) {
+            document.getElementById('txt-' + type).innerText = type.charAt(0).toUpperCase() + type.slice(1) + ' (' + val + ')';
+            document.querySelectorAll('.popover-menu').forEach(m => m.classList.remove('open'));
+        }
+
+        window.onclick = function() {
+            document.querySelectorAll('.popover-menu').forEach(m => m.classList.remove('open'));
+        };
+
         function switchTab(tabId, btn) {
             document.querySelectorAll('.parent-tab-btn').forEach(b => b.classList.remove('active'));
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
@@ -332,21 +493,26 @@
         }
 
         function switchChildFilter(filterId, btn) {
-            document.querySelectorAll('.child-pill').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('#child-filter-bar .child-pill').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        function switchDrillView(viewId, btn) {
+            btn.parentElement.querySelectorAll('.child-pill').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
         }
 
         function renderChart() {
             var data = [{
                 x: ['0-3 Months', '3-6 Months', '6-12 Months', '1-2 Years', '2+ Years'],
-                y: [65, 85, 110, 55, 35],
+                y: [110, 145, 180, 95, 69],
                 type: 'bar',
                 marker: { color: ['#5E2D91', '#7B4BB3', '#0284C7', '#059669', '#D97706'] }
             }];
             var layout = {
                 title: 'Employee Count by Tenure Bucket',
                 margin: { t: 40, b: 40, l: 40, r: 40 },
-                font: { family: 'Plus Jakarta Sans' }
+                font: { family: 'Plus Jakarta Sans', size: 14 }
             };
             Plotly.newPlot('tenureChart', data, layout);
         }
@@ -366,6 +532,8 @@
                     var activeTab = document.querySelector('.parent-tab-btn.active');
                     if (activeTab) activeTab.focus();
                 }
+            } else if (e.key === 'Escape') {
+                document.querySelectorAll('.popover-menu').forEach(m => m.classList.remove('open'));
             }
         });
     </script>
