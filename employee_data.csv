@@ -1,0 +1,801 @@
+emp_code,emp_name,branch,emp_type,team_type,doj,dol,designation,email,phone
+EMP0001,Rahul Patel,Ahmedabad,ME,Key Accounts,2020-09-30,2024-12-01,ME Executive,rahul.patel1@company.com,+91 9906402157
+EMP0002,Sneha Kulkarni,Bangalore,TME,SHT,2022-09-25,2023-04-19,TME BDE,sneha.kulkarni2@company.com,+91 7999270936
+EMP0003,Kavya Malhotra,Ahmedabad,TME,Revival (Expiry),2020-03-25,,TME Trainee,kavya.malhotra3@company.com,+91 7946785248
+EMP0004,Pari Aggarwal,Coimbatore,ME,Field Sales,2019-10-16,,Senior ME,pari.aggarwal4@company.com,+91 8193448329
+EMP0005,Arjun Kumar,Delhi,JDA,JDA Direct,2019-01-15,,JDA Senior Executive,arjun.kumar5@company.com,+91 8477278577
+EMP0006,Anika Nair,Ahmedabad,JDA,BLANK,2024-01-06,2026-03-06,JDA Associate,anika.nair6@company.com,+91 9370996465
+EMP0007,Ishaan Malhotra,Delhi,JDA,JDA Partner,2025-11-25,,JDA Associate,ishaan.malhotra7@company.com,+91 8242911821
+EMP0008,Aditya Joshi,Bangalore,TME,Multiple team,2021-02-12,,TME Team Lead,aditya.joshi8@company.com,+91 7698594025
+EMP0009,Diya Chawla,Chennai,TME,Super,2020-12-29,,TME Tele-caller,diya.chawla9@company.com,+91 9616197747
+EMP0010,Rahul Singh,Kolkata,TME,Super Cat,2020-09-29,2022-11-30,TME Team Lead,rahul.singh10@company.com,+91 9748778024
+EMP0011,Priya Kulkarni,Chennai,JDA,JDA Corporate,2018-08-18,2018-11-06,JDA Senior Executive,priya.kulkarni11@company.com,+91 8722989659
+EMP0012,Krishna Gupta,Chennai,TME,SHT,2026-01-19,,TME Trainee,krishna.gupta12@company.com,+91 8699226064
+EMP0013,Suresh Chatterjee,Chandigarh,TME,DF,2019-07-26,2022-10-02,TME Team Lead,suresh.chatterjee13@company.com,+91 9510777721
+EMP0014,Aadhya Aggarwal,Hyderabad,JDA,JDA Corporate,2020-06-17,,JDA Associate,aadhya.aggarwal14@company.com,+91 9188398760
+EMP0015,Saisha Gupta,Ahmedabad,JDA,JDA Direct,2019-09-19,,JDA Lead,saisha.gupta15@company.com,+91 8813163240
+EMP0016,Anika Gupta,Hyderabad,JDA,BLANK,2024-09-06,,JDA Lead,anika.gupta16@company.com,+91 8079815404
+EMP0017,Navya Sharma,Pune,ME,Field Sales,2025-08-24,,Senior ME,navya.sharma17@company.com,+91 9752909971
+EMP0018,Ananya Patel,Coimbatore,ME,Corporate ME,2019-10-10,,ME Manager,ananya.patel18@company.com,+91 8131247330
+EMP0019,Kavya Singh,Kolkata,ME,Field Sales,2025-01-05,,ME Manager,kavya.singh19@company.com,+91 9615507143
+EMP0020,Reyansh Mehta,Delhi,ME,Merchant Onboarding,2024-01-19,,ME Manager,reyansh.mehta20@company.com,+91 7002456273
+EMP0021,Anika Rao,Jaipur,TME,B2B BDE,2019-04-04,,TME Team Lead,anika.rao21@company.com,+91 8028439863
+EMP0022,Vivaan Joshi,Mumbai,JDA,JDA Direct,2018-12-17,,JDA Associate,vivaan.joshi22@company.com,+91 9287955558
+EMP0023,Amit Mehta,Chandigarh,ME,Corporate ME,2024-03-01,,ME Manager,amit.mehta23@company.com,+91 8817363615
+EMP0024,Reyansh Kulkarni,Chennai,ME,Key Accounts,2022-06-23,,ME Manager,reyansh.kulkarni24@company.com,+91 8603828849
+EMP0025,Pari Shah,Jaipur,ME,Field Sales,2020-10-12,2022-09-19,ME Executive,pari.shah25@company.com,+91 9526766690
+EMP0026,Navya Joshi,Mumbai,TME,Corporate,2018-01-30,2021-08-29,TME Tele-caller,navya.joshi26@company.com,+91 7983297492
+EMP0027,Aditya Verma,Delhi,JDA,JDA Direct,2023-10-07,,JDA Senior Executive,aditya.verma27@company.com,+91 7920140090
+EMP0028,Navya Mehta,Mumbai,ME,BLANK,2023-04-21,2025-12-29,Senior ME,navya.mehta28@company.com,+91 7817804383
+EMP0029,Vihaan Patel,Pune,ME,Corporate ME,2021-12-22,,Senior ME,vihaan.patel29@company.com,+91 7232663462
+EMP0030,Rohan Patel,Ahmedabad,JDA,BLANK,2026-03-02,,JDA Associate,rohan.patel30@company.com,+91 8067970820
+EMP0031,Reyansh Kumar,Kolkata,TME,Online,2019-07-29,,TME Team Lead,reyansh.kumar31@company.com,+91 8986972437
+EMP0032,Ayaan Gupta,Jaipur,JDA,JDA Direct,2018-07-27,,JDA Lead,ayaan.gupta32@company.com,+91 7063384488
+EMP0033,Aditya Joshi,Chandigarh,JDA,BLANK,2023-06-13,,JDA Senior Executive,aditya.joshi33@company.com,+91 7251837136
+EMP0034,Sai Deshmukh,Ahmedabad,TME,Multiple team,2020-12-22,,TME Trainee,sai.deshmukh34@company.com,+91 8225136114
+EMP0035,Aadhya Kulkarni,Pune,TME,Super Cat,2023-06-17,2025-02-28,TME BDE,aadhya.kulkarni35@company.com,+91 7251183830
+EMP0036,Riya Kulkarni,Ahmedabad,TME,Super Cat,2021-07-08,2024-10-31,TME Trainee,riya.kulkarni36@company.com,+91 9159725924
+EMP0037,Rajesh Shah,Chandigarh,ME,Field Sales,2023-09-12,2024-10-11,ME Executive,rajesh.shah37@company.com,+91 9555656321
+EMP0038,Aditya Joshi,Hyderabad,JDA,JDA Direct,2024-05-22,,JDA Associate,aditya.joshi38@company.com,+91 9660223333
+EMP0039,Aditya Banerjee,Pune,TME,SHT,2024-05-04,,TME Team Lead,aditya.banerjee39@company.com,+91 7877286584
+EMP0040,Rohan Rao,Chennai,ME,Key Accounts,2022-06-10,2026-02-05,Senior ME,rohan.rao40@company.com,+91 8963764597
+EMP0041,Ananya Gupta,Ahmedabad,JDA,BLANK,2024-12-19,,JDA Associate,ananya.gupta41@company.com,+91 7314652384
+EMP0042,Navya Kumar,Kolkata,ME,Key Accounts,2019-06-27,,ME Executive,navya.kumar42@company.com,+91 8049193572
+EMP0043,Diya Reddy,Chandigarh,JDA,BLANK,2024-02-04,,JDA Lead,diya.reddy43@company.com,+91 9808806886
+EMP0044,Kavya Sharma,Pune,TME,Revival (Expiry),2021-05-11,,TME Tele-caller,kavya.sharma44@company.com,+91 7576775951
+EMP0045,Krishna Patel,Bangalore,ME,BLANK,2019-09-29,2023-03-05,ME Executive,krishna.patel45@company.com,+91 8472659626
+EMP0046,Reyansh Nair,Kolkata,TME,Online,2020-10-25,,TME Tele-caller,reyansh.nair46@company.com,+91 7396418889
+EMP0047,Rahul Banerjee,Coimbatore,ME,Field Sales,2018-01-15,2018-10-24,ME Manager,rahul.banerjee47@company.com,+91 8125089309
+EMP0048,Sai Chatterjee,Kolkata,ME,Corporate ME,2024-04-16,2024-10-02,ME Manager,sai.chatterjee48@company.com,+91 7640183291
+EMP0049,Navya Verma,Delhi,ME,BLANK,2024-03-13,2024-12-14,ME Executive,navya.verma49@company.com,+91 8323959527
+EMP0050,Diya Verma,Delhi,JDA,JDA Partner,2025-08-25,2026-04-07,JDA Senior Executive,diya.verma50@company.com,+91 9404681399
+EMP0051,Suresh Banerjee,Mumbai,TME,Super Cat,2019-09-26,,TME BDE,suresh.banerjee51@company.com,+91 7697939765
+EMP0052,Vikram Singh,Hyderabad,TME,B2B BDE,2020-01-05,,TME Team Lead,vikram.singh52@company.com,+91 8768294570
+EMP0053,Vikram Joshi,Coimbatore,TME,Bounce,2025-11-12,2026-02-14,TME Trainee,vikram.joshi53@company.com,+91 7955345537
+EMP0054,Reyansh Chatterjee,Delhi,TME,DF,2020-07-21,2024-04-17,TME BDE,reyansh.chatterjee54@company.com,+91 8711398352
+EMP0055,Ananya Nair,Bangalore,ME,Key Accounts,2021-12-09,,Senior ME,ananya.nair55@company.com,+91 9918508077
+EMP0056,Neha Kulkarni,Delhi,TME,B2B BDE,2019-04-18,,TME Team Lead,neha.kulkarni56@company.com,+91 7766942939
+EMP0057,Riya Nair,Ahmedabad,JDA,JDA Direct,2024-09-09,,JDA Lead,riya.nair57@company.com,+91 8347233823
+EMP0058,Aadhya Malhotra,Kolkata,JDA,JDA Direct,2022-04-27,,JDA Associate,aadhya.malhotra58@company.com,+91 8094024844
+EMP0059,Vivaan Banerjee,Ahmedabad,JDA,JDA Partner,2022-01-31,,JDA Lead,vivaan.banerjee59@company.com,+91 8418198351
+EMP0060,Anika Rao,Pune,ME,Field Sales,2026-01-27,,ME Manager,anika.rao60@company.com,+91 8328367510
+EMP0061,Rohan Banerjee,Delhi,ME,Corporate ME,2025-10-26,2026-07-28,ME Executive,rohan.banerjee61@company.com,+91 8805803262
+EMP0062,Rohan Deshmukh,Pune,ME,Merchant Onboarding,2024-11-26,,Senior ME,rohan.deshmukh62@company.com,+91 9353372386
+EMP0063,Neha Sharma,Coimbatore,TME,DF,2020-05-10,,TME Team Lead,neha.sharma63@company.com,+91 8997109065
+EMP0064,Pari Chatterjee,Pune,ME,Merchant Onboarding,2023-09-25,,ME Manager,pari.chatterjee64@company.com,+91 7728818981
+EMP0065,Rohan Gupta,Coimbatore,ME,BLANK,2025-06-12,,Senior ME,rohan.gupta65@company.com,+91 7401094954
+EMP0066,Neha Joshi,Pune,ME,Key Accounts,2020-07-09,,ME Executive,neha.joshi66@company.com,+91 7104906255
+EMP0067,Vivaan Joshi,Jaipur,JDA,JDA Direct,2023-02-09,,JDA Lead,vivaan.joshi67@company.com,+91 9472487690
+EMP0068,Reyansh Deshmukh,Jaipur,TME,Multiple team,2020-09-26,2024-08-19,TME Tele-caller,reyansh.deshmukh68@company.com,+91 7457788949
+EMP0069,Amit Banerjee,Chennai,JDA,JDA Partner,2025-10-21,,JDA Associate,amit.banerjee69@company.com,+91 9394039673
+EMP0070,Ayaan Patel,Jaipur,TME,Bounce,2023-03-19,,TME Team Lead,ayaan.patel70@company.com,+91 8900838388
+EMP0071,Anika Shah,Hyderabad,TME,Revival (Expiry),2023-01-01,,TME Trainee,anika.shah71@company.com,+91 8933034905
+EMP0072,Krishna Joshi,Pune,JDA,JDA Corporate,2023-11-06,,JDA Associate,krishna.joshi72@company.com,+91 8179387055
+EMP0073,Pari Gupta,Coimbatore,JDA,JDA Partner,2021-01-17,2024-02-12,JDA Associate,pari.gupta73@company.com,+91 7594312071
+EMP0074,Arjun Joshi,Hyderabad,TME,Super Cat,2019-09-18,,TME Tele-caller,arjun.joshi74@company.com,+91 8781844052
+EMP0075,Aadhya Rao,Kolkata,TME,Online,2022-08-31,,TME Trainee,aadhya.rao75@company.com,+91 8672790155
+EMP0076,Suresh Aggarwal,Ahmedabad,TME,trainee,2024-06-16,,TME Tele-caller,suresh.aggarwal76@company.com,+91 8510792572
+EMP0077,Ishaan Deshmukh,Hyderabad,TME,Revival (Expiry),2026-05-20,,TME BDE,ishaan.deshmukh77@company.com,+91 9096929657
+EMP0078,Ayaan Nair,Hyderabad,JDA,BLANK,2018-04-29,,JDA Lead,ayaan.nair78@company.com,+91 9916892179
+EMP0079,Vikram Deshmukh,Chandigarh,ME,Corporate ME,2019-06-07,,ME Manager,vikram.deshmukh79@company.com,+91 7115820025
+EMP0080,Rajesh Deshmukh,Mumbai,JDA,JDA Direct,2018-12-10,,JDA Associate,rajesh.deshmukh80@company.com,+91 8982979741
+EMP0081,Sai Verma,Coimbatore,TME,Multiple team,2021-09-02,2023-07-18,TME Team Lead,sai.verma81@company.com,+91 8628334692
+EMP0082,Krishna Banerjee,Coimbatore,TME,BLANK,2023-04-11,2026-05-04,TME Tele-caller,krishna.banerjee82@company.com,+91 8503068227
+EMP0083,Ayaan Gupta,Pune,ME,Field Sales,2026-06-17,,ME Executive,ayaan.gupta83@company.com,+91 7087531510
+EMP0084,Anika Mehta,Chennai,JDA,JDA Partner,2023-04-24,,JDA Lead,anika.mehta84@company.com,+91 7936150587
+EMP0085,Pari Nair,Delhi,ME,Merchant Onboarding,2024-10-17,,ME Manager,pari.nair85@company.com,+91 7491914923
+EMP0086,Amit Singh,Coimbatore,ME,Field Sales,2024-06-28,2026-04-12,ME Manager,amit.singh86@company.com,+91 9909184445
+EMP0087,Rajesh Deshmukh,Hyderabad,TME,Super Cat,2020-03-23,2024-02-20,TME BDE,rajesh.deshmukh87@company.com,+91 7437662764
+EMP0088,Priya Reddy,Pune,TME,SHT,2019-05-11,,TME Tele-caller,priya.reddy88@company.com,+91 8491228808
+EMP0089,Navya Banerjee,Pune,TME,Hot Data,2018-10-10,,TME Team Lead,navya.banerjee89@company.com,+91 7054340558
+EMP0090,Pooja Banerjee,Jaipur,ME,Field Sales,2022-11-11,,ME Manager,pooja.banerjee90@company.com,+91 8974565461
+EMP0091,Priya Mehta,Hyderabad,JDA,JDA Partner,2026-03-25,,JDA Lead,priya.mehta91@company.com,+91 8159995046
+EMP0092,Anika Kulkarni,Jaipur,TME,Online,2022-11-20,,TME Team Lead,anika.kulkarni92@company.com,+91 8384287616
+EMP0093,Pooja Joshi,Bangalore,TME,DF,2023-01-21,2025-09-13,TME Trainee,pooja.joshi93@company.com,+91 8444812497
+EMP0094,Aarav Roy,Delhi,ME,Merchant Onboarding,2023-06-21,,Senior ME,aarav.roy94@company.com,+91 8461744198
+EMP0095,Krishna Malhotra,Coimbatore,TME,Revival (Expiry),2018-02-11,,TME BDE,krishna.malhotra95@company.com,+91 7367704871
+EMP0096,Ayaan Banerjee,Jaipur,ME,BLANK,2020-09-11,,ME Manager,ayaan.banerjee96@company.com,+91 9108061573
+EMP0097,Pari Sharma,Bangalore,ME,Key Accounts,2020-06-26,,ME Executive,pari.sharma97@company.com,+91 8315144891
+EMP0098,Rohan Aggarwal,Delhi,ME,Corporate ME,2024-03-17,,Senior ME,rohan.aggarwal98@company.com,+91 9363900493
+EMP0099,Ananya Chawla,Jaipur,JDA,JDA Corporate,2021-06-09,2022-02-26,JDA Lead,ananya.chawla99@company.com,+91 7827143233
+EMP0100,Ananya Patel,Kolkata,JDA,JDA Partner,2020-02-24,2022-11-26,JDA Senior Executive,ananya.patel100@company.com,+91 9532256470
+EMP0101,Amit Shah,Mumbai,JDA,JDA Corporate,2019-02-16,,JDA Senior Executive,amit.shah101@company.com,+91 7977032766
+EMP0102,Diya Singh,Coimbatore,TME,B2B BDE,2025-12-10,,TME Team Lead,diya.singh102@company.com,+91 7195488441
+EMP0103,Vivaan Kulkarni,Coimbatore,ME,Merchant Onboarding,2025-02-25,,Senior ME,vivaan.kulkarni103@company.com,+91 7440610570
+EMP0104,Pooja Sharma,Mumbai,ME,Key Accounts,2023-04-07,,Senior ME,pooja.sharma104@company.com,+91 7791835934
+EMP0105,Vivaan Nair,Jaipur,TME,BLANK,2018-09-25,,TME Tele-caller,vivaan.nair105@company.com,+91 9478286982
+EMP0106,Rahul Verma,Chandigarh,JDA,JDA Partner,2024-04-24,,JDA Associate,rahul.verma106@company.com,+91 8065972034
+EMP0107,Vihaan Kulkarni,Hyderabad,ME,BLANK,2024-09-07,,ME Executive,vihaan.kulkarni107@company.com,+91 9244431947
+EMP0108,Sanya Chatterjee,Jaipur,TME,DF,2024-08-07,,TME Team Lead,sanya.chatterjee108@company.com,+91 9442244963
+EMP0109,Anika Verma,Mumbai,JDA,JDA Direct,2020-05-01,,JDA Senior Executive,anika.verma109@company.com,+91 9836517266
+EMP0110,Aditya Singh,Chennai,JDA,JDA Partner,2024-03-10,2024-03-30,JDA Senior Executive,aditya.singh110@company.com,+91 8934898666
+EMP0111,Priya Malhotra,Jaipur,ME,Key Accounts,2018-05-14,2022-05-15,Senior ME,priya.malhotra111@company.com,+91 8950049698
+EMP0112,Aditya Joshi,Coimbatore,JDA,JDA Partner,2022-10-08,2024-01-26,JDA Lead,aditya.joshi112@company.com,+91 7639904576
+EMP0113,Rajesh Nair,Chandigarh,TME,BLANK,2018-09-02,2020-06-07,TME Team Lead,rajesh.nair113@company.com,+91 8886149718
+EMP0114,Vihaan Chatterjee,Coimbatore,TME,Super Cat,2022-07-07,,TME Trainee,vihaan.chatterjee114@company.com,+91 8880160025
+EMP0115,Aditya Malhotra,Ahmedabad,TME,Multiple team,2026-03-28,,TME Tele-caller,aditya.malhotra115@company.com,+91 7392245997
+EMP0116,Ayaan Aggarwal,Mumbai,TME,B2B BDE,2025-07-16,,TME Tele-caller,ayaan.aggarwal116@company.com,+91 7752438459
+EMP0117,Saisha Shah,Pune,TME,Online,2021-02-13,2024-06-10,TME Trainee,saisha.shah117@company.com,+91 9726379588
+EMP0118,Neha Roy,Bangalore,JDA,BLANK,2021-11-26,,JDA Senior Executive,neha.roy118@company.com,+91 9878201524
+EMP0119,Vihaan Singh,Delhi,TME,Multiple team,2025-10-12,,TME Trainee,vihaan.singh119@company.com,+91 9362646960
+EMP0120,Vivaan Chatterjee,Bangalore,ME,Key Accounts,2020-10-30,2025-03-15,Senior ME,vivaan.chatterjee120@company.com,+91 9210174072
+EMP0121,Neha Sharma,Pune,TME,Revival (Expiry),2023-03-08,,TME BDE,neha.sharma121@company.com,+91 9226680251
+EMP0122,Diya Malhotra,Jaipur,TME,Super,2022-12-16,,TME BDE,diya.malhotra122@company.com,+91 8146997816
+EMP0123,Navya Mehta,Coimbatore,ME,Corporate ME,2025-10-31,,ME Executive,navya.mehta123@company.com,+91 9705925058
+EMP0124,Anika Joshi,Chandigarh,JDA,JDA Corporate,2024-03-06,2026-07-04,JDA Associate,anika.joshi124@company.com,+91 7965081954
+EMP0125,Neha Patel,Jaipur,JDA,JDA Direct,2025-04-07,,JDA Senior Executive,neha.patel125@company.com,+91 8253535854
+EMP0126,Kavya Nair,Hyderabad,ME,Corporate ME,2023-04-19,2026-06-05,ME Executive,kavya.nair126@company.com,+91 8647489402
+EMP0127,Reyansh Malhotra,Kolkata,TME,Super Cat,2019-07-14,,TME Team Lead,reyansh.malhotra127@company.com,+91 8782164134
+EMP0128,Ananya Shah,Coimbatore,TME,B2B BDE,2021-03-04,,TME Trainee,ananya.shah128@company.com,+91 7638212450
+EMP0129,Pari Kulkarni,Jaipur,JDA,JDA Corporate,2021-09-23,,JDA Lead,pari.kulkarni129@company.com,+91 8620104855
+EMP0130,Pari Rao,Chennai,ME,Merchant Onboarding,2024-05-31,,Senior ME,pari.rao130@company.com,+91 7187463722
+EMP0131,Ananya Roy,Hyderabad,ME,Corporate ME,2025-06-11,,ME Manager,ananya.roy131@company.com,+91 7653287375
+EMP0132,Saisha Verma,Chandigarh,JDA,JDA Corporate,2019-02-16,,JDA Senior Executive,saisha.verma132@company.com,+91 7428258482
+EMP0133,Kavya Chatterjee,Ahmedabad,JDA,JDA Partner,2022-08-07,,JDA Associate,kavya.chatterjee133@company.com,+91 7321384892
+EMP0134,Saisha Nair,Delhi,ME,BLANK,2025-10-08,,ME Executive,saisha.nair134@company.com,+91 8411178445
+EMP0135,Pooja Kulkarni,Hyderabad,TME,Hot Data,2025-01-11,,TME Trainee,pooja.kulkarni135@company.com,+91 9323646093
+EMP0136,Vivaan Malhotra,Bangalore,ME,Merchant Onboarding,2025-01-29,,Senior ME,vivaan.malhotra136@company.com,+91 7977046129
+EMP0137,Sneha Gupta,Hyderabad,ME,Field Sales,2025-02-08,,ME Executive,sneha.gupta137@company.com,+91 8905584866
+EMP0138,Sai Reddy,Ahmedabad,TME,B2B BDE,2021-08-21,,TME Team Lead,sai.reddy138@company.com,+91 8539588337
+EMP0139,Diya Banerjee,Chandigarh,ME,Merchant Onboarding,2023-12-16,,ME Manager,diya.banerjee139@company.com,+91 7773338452
+EMP0140,Sai Singh,Bangalore,TME,SHT,2022-04-16,,TME BDE,sai.singh140@company.com,+91 9137464556
+EMP0141,Rajesh Aggarwal,Chandigarh,TME,Corporate,2023-03-04,,TME Trainee,rajesh.aggarwal141@company.com,+91 8096619850
+EMP0142,Rohan Sharma,Jaipur,ME,Key Accounts,2025-08-07,,ME Executive,rohan.sharma142@company.com,+91 8897214963
+EMP0143,Diya Aggarwal,Coimbatore,ME,Corporate ME,2025-09-28,,Senior ME,diya.aggarwal143@company.com,+91 7855630484
+EMP0144,Sanya Roy,Bangalore,ME,Merchant Onboarding,2022-04-12,,ME Manager,sanya.roy144@company.com,+91 8270762239
+EMP0145,Priya Reddy,Ahmedabad,ME,Corporate ME,2021-01-29,2025-12-20,ME Manager,priya.reddy145@company.com,+91 7210643427
+EMP0146,Rajesh Malhotra,Jaipur,JDA,JDA Corporate,2020-07-31,,JDA Senior Executive,rajesh.malhotra146@company.com,+91 7940617318
+EMP0147,Rahul Kumar,Mumbai,TME,DF,2025-08-08,,TME BDE,rahul.kumar147@company.com,+91 9698305085
+EMP0148,Vihaan Verma,Coimbatore,ME,Corporate ME,2018-05-17,,ME Manager,vihaan.verma148@company.com,+91 7564409423
+EMP0149,Aditya Reddy,Delhi,JDA,BLANK,2019-12-21,2024-06-02,JDA Lead,aditya.reddy149@company.com,+91 8571346130
+EMP0150,Kavya Shah,Coimbatore,ME,Merchant Onboarding,2020-11-18,,Senior ME,kavya.shah150@company.com,+91 8267622868
+EMP0151,Sneha Rao,Bangalore,TME,Online,2018-11-05,2020-02-25,TME Trainee,sneha.rao151@company.com,+91 9393639475
+EMP0152,Diya Gupta,Hyderabad,JDA,JDA Direct,2020-12-19,,JDA Senior Executive,diya.gupta152@company.com,+91 8583063357
+EMP0153,Rohan Nair,Mumbai,JDA,BLANK,2025-02-28,,JDA Associate,rohan.nair153@company.com,+91 9898400928
+EMP0154,Ayaan Roy,Ahmedabad,ME,BLANK,2024-04-18,,ME Executive,ayaan.roy154@company.com,+91 9781645815
+EMP0155,Aditya Chatterjee,Coimbatore,TME,Super,2022-07-31,2022-11-15,TME Tele-caller,aditya.chatterjee155@company.com,+91 8307235909
+EMP0156,Saisha Patel,Bangalore,JDA,JDA Partner,2024-01-11,,JDA Senior Executive,saisha.patel156@company.com,+91 9879716355
+EMP0157,Sneha Kulkarni,Hyderabad,TME,SHT,2026-04-29,,TME Trainee,sneha.kulkarni157@company.com,+91 9812868150
+EMP0158,Vihaan Roy,Mumbai,TME,Multiple team,2021-02-19,2023-04-03,TME BDE,vihaan.roy158@company.com,+91 8904315855
+EMP0159,Pari Joshi,Delhi,JDA,JDA Direct,2025-09-09,,JDA Lead,pari.joshi159@company.com,+91 8540492440
+EMP0160,Vivaan Deshmukh,Coimbatore,TME,Corporate,2019-05-16,,TME Trainee,vivaan.deshmukh160@company.com,+91 7393734347
+EMP0161,Rohan Kumar,Pune,ME,BLANK,2018-03-29,2020-02-25,ME Executive,rohan.kumar161@company.com,+91 7540838949
+EMP0162,Vikram Aggarwal,Chennai,TME,BLANK,2024-03-20,2025-06-20,TME BDE,vikram.aggarwal162@company.com,+91 8411152518
+EMP0163,Amit Mehta,Mumbai,TME,B2B BDE,2021-02-09,,TME BDE,amit.mehta163@company.com,+91 7558311957
+EMP0164,Navya Nair,Chandigarh,ME,Field Sales,2025-05-31,,ME Executive,navya.nair164@company.com,+91 7063824611
+EMP0165,Diya Joshi,Mumbai,JDA,JDA Corporate,2018-03-06,2018-07-06,JDA Associate,diya.joshi165@company.com,+91 8808011838
+EMP0166,Kavya Patel,Bangalore,TME,Online,2023-01-11,,TME Tele-caller,kavya.patel166@company.com,+91 8941348507
+EMP0167,Kavya Joshi,Mumbai,ME,Field Sales,2026-02-26,,ME Manager,kavya.joshi167@company.com,+91 9239615923
+EMP0168,Ishaan Chatterjee,Pune,JDA,JDA Direct,2018-09-07,,JDA Senior Executive,ishaan.chatterjee168@company.com,+91 8830831254
+EMP0169,Rohan Patel,Jaipur,JDA,BLANK,2018-10-29,,JDA Senior Executive,rohan.patel169@company.com,+91 9612617557
+EMP0170,Arjun Gupta,Chandigarh,ME,Key Accounts,2025-01-01,,ME Manager,arjun.gupta170@company.com,+91 8396660850
+EMP0171,Sanya Malhotra,Kolkata,TME,DF,2023-02-02,,TME Trainee,sanya.malhotra171@company.com,+91 7425968237
+EMP0172,Vikram Patel,Pune,JDA,JDA Partner,2022-10-28,,JDA Associate,vikram.patel172@company.com,+91 8777315761
+EMP0173,Ananya Chatterjee,Hyderabad,ME,Corporate ME,2026-03-08,,Senior ME,ananya.chatterjee173@company.com,+91 9856616537
+EMP0174,Krishna Chawla,Chandigarh,JDA,BLANK,2018-10-02,2019-04-09,JDA Associate,krishna.chawla174@company.com,+91 8854895521
+EMP0175,Vihaan Chawla,Chandigarh,TME,Revival (Expiry),2018-09-03,,TME Team Lead,vihaan.chawla175@company.com,+91 9877685081
+EMP0176,Vihaan Banerjee,Delhi,JDA,BLANK,2026-02-01,,JDA Lead,vihaan.banerjee176@company.com,+91 8341957809
+EMP0177,Diya Patel,Mumbai,TME,Revival (Expiry),2020-05-21,2023-02-17,TME BDE,diya.patel177@company.com,+91 7464794418
+EMP0178,Diya Kulkarni,Delhi,ME,Field Sales,2021-02-15,,Senior ME,diya.kulkarni178@company.com,+91 9409329326
+EMP0179,Amit Malhotra,Mumbai,TME,Super,2025-03-17,,TME Team Lead,amit.malhotra179@company.com,+91 7124352982
+EMP0180,Sai Nair,Coimbatore,JDA,JDA Corporate,2021-12-08,,JDA Associate,sai.nair180@company.com,+91 9432330583
+EMP0181,Rohan Deshmukh,Bangalore,ME,Merchant Onboarding,2026-04-24,,ME Executive,rohan.deshmukh181@company.com,+91 7394096254
+EMP0182,Sneha Shah,Chennai,JDA,BLANK,2022-09-16,,JDA Associate,sneha.shah182@company.com,+91 8589365925
+EMP0183,Ishaan Rao,Mumbai,TME,SHT,2018-12-14,,TME BDE,ishaan.rao183@company.com,+91 7676070354
+EMP0184,Amit Malhotra,Ahmedabad,TME,Super,2018-12-01,2022-09-01,TME Trainee,amit.malhotra184@company.com,+91 9085901151
+EMP0185,Anika Chatterjee,Hyderabad,ME,Key Accounts,2020-06-01,,ME Executive,anika.chatterjee185@company.com,+91 8482506118
+EMP0186,Aadhya Patel,Coimbatore,TME,Super,2025-08-11,,TME Team Lead,aadhya.patel186@company.com,+91 7195066088
+EMP0187,Ayaan Deshmukh,Mumbai,TME,B2B BDE,2018-02-01,2019-04-24,TME BDE,ayaan.deshmukh187@company.com,+91 8097447932
+EMP0188,Ishaan Rao,Bangalore,ME,Field Sales,2023-07-31,,ME Executive,ishaan.rao188@company.com,+91 7554848380
+EMP0189,Sanya Kulkarni,Chennai,ME,BLANK,2024-04-07,,Senior ME,sanya.kulkarni189@company.com,+91 7309561891
+EMP0190,Sanya Verma,Hyderabad,JDA,JDA Direct,2023-02-27,,JDA Senior Executive,sanya.verma190@company.com,+91 9472866768
+EMP0191,Aadhya Aggarwal,Hyderabad,JDA,BLANK,2021-03-31,2021-05-27,JDA Senior Executive,aadhya.aggarwal191@company.com,+91 7738189691
+EMP0192,Vikram Malhotra,Jaipur,TME,Super Cat,2022-01-22,,TME Tele-caller,vikram.malhotra192@company.com,+91 8045036297
+EMP0193,Aadhya Aggarwal,Hyderabad,TME,Revival (Expiry),2018-11-19,,TME Team Lead,aadhya.aggarwal193@company.com,+91 8458198451
+EMP0194,Ayaan Rao,Chandigarh,TME,BLANK,2023-09-22,,TME BDE,ayaan.rao194@company.com,+91 8500555353
+EMP0195,Diya Mehta,Chennai,ME,Field Sales,2019-08-23,2020-08-27,ME Manager,diya.mehta195@company.com,+91 7656570734
+EMP0196,Amit Gupta,Chandigarh,ME,Corporate ME,2023-03-16,,ME Manager,amit.gupta196@company.com,+91 8928033396
+EMP0197,Rohan Aggarwal,Pune,TME,Super,2025-01-02,,TME Team Lead,rohan.aggarwal197@company.com,+91 7648357091
+EMP0198,Pari Gupta,Jaipur,TME,Online,2025-01-30,,TME Tele-caller,pari.gupta198@company.com,+91 8511580323
+EMP0199,Kavya Gupta,Coimbatore,TME,Online,2023-01-26,2025-03-06,TME Team Lead,kavya.gupta199@company.com,+91 7329557138
+EMP0200,Rahul Gupta,Mumbai,TME,SHT,2023-09-08,,TME Tele-caller,rahul.gupta200@company.com,+91 8931591531
+EMP0201,Rajesh Aggarwal,Pune,TME,Corporate,2021-08-09,,TME BDE,rajesh.aggarwal201@company.com,+91 7265745534
+EMP0202,Pari Patel,Delhi,JDA,JDA Direct,2023-08-29,,JDA Associate,pari.patel202@company.com,+91 8064051191
+EMP0203,Priya Chatterjee,Jaipur,JDA,JDA Partner,2022-01-30,,JDA Senior Executive,priya.chatterjee203@company.com,+91 8663941470
+EMP0204,Aadhya Rao,Pune,TME,SHT,2018-08-03,,TME Team Lead,aadhya.rao204@company.com,+91 7283089268
+EMP0205,Ananya Patel,Kolkata,TME,Super,2022-05-03,2026-06-08,TME BDE,ananya.patel205@company.com,+91 8431779064
+EMP0206,Aditya Aggarwal,Pune,JDA,JDA Partner,2021-12-03,2025-08-22,JDA Lead,aditya.aggarwal206@company.com,+91 9843848856
+EMP0207,Sanya Mehta,Mumbai,JDA,JDA Direct,2021-06-22,,JDA Lead,sanya.mehta207@company.com,+91 8410796055
+EMP0208,Neha Mehta,Pune,TME,Super Cat,2026-04-15,,TME Tele-caller,neha.mehta208@company.com,+91 9774655465
+EMP0209,Rohan Banerjee,Kolkata,JDA,JDA Corporate,2018-03-16,,JDA Associate,rohan.banerjee209@company.com,+91 7919950484
+EMP0210,Ananya Roy,Chennai,JDA,JDA Partner,2019-07-18,2021-03-29,JDA Associate,ananya.roy210@company.com,+91 9180510715
+EMP0211,Amit Kulkarni,Kolkata,ME,Field Sales,2025-06-04,,ME Manager,amit.kulkarni211@company.com,+91 7562851356
+EMP0212,Anika Deshmukh,Chandigarh,TME,Bounce,2020-01-11,,TME BDE,anika.deshmukh212@company.com,+91 8879792991
+EMP0213,Vivaan Banerjee,Delhi,TME,Super,2026-01-26,,TME Team Lead,vivaan.banerjee213@company.com,+91 8928130926
+EMP0214,Ayaan Kulkarni,Chennai,JDA,JDA Corporate,2023-04-06,,JDA Associate,ayaan.kulkarni214@company.com,+91 8579864877
+EMP0215,Rohan Aggarwal,Jaipur,TME,Online,2021-02-28,,TME Trainee,rohan.aggarwal215@company.com,+91 7696034559
+EMP0216,Neha Kumar,Mumbai,JDA,JDA Partner,2020-10-21,2023-07-17,JDA Senior Executive,neha.kumar216@company.com,+91 9381734362
+EMP0217,Rajesh Patel,Kolkata,ME,Field Sales,2021-03-13,2022-02-19,Senior ME,rajesh.patel217@company.com,+91 8929811336
+EMP0218,Suresh Shah,Chandigarh,TME,Multiple team,2019-01-11,,TME BDE,suresh.shah218@company.com,+91 8937579958
+EMP0219,Suresh Chawla,Ahmedabad,TME,Multiple team,2018-08-07,,TME Team Lead,suresh.chawla219@company.com,+91 8012659111
+EMP0220,Sanya Gupta,Delhi,TME,Corporate,2018-04-26,2018-11-29,TME Team Lead,sanya.gupta220@company.com,+91 7627276995
+EMP0221,Arjun Verma,Coimbatore,TME,Online,2025-10-22,,TME Trainee,arjun.verma221@company.com,+91 8926728669
+EMP0222,Anika Sharma,Bangalore,ME,Field Sales,2020-11-14,2021-10-01,ME Manager,anika.sharma222@company.com,+91 9615120114
+EMP0223,Kavya Banerjee,Bangalore,JDA,JDA Corporate,2020-08-31,2020-12-21,JDA Associate,kavya.banerjee223@company.com,+91 8803136972
+EMP0224,Rahul Malhotra,Jaipur,ME,Field Sales,2019-03-31,,Senior ME,rahul.malhotra224@company.com,+91 9562974666
+EMP0225,Navya Sharma,Pune,ME,BLANK,2024-06-13,2025-04-18,Senior ME,navya.sharma225@company.com,+91 8843567009
+EMP0226,Aarav Malhotra,Delhi,JDA,JDA Partner,2024-05-26,,JDA Lead,aarav.malhotra226@company.com,+91 9869961166
+EMP0227,Aditya Shah,Delhi,TME,BLANK,2023-11-25,,TME Tele-caller,aditya.shah227@company.com,+91 8676986013
+EMP0228,Pooja Roy,Ahmedabad,ME,Corporate ME,2022-03-10,2022-04-27,Senior ME,pooja.roy228@company.com,+91 7290166087
+EMP0229,Diya Joshi,Pune,TME,Super,2019-03-01,,TME Team Lead,diya.joshi229@company.com,+91 7572989855
+EMP0230,Vivaan Chawla,Kolkata,TME,Hot Data,2025-03-17,,TME Trainee,vivaan.chawla230@company.com,+91 9986674107
+EMP0231,Saisha Singh,Chandigarh,TME,BLANK,2026-01-11,,TME Trainee,saisha.singh231@company.com,+91 7158844179
+EMP0232,Ishaan Kumar,Ahmedabad,ME,Merchant Onboarding,2018-06-21,2020-04-01,ME Manager,ishaan.kumar232@company.com,+91 8710359289
+EMP0233,Neha Kulkarni,Jaipur,ME,Key Accounts,2018-05-30,,ME Executive,neha.kulkarni233@company.com,+91 8228836941
+EMP0234,Diya Verma,Pune,ME,Key Accounts,2021-01-24,2023-03-03,Senior ME,diya.verma234@company.com,+91 8718080443
+EMP0235,Sneha Chatterjee,Hyderabad,JDA,JDA Corporate,2020-02-05,,JDA Senior Executive,sneha.chatterjee235@company.com,+91 8577743019
+EMP0236,Rajesh Shah,Coimbatore,TME,trainee,2018-12-05,,TME Tele-caller,rajesh.shah236@company.com,+91 8849443634
+EMP0237,Anika Singh,Kolkata,ME,Key Accounts,2021-08-08,2023-06-25,ME Manager,anika.singh237@company.com,+91 8269763934
+EMP0238,Ishaan Chatterjee,Mumbai,JDA,BLANK,2019-11-14,,JDA Senior Executive,ishaan.chatterjee238@company.com,+91 8920407276
+EMP0239,Vivaan Chawla,Mumbai,TME,Multiple team,2021-01-29,,TME Tele-caller,vivaan.chawla239@company.com,+91 7322299355
+EMP0240,Rohan Deshmukh,Delhi,JDA,JDA Partner,2018-05-08,2021-10-18,JDA Lead,rohan.deshmukh240@company.com,+91 8881937953
+EMP0241,Vivaan Mehta,Bangalore,TME,Corporate,2025-03-27,,TME Trainee,vivaan.mehta241@company.com,+91 9436297208
+EMP0242,Vivaan Malhotra,Chandigarh,TME,Super,2023-01-17,,TME Team Lead,vivaan.malhotra242@company.com,+91 8906704716
+EMP0243,Amit Gupta,Mumbai,TME,Bounce,2023-12-09,,TME Team Lead,amit.gupta243@company.com,+91 9789842140
+EMP0244,Krishna Joshi,Bangalore,ME,Field Sales,2026-04-02,,Senior ME,krishna.joshi244@company.com,+91 9412365931
+EMP0245,Vihaan Nair,Coimbatore,JDA,BLANK,2020-05-28,,JDA Senior Executive,vihaan.nair245@company.com,+91 9980624159
+EMP0246,Rajesh Roy,Chennai,TME,BLANK,2019-07-10,,TME Trainee,rajesh.roy246@company.com,+91 7741553420
+EMP0247,Suresh Chatterjee,Bangalore,ME,Key Accounts,2025-06-28,2025-11-22,ME Manager,suresh.chatterjee247@company.com,+91 9328608265
+EMP0248,Ishaan Reddy,Chandigarh,TME,Super Cat,2025-12-16,,TME BDE,ishaan.reddy248@company.com,+91 8552597094
+EMP0249,Kavya Joshi,Bangalore,TME,Corporate,2019-07-23,2022-05-14,TME Tele-caller,kavya.joshi249@company.com,+91 8550038771
+EMP0250,Navya Aggarwal,Delhi,TME,Online,2024-03-09,2024-09-16,TME Tele-caller,navya.aggarwal250@company.com,+91 8328393535
+EMP0251,Sanya Roy,Kolkata,ME,Corporate ME,2022-08-05,,ME Executive,sanya.roy251@company.com,+91 7538274418
+EMP0252,Ananya Gupta,Jaipur,ME,Corporate ME,2025-08-17,,ME Executive,ananya.gupta252@company.com,+91 9367830246
+EMP0253,Rahul Aggarwal,Chandigarh,TME,trainee,2019-06-13,,TME Tele-caller,rahul.aggarwal253@company.com,+91 7533267960
+EMP0254,Kavya Mehta,Coimbatore,ME,Merchant Onboarding,2019-10-26,2023-11-01,ME Executive,kavya.mehta254@company.com,+91 8486157809
+EMP0255,Kavya Reddy,Bangalore,JDA,JDA Corporate,2020-03-15,,JDA Lead,kavya.reddy255@company.com,+91 8178758213
+EMP0256,Arjun Reddy,Mumbai,ME,BLANK,2019-01-18,,ME Executive,arjun.reddy256@company.com,+91 9541797909
+EMP0257,Riya Mehta,Chandigarh,TME,Super,2025-01-01,,TME Team Lead,riya.mehta257@company.com,+91 9420721027
+EMP0258,Vivaan Sharma,Bangalore,TME,B2B BDE,2025-03-12,,TME Team Lead,vivaan.sharma258@company.com,+91 9796581976
+EMP0259,Reyansh Aggarwal,Hyderabad,ME,BLANK,2025-03-02,,ME Manager,reyansh.aggarwal259@company.com,+91 8244130290
+EMP0260,Rahul Reddy,Jaipur,JDA,JDA Partner,2025-09-06,,JDA Senior Executive,rahul.reddy260@company.com,+91 7313416738
+EMP0261,Priya Verma,Chandigarh,TME,Online,2022-08-30,,TME BDE,priya.verma261@company.com,+91 8461115950
+EMP0262,Anika Mehta,Delhi,TME,Super Cat,2021-07-31,,TME Team Lead,anika.mehta262@company.com,+91 8712474804
+EMP0263,Arjun Chawla,Kolkata,JDA,JDA Direct,2021-07-31,2022-04-22,JDA Senior Executive,arjun.chawla263@company.com,+91 8931000173
+EMP0264,Ayaan Mehta,Bangalore,ME,Field Sales,2021-04-03,,ME Manager,ayaan.mehta264@company.com,+91 8795875043
+EMP0265,Ayaan Singh,Delhi,TME,SHT,2026-02-01,,TME BDE,ayaan.singh265@company.com,+91 9140034179
+EMP0266,Kavya Chatterjee,Jaipur,TME,DF,2023-07-31,2025-10-28,TME Trainee,kavya.chatterjee266@company.com,+91 8033921654
+EMP0267,Reyansh Aggarwal,Delhi,TME,B2B BDE,2018-07-27,2021-12-16,TME Trainee,reyansh.aggarwal267@company.com,+91 8227279967
+EMP0268,Navya Sharma,Bangalore,TME,Multiple team,2019-07-03,,TME Team Lead,navya.sharma268@company.com,+91 8731963069
+EMP0269,Diya Verma,Hyderabad,ME,Field Sales,2024-05-24,,Senior ME,diya.verma269@company.com,+91 9376074389
+EMP0270,Ishaan Gupta,Hyderabad,ME,BLANK,2023-01-19,,Senior ME,ishaan.gupta270@company.com,+91 9676802207
+EMP0271,Rohan Malhotra,Bangalore,TME,Bounce,2019-02-01,,TME Team Lead,rohan.malhotra271@company.com,+91 9395869480
+EMP0272,Diya Mehta,Chennai,TME,SHT,2023-09-17,,TME Tele-caller,diya.mehta272@company.com,+91 7194576436
+EMP0273,Vivaan Mehta,Delhi,TME,trainee,2023-04-25,,TME BDE,vivaan.mehta273@company.com,+91 9603869092
+EMP0274,Suresh Shah,Chandigarh,TME,Hot Data,2024-11-16,,TME Team Lead,suresh.shah274@company.com,+91 9550027973
+EMP0275,Ananya Shah,Kolkata,ME,BLANK,2023-06-30,,Senior ME,ananya.shah275@company.com,+91 9039648170
+EMP0276,Neha Sharma,Delhi,ME,Key Accounts,2025-07-22,,ME Manager,neha.sharma276@company.com,+91 8321466224
+EMP0277,Vikram Sharma,Mumbai,TME,Online,2020-12-23,,TME BDE,vikram.sharma277@company.com,+91 7220568746
+EMP0278,Riya Roy,Chandigarh,TME,Revival (Expiry),2025-01-20,,TME Trainee,riya.roy278@company.com,+91 7634691836
+EMP0279,Neha Joshi,Ahmedabad,TME,SHT,2025-11-09,2026-01-01,TME Trainee,neha.joshi279@company.com,+91 8347298951
+EMP0280,Aadhya Mehta,Hyderabad,TME,Super Cat,2020-04-15,,TME Trainee,aadhya.mehta280@company.com,+91 7267496095
+EMP0281,Priya Mehta,Kolkata,TME,Corporate,2024-04-16,,TME Trainee,priya.mehta281@company.com,+91 9256907178
+EMP0282,Sanya Rao,Chandigarh,ME,Corporate ME,2023-12-24,2026-01-02,ME Manager,sanya.rao282@company.com,+91 9923781318
+EMP0283,Rahul Nair,Mumbai,ME,Corporate ME,2020-02-27,,Senior ME,rahul.nair283@company.com,+91 9396963917
+EMP0284,Ishaan Joshi,Coimbatore,JDA,JDA Corporate,2025-11-27,,JDA Senior Executive,ishaan.joshi284@company.com,+91 8361679629
+EMP0285,Saisha Chawla,Kolkata,ME,Key Accounts,2021-03-24,2025-01-22,ME Manager,saisha.chawla285@company.com,+91 8630774093
+EMP0286,Suresh Deshmukh,Delhi,JDA,JDA Partner,2021-04-04,2025-04-20,JDA Associate,suresh.deshmukh286@company.com,+91 8487619960
+EMP0287,Rajesh Chatterjee,Pune,ME,Key Accounts,2026-05-20,,ME Executive,rajesh.chatterjee287@company.com,+91 9313174562
+EMP0288,Krishna Kulkarni,Coimbatore,ME,Merchant Onboarding,2019-03-24,,ME Manager,krishna.kulkarni288@company.com,+91 8027708670
+EMP0289,Ayaan Verma,Pune,ME,BLANK,2020-07-13,,ME Executive,ayaan.verma289@company.com,+91 7430346953
+EMP0290,Aadhya Rao,Jaipur,ME,Field Sales,2025-08-22,,ME Executive,aadhya.rao290@company.com,+91 9363746243
+EMP0291,Rajesh Singh,Hyderabad,JDA,BLANK,2023-05-10,,JDA Senior Executive,rajesh.singh291@company.com,+91 8379404786
+EMP0292,Ishaan Verma,Bangalore,JDA,JDA Partner,2024-01-01,,JDA Associate,ishaan.verma292@company.com,+91 7751897503
+EMP0293,Aadhya Singh,Ahmedabad,TME,Multiple team,2023-07-23,,TME Team Lead,aadhya.singh293@company.com,+91 7160916026
+EMP0294,Aarav Reddy,Mumbai,ME,BLANK,2019-03-16,,Senior ME,aarav.reddy294@company.com,+91 8222182982
+EMP0295,Pari Kulkarni,Kolkata,JDA,BLANK,2019-07-04,,JDA Senior Executive,pari.kulkarni295@company.com,+91 8171826349
+EMP0296,Reyansh Patel,Delhi,ME,Merchant Onboarding,2026-03-14,,Senior ME,reyansh.patel296@company.com,+91 7799718923
+EMP0297,Aarav Rao,Coimbatore,TME,SHT,2025-07-25,,TME BDE,aarav.rao297@company.com,+91 9624029587
+EMP0298,Pooja Deshmukh,Hyderabad,JDA,JDA Corporate,2018-12-22,,JDA Associate,pooja.deshmukh298@company.com,+91 7793629209
+EMP0299,Arjun Roy,Delhi,TME,Corporate,2018-01-28,2019-06-09,TME Trainee,arjun.roy299@company.com,+91 8146731886
+EMP0300,Ananya Reddy,Mumbai,JDA,JDA Direct,2020-12-07,,JDA Lead,ananya.reddy300@company.com,+91 8014911848
+EMP0301,Vivaan Patel,Jaipur,JDA,JDA Corporate,2019-10-17,,JDA Lead,vivaan.patel301@company.com,+91 8335640103
+EMP0302,Priya Patel,Pune,ME,Key Accounts,2022-02-14,,ME Executive,priya.patel302@company.com,+91 7573673552
+EMP0303,Saisha Mehta,Jaipur,ME,BLANK,2022-03-11,,ME Manager,saisha.mehta303@company.com,+91 9022191192
+EMP0304,Amit Kulkarni,Pune,TME,Corporate,2020-10-10,,TME Tele-caller,amit.kulkarni304@company.com,+91 9257033897
+EMP0305,Pari Shah,Delhi,TME,BLANK,2024-04-29,,TME BDE,pari.shah305@company.com,+91 9459734963
+EMP0306,Navya Mehta,Chandigarh,TME,Hot Data,2023-11-02,,TME BDE,navya.mehta306@company.com,+91 9504600194
+EMP0307,Saisha Gupta,Kolkata,ME,Corporate ME,2018-08-16,,ME Manager,saisha.gupta307@company.com,+91 8784234958
+EMP0308,Pari Aggarwal,Ahmedabad,ME,BLANK,2023-03-09,,Senior ME,pari.aggarwal308@company.com,+91 7093503397
+EMP0309,Sanya Nair,Ahmedabad,TME,Super Cat,2020-06-11,,TME Tele-caller,sanya.nair309@company.com,+91 8819766421
+EMP0310,Diya Gupta,Kolkata,ME,Field Sales,2018-10-10,,Senior ME,diya.gupta310@company.com,+91 7136300252
+EMP0311,Ishaan Banerjee,Chandigarh,ME,Merchant Onboarding,2025-03-12,,ME Manager,ishaan.banerjee311@company.com,+91 8805440796
+EMP0312,Diya Deshmukh,Jaipur,JDA,BLANK,2022-03-19,2025-12-18,JDA Lead,diya.deshmukh312@company.com,+91 7571186857
+EMP0313,Rahul Chawla,Bangalore,JDA,JDA Partner,2024-01-10,,JDA Associate,rahul.chawla313@company.com,+91 7956447193
+EMP0314,Neha Sharma,Ahmedabad,TME,DF,2023-03-12,,TME Trainee,neha.sharma314@company.com,+91 9284637470
+EMP0315,Sanya Joshi,Chennai,TME,Online,2021-11-18,2022-12-24,TME Tele-caller,sanya.joshi315@company.com,+91 7138372291
+EMP0316,Vikram Banerjee,Mumbai,TME,trainee,2018-03-06,2018-08-05,TME Tele-caller,vikram.banerjee316@company.com,+91 9550970716
+EMP0317,Vivaan Chatterjee,Mumbai,ME,Field Sales,2020-09-29,,Senior ME,vivaan.chatterjee317@company.com,+91 8885330933
+EMP0318,Ayaan Kulkarni,Chennai,JDA,JDA Direct,2019-07-28,,JDA Senior Executive,ayaan.kulkarni318@company.com,+91 8005716063
+EMP0319,Neha Aggarwal,Delhi,JDA,JDA Corporate,2020-08-28,2021-07-02,JDA Lead,neha.aggarwal319@company.com,+91 9238756255
+EMP0320,Ayaan Banerjee,Coimbatore,ME,Key Accounts,2018-09-07,,ME Manager,ayaan.banerjee320@company.com,+91 7752191321
+EMP0321,Rahul Banerjee,Kolkata,ME,Corporate ME,2018-07-12,,ME Manager,rahul.banerjee321@company.com,+91 9883394191
+EMP0322,Sanya Shah,Delhi,TME,Super Cat,2022-09-02,,TME Team Lead,sanya.shah322@company.com,+91 8616884203
+EMP0323,Sai Kulkarni,Jaipur,TME,Corporate,2020-07-12,2024-07-15,TME BDE,sai.kulkarni323@company.com,+91 8988677919
+EMP0324,Rajesh Verma,Kolkata,ME,Corporate ME,2022-09-03,,ME Executive,rajesh.verma324@company.com,+91 8668247132
+EMP0325,Ayaan Nair,Chennai,TME,Hot Data,2025-04-02,,TME Team Lead,ayaan.nair325@company.com,+91 7397129827
+EMP0326,Navya Kumar,Ahmedabad,TME,DF,2022-03-25,,TME Tele-caller,navya.kumar326@company.com,+91 7312606333
+EMP0327,Reyansh Aggarwal,Pune,ME,BLANK,2020-06-07,,Senior ME,reyansh.aggarwal327@company.com,+91 8302182635
+EMP0328,Rajesh Sharma,Chennai,TME,Corporate,2026-04-26,,TME Trainee,rajesh.sharma328@company.com,+91 8041929790
+EMP0329,Priya Malhotra,Chennai,ME,Corporate ME,2020-09-07,,Senior ME,priya.malhotra329@company.com,+91 8634929736
+EMP0330,Pari Kulkarni,Pune,JDA,JDA Corporate,2021-06-17,2024-05-17,JDA Senior Executive,pari.kulkarni330@company.com,+91 9001472250
+EMP0331,Vihaan Roy,Delhi,ME,Merchant Onboarding,2022-02-27,2022-06-15,ME Manager,vihaan.roy331@company.com,+91 7950365001
+EMP0332,Sneha Mehta,Ahmedabad,TME,DF,2024-03-16,,TME Trainee,sneha.mehta332@company.com,+91 8267841227
+EMP0333,Arjun Kumar,Delhi,JDA,JDA Partner,2022-04-05,,JDA Associate,arjun.kumar333@company.com,+91 9144483523
+EMP0334,Navya Rao,Coimbatore,JDA,BLANK,2026-02-11,,JDA Senior Executive,navya.rao334@company.com,+91 8979245480
+EMP0335,Sai Chawla,Chandigarh,JDA,JDA Partner,2026-01-29,,JDA Associate,sai.chawla335@company.com,+91 9328460033
+EMP0336,Rahul Verma,Kolkata,JDA,JDA Direct,2018-11-01,,JDA Lead,rahul.verma336@company.com,+91 7208367732
+EMP0337,Amit Sharma,Hyderabad,TME,Bounce,2025-01-27,,TME BDE,amit.sharma337@company.com,+91 7039262289
+EMP0338,Reyansh Shah,Jaipur,TME,Hot Data,2018-09-05,,TME Trainee,reyansh.shah338@company.com,+91 9831604672
+EMP0339,Saisha Sharma,Ahmedabad,ME,BLANK,2024-03-09,,ME Executive,saisha.sharma339@company.com,+91 9273831457
+EMP0340,Sneha Nair,Kolkata,JDA,JDA Corporate,2018-03-12,,JDA Lead,sneha.nair340@company.com,+91 9894949501
+EMP0341,Aadhya Singh,Bangalore,ME,Field Sales,2023-11-18,2024-12-30,ME Manager,aadhya.singh341@company.com,+91 9261111254
+EMP0342,Krishna Chawla,Coimbatore,ME,Corporate ME,2018-11-20,,Senior ME,krishna.chawla342@company.com,+91 8971380304
+EMP0343,Riya Joshi,Chennai,JDA,JDA Corporate,2025-09-02,,JDA Associate,riya.joshi343@company.com,+91 9807773530
+EMP0344,Pooja Verma,Bangalore,ME,Corporate ME,2022-04-03,,Senior ME,pooja.verma344@company.com,+91 7241011818
+EMP0345,Rahul Sharma,Chandigarh,ME,Field Sales,2023-08-10,,ME Manager,rahul.sharma345@company.com,+91 8422796478
+EMP0346,Riya Patel,Kolkata,TME,B2B BDE,2020-07-30,2025-06-26,TME Trainee,riya.patel346@company.com,+91 8164344392
+EMP0347,Vivaan Gupta,Pune,TME,DF,2024-02-03,,TME Tele-caller,vivaan.gupta347@company.com,+91 7770321709
+EMP0348,Rajesh Rao,Ahmedabad,JDA,JDA Partner,2024-08-01,,JDA Lead,rajesh.rao348@company.com,+91 8710668371
+EMP0349,Rajesh Gupta,Coimbatore,ME,Merchant Onboarding,2024-04-28,,Senior ME,rajesh.gupta349@company.com,+91 9907843037
+EMP0350,Suresh Kulkarni,Delhi,TME,Multiple team,2026-06-22,,TME Tele-caller,suresh.kulkarni350@company.com,+91 9150888898
+EMP0351,Sneha Chawla,Ahmedabad,ME,Field Sales,2022-11-26,2023-05-15,Senior ME,sneha.chawla351@company.com,+91 9599179944
+EMP0352,Amit Malhotra,Mumbai,TME,Multiple team,2021-08-29,2023-03-26,TME Trainee,amit.malhotra352@company.com,+91 9107125807
+EMP0353,Ayaan Chawla,Kolkata,TME,Multiple team,2022-11-04,2026-03-02,TME Trainee,ayaan.chawla353@company.com,+91 7368053428
+EMP0354,Amit Malhotra,Coimbatore,JDA,JDA Partner,2025-12-30,,JDA Associate,amit.malhotra354@company.com,+91 8632087531
+EMP0355,Priya Mehta,Hyderabad,JDA,JDA Corporate,2022-01-17,2022-02-11,JDA Senior Executive,priya.mehta355@company.com,+91 8910126009
+EMP0356,Diya Nair,Bangalore,TME,Bounce,2018-12-24,2021-07-15,TME Trainee,diya.nair356@company.com,+91 7443639751
+EMP0357,Aarav Gupta,Delhi,JDA,JDA Direct,2024-09-11,,JDA Senior Executive,aarav.gupta357@company.com,+91 8654584280
+EMP0358,Aarav Reddy,Hyderabad,ME,Corporate ME,2018-12-13,,ME Manager,aarav.reddy358@company.com,+91 8042571199
+EMP0359,Riya Shah,Chandigarh,TME,Super,2022-04-09,2023-10-26,TME Team Lead,riya.shah359@company.com,+91 8152798401
+EMP0360,Saisha Mehta,Bangalore,ME,Merchant Onboarding,2022-11-16,2024-08-05,Senior ME,saisha.mehta360@company.com,+91 7330374745
+EMP0361,Diya Nair,Chennai,ME,Corporate ME,2024-08-29,,Senior ME,diya.nair361@company.com,+91 7459442845
+EMP0362,Arjun Reddy,Ahmedabad,TME,Multiple team,2021-09-22,,TME Trainee,arjun.reddy362@company.com,+91 8415370893
+EMP0363,Pari Rao,Hyderabad,ME,BLANK,2019-07-12,2022-12-13,ME Manager,pari.rao363@company.com,+91 7862650571
+EMP0364,Saisha Rao,Chandigarh,ME,Corporate ME,2021-07-31,2025-07-08,ME Manager,saisha.rao364@company.com,+91 9108860330
+EMP0365,Riya Joshi,Delhi,TME,Multiple team,2021-02-22,,TME Trainee,riya.joshi365@company.com,+91 8567729816
+EMP0366,Vihaan Aggarwal,Chennai,ME,BLANK,2024-02-13,,ME Manager,vihaan.aggarwal366@company.com,+91 7115603785
+EMP0367,Sneha Chatterjee,Chennai,TME,Online,2021-04-08,,TME Tele-caller,sneha.chatterjee367@company.com,+91 8757249751
+EMP0368,Rohan Roy,Chandigarh,TME,Super,2021-05-25,2025-02-16,TME BDE,rohan.roy368@company.com,+91 8817320723
+EMP0369,Vikram Deshmukh,Bangalore,JDA,BLANK,2024-09-15,,JDA Senior Executive,vikram.deshmukh369@company.com,+91 9295090505
+EMP0370,Kavya Banerjee,Kolkata,JDA,JDA Direct,2022-01-12,,JDA Lead,kavya.banerjee370@company.com,+91 9550437218
+EMP0371,Rahul Gupta,Bangalore,JDA,JDA Partner,2025-05-17,,JDA Associate,rahul.gupta371@company.com,+91 9778843173
+EMP0372,Anika Verma,Mumbai,JDA,BLANK,2026-06-10,,JDA Senior Executive,anika.verma372@company.com,+91 7455028401
+EMP0373,Aarav Patel,Coimbatore,JDA,JDA Partner,2023-09-23,,JDA Lead,aarav.patel373@company.com,+91 9493307092
+EMP0374,Priya Aggarwal,Chennai,TME,Online,2022-03-13,,TME BDE,priya.aggarwal374@company.com,+91 8481623643
+EMP0375,Aarav Roy,Bangalore,JDA,JDA Corporate,2022-08-31,,JDA Associate,aarav.roy375@company.com,+91 7498513988
+EMP0376,Neha Mehta,Delhi,ME,Key Accounts,2021-11-06,,ME Executive,neha.mehta376@company.com,+91 9238171141
+EMP0377,Saisha Chawla,Jaipur,TME,BLANK,2022-11-30,,TME Trainee,saisha.chawla377@company.com,+91 8369705770
+EMP0378,Aditya Reddy,Ahmedabad,JDA,JDA Direct,2018-04-03,,JDA Lead,aditya.reddy378@company.com,+91 7469709122
+EMP0379,Rohan Singh,Chennai,TME,Revival (Expiry),2019-12-16,,TME Team Lead,rohan.singh379@company.com,+91 9404532947
+EMP0380,Aadhya Chatterjee,Chennai,ME,Corporate ME,2025-01-23,,ME Manager,aadhya.chatterjee380@company.com,+91 8856003347
+EMP0381,Sanya Sharma,Mumbai,JDA,JDA Partner,2023-01-16,,JDA Senior Executive,sanya.sharma381@company.com,+91 7019112776
+EMP0382,Priya Kumar,Chennai,TME,DF,2026-06-09,,TME Tele-caller,priya.kumar382@company.com,+91 9479690385
+EMP0383,Vihaan Kulkarni,Chandigarh,TME,Hot Data,2021-08-28,2022-05-03,TME Team Lead,vihaan.kulkarni383@company.com,+91 9880640679
+EMP0384,Pooja Roy,Kolkata,TME,Super,2021-07-07,,TME Trainee,pooja.roy384@company.com,+91 9521166052
+EMP0385,Vihaan Chawla,Delhi,TME,Online,2024-12-03,,TME Team Lead,vihaan.chawla385@company.com,+91 9639190897
+EMP0386,Riya Gupta,Pune,TME,Bounce,2021-07-06,2023-04-07,TME Tele-caller,riya.gupta386@company.com,+91 7786170238
+EMP0387,Diya Mehta,Kolkata,ME,Corporate ME,2022-09-10,,ME Manager,diya.mehta387@company.com,+91 8648021756
+EMP0388,Aadhya Singh,Jaipur,JDA,JDA Partner,2024-03-22,2025-11-18,JDA Associate,aadhya.singh388@company.com,+91 7803582272
+EMP0389,Ananya Chatterjee,Mumbai,TME,B2B BDE,2022-01-10,,TME Trainee,ananya.chatterjee389@company.com,+91 7586412136
+EMP0390,Reyansh Deshmukh,Kolkata,TME,Revival (Expiry),2025-04-28,,TME Trainee,reyansh.deshmukh390@company.com,+91 8785119108
+EMP0391,Priya Chatterjee,Jaipur,TME,Bounce,2018-12-05,,TME BDE,priya.chatterjee391@company.com,+91 8254516608
+EMP0392,Vivaan Nair,Chennai,ME,BLANK,2021-03-28,2023-11-04,ME Manager,vivaan.nair392@company.com,+91 9127354612
+EMP0393,Navya Shah,Bangalore,ME,BLANK,2019-04-13,2022-05-14,Senior ME,navya.shah393@company.com,+91 9328058564
+EMP0394,Neha Verma,Jaipur,TME,Revival (Expiry),2020-06-14,,TME Tele-caller,neha.verma394@company.com,+91 9807498587
+EMP0395,Amit Joshi,Coimbatore,ME,Field Sales,2023-01-17,,ME Executive,amit.joshi395@company.com,+91 8885790857
+EMP0396,Pooja Patel,Chennai,TME,Corporate,2026-04-10,,TME Team Lead,pooja.patel396@company.com,+91 9621054475
+EMP0397,Rahul Banerjee,Chandigarh,TME,SHT,2019-07-25,,TME BDE,rahul.banerjee397@company.com,+91 7254939955
+EMP0398,Riya Chawla,Kolkata,ME,Key Accounts,2024-09-10,,Senior ME,riya.chawla398@company.com,+91 8256856463
+EMP0399,Ishaan Aggarwal,Coimbatore,TME,Revival (Expiry),2025-08-14,,TME BDE,ishaan.aggarwal399@company.com,+91 8767792297
+EMP0400,Rajesh Verma,Coimbatore,TME,Super,2019-06-04,,TME BDE,rajesh.verma400@company.com,+91 8072355594
+EMP0401,Arjun Rao,Chennai,JDA,BLANK,2023-06-28,,JDA Senior Executive,arjun.rao401@company.com,+91 9696435541
+EMP0402,Aadhya Deshmukh,Jaipur,TME,BLANK,2025-02-08,,TME Tele-caller,aadhya.deshmukh402@company.com,+91 8730230896
+EMP0403,Kavya Nair,Delhi,ME,Corporate ME,2023-06-23,2023-07-13,ME Manager,kavya.nair403@company.com,+91 7400040376
+EMP0404,Sneha Chatterjee,Pune,TME,Super,2025-10-27,,TME Tele-caller,sneha.chatterjee404@company.com,+91 9295335613
+EMP0405,Sanya Kumar,Hyderabad,ME,Merchant Onboarding,2023-07-20,,Senior ME,sanya.kumar405@company.com,+91 8450647350
+EMP0406,Navya Aggarwal,Chandigarh,TME,SHT,2023-06-11,,TME Tele-caller,navya.aggarwal406@company.com,+91 7197323378
+EMP0407,Vihaan Chatterjee,Ahmedabad,ME,Field Sales,2019-10-10,,ME Executive,vihaan.chatterjee407@company.com,+91 8837384013
+EMP0408,Reyansh Mehta,Pune,JDA,JDA Corporate,2019-10-14,,JDA Senior Executive,reyansh.mehta408@company.com,+91 7400892179
+EMP0409,Rahul Chawla,Coimbatore,TME,BLANK,2022-03-04,,TME BDE,rahul.chawla409@company.com,+91 7222424647
+EMP0410,Sanya Reddy,Chennai,JDA,BLANK,2025-05-08,2025-12-03,JDA Associate,sanya.reddy410@company.com,+91 7916636971
+EMP0411,Saisha Gupta,Chandigarh,ME,BLANK,2020-07-15,,Senior ME,saisha.gupta411@company.com,+91 7039887139
+EMP0412,Aarav Rao,Bangalore,TME,Multiple team,2025-10-13,2026-03-22,TME BDE,aarav.rao412@company.com,+91 8645272822
+EMP0413,Aditya Patel,Bangalore,TME,Hot Data,2022-02-14,,TME BDE,aditya.patel413@company.com,+91 8643774394
+EMP0414,Amit Mehta,Pune,ME,Merchant Onboarding,2018-10-08,,ME Executive,amit.mehta414@company.com,+91 9621301168
+EMP0415,Rahul Singh,Jaipur,TME,Hot Data,2026-02-07,,TME BDE,rahul.singh415@company.com,+91 8768280529
+EMP0416,Anika Chatterjee,Chennai,ME,Field Sales,2019-02-16,2019-11-10,ME Manager,anika.chatterjee416@company.com,+91 8649404491
+EMP0417,Diya Banerjee,Delhi,ME,Merchant Onboarding,2020-10-11,2021-04-16,ME Executive,diya.banerjee417@company.com,+91 9376820435
+EMP0418,Anika Malhotra,Mumbai,ME,Key Accounts,2025-09-29,,ME Manager,anika.malhotra418@company.com,+91 8295574037
+EMP0419,Reyansh Shah,Mumbai,TME,Revival (Expiry),2020-02-12,,TME Team Lead,reyansh.shah419@company.com,+91 9775278048
+EMP0420,Vivaan Joshi,Jaipur,TME,Multiple team,2019-04-07,2022-11-18,TME Tele-caller,vivaan.joshi420@company.com,+91 9268973245
+EMP0421,Suresh Sharma,Delhi,TME,Hot Data,2019-06-25,,TME Trainee,suresh.sharma421@company.com,+91 8569434583
+EMP0422,Navya Singh,Jaipur,TME,trainee,2018-10-26,2019-03-28,TME Tele-caller,navya.singh422@company.com,+91 8126077199
+EMP0423,Reyansh Verma,Ahmedabad,JDA,BLANK,2023-09-07,,JDA Lead,reyansh.verma423@company.com,+91 8784266819
+EMP0424,Aadhya Deshmukh,Bangalore,ME,BLANK,2024-01-12,,Senior ME,aadhya.deshmukh424@company.com,+91 7359046710
+EMP0425,Ishaan Gupta,Kolkata,JDA,JDA Partner,2019-09-29,,JDA Senior Executive,ishaan.gupta425@company.com,+91 9518728422
+EMP0426,Rahul Gupta,Coimbatore,ME,Corporate ME,2026-03-09,,ME Executive,rahul.gupta426@company.com,+91 7248704157
+EMP0427,Ayaan Gupta,Hyderabad,ME,Field Sales,2023-02-01,,ME Executive,ayaan.gupta427@company.com,+91 8328390707
+EMP0428,Rohan Singh,Bangalore,TME,B2B BDE,2025-12-09,2026-01-16,TME BDE,rohan.singh428@company.com,+91 9132077306
+EMP0429,Diya Shah,Kolkata,ME,Key Accounts,2019-11-15,,ME Manager,diya.shah429@company.com,+91 8154334685
+EMP0430,Sneha Patel,Ahmedabad,JDA,JDA Corporate,2022-10-25,2023-03-19,JDA Senior Executive,sneha.patel430@company.com,+91 9476700066
+EMP0431,Rahul Gupta,Jaipur,JDA,BLANK,2023-09-24,,JDA Senior Executive,rahul.gupta431@company.com,+91 9434757387
+EMP0432,Sai Chawla,Chandigarh,TME,DF,2019-02-26,,TME Tele-caller,sai.chawla432@company.com,+91 7980989514
+EMP0433,Sneha Shah,Ahmedabad,TME,B2B BDE,2018-02-20,2020-10-28,TME Team Lead,sneha.shah433@company.com,+91 8644884312
+EMP0434,Rajesh Mehta,Chandigarh,JDA,JDA Direct,2024-03-14,,JDA Lead,rajesh.mehta434@company.com,+91 9816224192
+EMP0435,Aadhya Joshi,Delhi,JDA,JDA Partner,2022-09-01,,JDA Senior Executive,aadhya.joshi435@company.com,+91 8165044057
+EMP0436,Neha Gupta,Mumbai,TME,Hot Data,2019-05-05,,TME Tele-caller,neha.gupta436@company.com,+91 7770278136
+EMP0437,Ayaan Shah,Ahmedabad,JDA,BLANK,2018-10-10,,JDA Senior Executive,ayaan.shah437@company.com,+91 8334436786
+EMP0438,Ananya Gupta,Kolkata,TME,Online,2018-02-02,,TME Team Lead,ananya.gupta438@company.com,+91 9421531503
+EMP0439,Vikram Reddy,Mumbai,TME,Corporate,2023-03-16,,TME Trainee,vikram.reddy439@company.com,+91 7839332926
+EMP0440,Sneha Kulkarni,Chennai,JDA,JDA Partner,2018-01-27,,JDA Associate,sneha.kulkarni440@company.com,+91 8000717686
+EMP0441,Navya Chawla,Pune,JDA,JDA Direct,2021-10-04,2025-06-26,JDA Senior Executive,navya.chawla441@company.com,+91 8320748157
+EMP0442,Vihaan Kumar,Kolkata,TME,Corporate,2022-09-16,,TME Tele-caller,vihaan.kumar442@company.com,+91 7611489444
+EMP0443,Priya Nair,Bangalore,ME,Field Sales,2020-08-06,,ME Manager,priya.nair443@company.com,+91 8774065466
+EMP0444,Priya Chawla,Jaipur,ME,Field Sales,2024-07-06,2025-04-20,ME Manager,priya.chawla444@company.com,+91 8693725910
+EMP0445,Aditya Aggarwal,Mumbai,TME,B2B BDE,2022-11-17,,TME BDE,aditya.aggarwal445@company.com,+91 8016926858
+EMP0446,Ishaan Nair,Delhi,TME,trainee,2022-05-29,,TME Team Lead,ishaan.nair446@company.com,+91 8366047498
+EMP0447,Pari Nair,Chennai,TME,BLANK,2020-04-10,2024-08-19,TME Tele-caller,pari.nair447@company.com,+91 7667483244
+EMP0448,Vihaan Singh,Jaipur,TME,Online,2021-07-10,,TME Team Lead,vihaan.singh448@company.com,+91 7891790792
+EMP0449,Pari Reddy,Jaipur,ME,Key Accounts,2019-05-07,2023-11-30,ME Manager,pari.reddy449@company.com,+91 8306593403
+EMP0450,Neha Malhotra,Ahmedabad,JDA,JDA Partner,2021-09-04,2025-09-14,JDA Associate,neha.malhotra450@company.com,+91 8527903519
+EMP0451,Sanya Shah,Ahmedabad,TME,Super,2021-05-09,2022-05-15,TME Tele-caller,sanya.shah451@company.com,+91 8736851379
+EMP0452,Pooja Chatterjee,Kolkata,ME,BLANK,2020-10-20,2021-05-31,ME Executive,pooja.chatterjee452@company.com,+91 7521637779
+EMP0453,Aarav Verma,Chennai,ME,Merchant Onboarding,2020-03-22,,Senior ME,aarav.verma453@company.com,+91 9947572742
+EMP0454,Rahul Gupta,Mumbai,TME,SHT,2020-11-26,,TME Tele-caller,rahul.gupta454@company.com,+91 7093631055
+EMP0455,Aditya Kumar,Pune,JDA,BLANK,2019-06-12,2024-03-27,JDA Senior Executive,aditya.kumar455@company.com,+91 7526252306
+EMP0456,Vivaan Chatterjee,Ahmedabad,ME,Merchant Onboarding,2024-06-08,,ME Manager,vivaan.chatterjee456@company.com,+91 8696506450
+EMP0457,Saisha Sharma,Hyderabad,JDA,BLANK,2019-12-09,,JDA Associate,saisha.sharma457@company.com,+91 8181037719
+EMP0458,Krishna Chatterjee,Chandigarh,ME,Field Sales,2024-11-20,,ME Executive,krishna.chatterjee458@company.com,+91 9780039555
+EMP0459,Ishaan Roy,Hyderabad,JDA,BLANK,2018-09-07,2020-11-14,JDA Associate,ishaan.roy459@company.com,+91 8800599868
+EMP0460,Reyansh Shah,Chennai,JDA,JDA Direct,2022-04-16,,JDA Senior Executive,reyansh.shah460@company.com,+91 9060228976
+EMP0461,Navya Roy,Delhi,JDA,JDA Corporate,2022-05-10,2022-07-17,JDA Senior Executive,navya.roy461@company.com,+91 9564595211
+EMP0462,Ayaan Sharma,Coimbatore,TME,B2B BDE,2023-04-17,,TME BDE,ayaan.sharma462@company.com,+91 7685583357
+EMP0463,Vihaan Joshi,Pune,TME,Corporate,2020-12-27,,TME Tele-caller,vihaan.joshi463@company.com,+91 7942365574
+EMP0464,Riya Deshmukh,Delhi,ME,Merchant Onboarding,2019-12-23,2021-10-19,ME Manager,riya.deshmukh464@company.com,+91 9996283266
+EMP0465,Diya Aggarwal,Ahmedabad,TME,Super Cat,2025-11-09,,TME BDE,diya.aggarwal465@company.com,+91 9418534256
+EMP0466,Reyansh Roy,Kolkata,ME,Key Accounts,2019-12-21,,ME Executive,reyansh.roy466@company.com,+91 7241239647
+EMP0467,Ayaan Malhotra,Chennai,ME,Field Sales,2023-11-27,,Senior ME,ayaan.malhotra467@company.com,+91 9637688758
+EMP0468,Reyansh Mehta,Delhi,TME,Super Cat,2019-12-28,,TME Team Lead,reyansh.mehta468@company.com,+91 7255790920
+EMP0469,Aarav Mehta,Mumbai,JDA,JDA Partner,2019-03-31,,JDA Senior Executive,aarav.mehta469@company.com,+91 7311520864
+EMP0470,Diya Deshmukh,Mumbai,TME,BLANK,2021-10-10,2022-07-31,TME BDE,diya.deshmukh470@company.com,+91 8876335418
+EMP0471,Vikram Roy,Pune,JDA,JDA Corporate,2019-12-15,,JDA Lead,vikram.roy471@company.com,+91 9978819212
+EMP0472,Suresh Malhotra,Delhi,TME,Corporate,2025-06-19,,TME BDE,suresh.malhotra472@company.com,+91 8625147377
+EMP0473,Ishaan Reddy,Chandigarh,JDA,JDA Partner,2026-03-05,,JDA Lead,ishaan.reddy473@company.com,+91 8681915310
+EMP0474,Pooja Aggarwal,Ahmedabad,TME,Bounce,2024-10-03,,TME BDE,pooja.aggarwal474@company.com,+91 9747261955
+EMP0475,Riya Patel,Jaipur,ME,Merchant Onboarding,2021-09-18,,ME Executive,riya.patel475@company.com,+91 8489538120
+EMP0476,Ananya Singh,Pune,TME,BLANK,2025-12-13,,TME Team Lead,ananya.singh476@company.com,+91 8918260963
+EMP0477,Aarav Nair,Chennai,JDA,JDA Partner,2025-10-10,,JDA Associate,aarav.nair477@company.com,+91 7005502537
+EMP0478,Vivaan Deshmukh,Jaipur,ME,Corporate ME,2019-11-13,,Senior ME,vivaan.deshmukh478@company.com,+91 8626558140
+EMP0479,Diya Kulkarni,Hyderabad,TME,BLANK,2023-05-18,,TME BDE,diya.kulkarni479@company.com,+91 7698604397
+EMP0480,Pari Gupta,Ahmedabad,ME,Key Accounts,2018-03-24,2018-11-08,ME Executive,pari.gupta480@company.com,+91 8468055063
+EMP0481,Sai Deshmukh,Chandigarh,TME,Super Cat,2018-11-04,,TME Tele-caller,sai.deshmukh481@company.com,+91 8451486688
+EMP0482,Anika Malhotra,Jaipur,TME,Super Cat,2018-05-07,,TME BDE,anika.malhotra482@company.com,+91 9608409338
+EMP0483,Suresh Banerjee,Chandigarh,ME,Field Sales,2019-02-19,2020-03-29,Senior ME,suresh.banerjee483@company.com,+91 9994437044
+EMP0484,Navya Kulkarni,Coimbatore,TME,Super,2021-02-27,2021-09-26,TME Tele-caller,navya.kulkarni484@company.com,+91 8687502175
+EMP0485,Riya Kulkarni,Jaipur,ME,Merchant Onboarding,2018-08-12,,Senior ME,riya.kulkarni485@company.com,+91 7376360931
+EMP0486,Ishaan Malhotra,Jaipur,TME,Corporate,2019-02-02,2020-02-01,TME Team Lead,ishaan.malhotra486@company.com,+91 7351912852
+EMP0487,Saisha Patel,Coimbatore,JDA,BLANK,2023-04-13,,JDA Lead,saisha.patel487@company.com,+91 8138185235
+EMP0488,Aditya Kulkarni,Hyderabad,ME,Merchant Onboarding,2022-02-28,,Senior ME,aditya.kulkarni488@company.com,+91 7801367625
+EMP0489,Pari Verma,Coimbatore,TME,Online,2023-03-20,,TME Team Lead,pari.verma489@company.com,+91 9423420650
+EMP0490,Vivaan Mehta,Pune,TME,BLANK,2018-12-18,,TME Trainee,vivaan.mehta490@company.com,+91 9532855799
+EMP0491,Ayaan Kulkarni,Ahmedabad,ME,Corporate ME,2023-11-11,,ME Manager,ayaan.kulkarni491@company.com,+91 9950934291
+EMP0492,Pooja Roy,Mumbai,TME,Corporate,2023-05-05,2025-08-05,TME Tele-caller,pooja.roy492@company.com,+91 9156509381
+EMP0493,Riya Shah,Mumbai,ME,BLANK,2019-08-27,2023-12-09,Senior ME,riya.shah493@company.com,+91 7742509523
+EMP0494,Sai Kumar,Chennai,JDA,JDA Partner,2018-06-24,,JDA Lead,sai.kumar494@company.com,+91 8869999754
+EMP0495,Reyansh Mehta,Mumbai,ME,Key Accounts,2021-08-02,,ME Executive,reyansh.mehta495@company.com,+91 7373780031
+EMP0496,Sanya Kulkarni,Hyderabad,ME,BLANK,2021-08-28,,ME Manager,sanya.kulkarni496@company.com,+91 8967770105
+EMP0497,Rajesh Sharma,Mumbai,ME,BLANK,2023-11-11,,ME Executive,rajesh.sharma497@company.com,+91 8780016559
+EMP0498,Arjun Mehta,Mumbai,JDA,JDA Direct,2019-03-09,,JDA Associate,arjun.mehta498@company.com,+91 8228759446
+EMP0499,Pooja Kulkarni,Delhi,TME,Multiple team,2020-12-17,,TME Trainee,pooja.kulkarni499@company.com,+91 9456821088
+EMP0500,Anika Roy,Ahmedabad,TME,Bounce,2021-02-02,,TME Trainee,anika.roy500@company.com,+91 7166569717
+EMP0501,Sanya Rao,Chennai,TME,B2B BDE,2026-05-13,,TME Team Lead,sanya.rao501@company.com,+91 8599620611
+EMP0502,Aarav Rao,Coimbatore,ME,Key Accounts,2021-02-22,,ME Manager,aarav.rao502@company.com,+91 9941417062
+EMP0503,Vihaan Joshi,Chandigarh,ME,Key Accounts,2026-05-05,,Senior ME,vihaan.joshi503@company.com,+91 8157150012
+EMP0504,Sneha Banerjee,Mumbai,TME,Super,2019-01-01,2020-03-23,TME Trainee,sneha.banerjee504@company.com,+91 9080741273
+EMP0505,Amit Shah,Delhi,TME,B2B BDE,2023-10-12,,TME Tele-caller,amit.shah505@company.com,+91 8336263518
+EMP0506,Priya Shah,Hyderabad,JDA,JDA Partner,2023-11-18,,JDA Associate,priya.shah506@company.com,+91 7746196273
+EMP0507,Reyansh Kumar,Ahmedabad,TME,Corporate,2018-05-16,,TME Team Lead,reyansh.kumar507@company.com,+91 7855169963
+EMP0508,Krishna Chawla,Jaipur,TME,Revival (Expiry),2022-06-14,,TME Tele-caller,krishna.chawla508@company.com,+91 9925621610
+EMP0509,Aarav Joshi,Delhi,TME,Online,2024-08-30,,TME Trainee,aarav.joshi509@company.com,+91 9520631487
+EMP0510,Navya Chawla,Delhi,TME,Bounce,2020-11-25,,TME Tele-caller,navya.chawla510@company.com,+91 8224363672
+EMP0511,Aarav Deshmukh,Ahmedabad,TME,Bounce,2024-06-01,,TME BDE,aarav.deshmukh511@company.com,+91 7950695647
+EMP0512,Rahul Joshi,Pune,ME,Merchant Onboarding,2021-01-07,,ME Manager,rahul.joshi512@company.com,+91 7086124217
+EMP0513,Pooja Sharma,Jaipur,TME,Bounce,2025-04-05,,TME Tele-caller,pooja.sharma513@company.com,+91 7961084962
+EMP0514,Krishna Malhotra,Coimbatore,TME,Super Cat,2025-12-15,,TME Trainee,krishna.malhotra514@company.com,+91 8616949739
+EMP0515,Pooja Chawla,Jaipur,JDA,JDA Corporate,2020-06-12,,JDA Lead,pooja.chawla515@company.com,+91 9236122747
+EMP0516,Neha Malhotra,Hyderabad,JDA,JDA Direct,2018-01-31,,JDA Lead,neha.malhotra516@company.com,+91 8607304606
+EMP0517,Navya Malhotra,Mumbai,ME,Key Accounts,2021-05-07,,Senior ME,navya.malhotra517@company.com,+91 7274178050
+EMP0518,Ananya Nair,Pune,TME,Hot Data,2021-02-08,2025-02-18,TME Team Lead,ananya.nair518@company.com,+91 7809000407
+EMP0519,Arjun Shah,Chennai,TME,B2B BDE,2024-09-23,,TME Team Lead,arjun.shah519@company.com,+91 9923823693
+EMP0520,Arjun Sharma,Pune,JDA,BLANK,2021-04-25,2023-09-14,JDA Senior Executive,arjun.sharma520@company.com,+91 8667628074
+EMP0521,Sneha Verma,Mumbai,ME,BLANK,2020-02-17,2024-03-02,ME Executive,sneha.verma521@company.com,+91 9947713853
+EMP0522,Navya Roy,Pune,ME,Key Accounts,2023-09-09,2024-09-06,ME Manager,navya.roy522@company.com,+91 9397657114
+EMP0523,Sai Reddy,Bangalore,TME,Online,2019-06-09,,TME BDE,sai.reddy523@company.com,+91 9919342370
+EMP0524,Suresh Rao,Pune,TME,BLANK,2020-06-29,,TME Team Lead,suresh.rao524@company.com,+91 8805915915
+EMP0525,Vikram Rao,Delhi,TME,DF,2024-07-26,,TME Tele-caller,vikram.rao525@company.com,+91 9020939193
+EMP0526,Vivaan Aggarwal,Mumbai,ME,BLANK,2018-10-19,,ME Executive,vivaan.aggarwal526@company.com,+91 9149533961
+EMP0527,Vihaan Deshmukh,Kolkata,ME,Key Accounts,2022-08-20,,ME Executive,vihaan.deshmukh527@company.com,+91 7589979266
+EMP0528,Reyansh Rao,Hyderabad,ME,BLANK,2023-02-18,,ME Manager,reyansh.rao528@company.com,+91 7774626412
+EMP0529,Amit Gupta,Jaipur,JDA,JDA Corporate,2025-01-28,,JDA Senior Executive,amit.gupta529@company.com,+91 9725152347
+EMP0530,Vivaan Sharma,Jaipur,TME,DF,2020-05-07,,TME BDE,vivaan.sharma530@company.com,+91 9475099081
+EMP0531,Amit Singh,Jaipur,TME,trainee,2018-12-27,2021-06-17,TME Trainee,amit.singh531@company.com,+91 8732561822
+EMP0532,Aadhya Roy,Hyderabad,TME,B2B BDE,2018-06-04,,TME Team Lead,aadhya.roy532@company.com,+91 7060460757
+EMP0533,Suresh Rao,Kolkata,TME,Corporate,2018-03-15,,TME BDE,suresh.rao533@company.com,+91 7971803809
+EMP0534,Priya Chawla,Coimbatore,ME,Merchant Onboarding,2019-02-25,,ME Manager,priya.chawla534@company.com,+91 8314754322
+EMP0535,Sai Gupta,Ahmedabad,TME,DF,2021-04-06,,TME Team Lead,sai.gupta535@company.com,+91 8862577974
+EMP0536,Suresh Mehta,Delhi,TME,Online,2022-01-11,,TME BDE,suresh.mehta536@company.com,+91 8732553940
+EMP0537,Aarav Joshi,Chennai,TME,Super Cat,2019-06-22,2019-08-20,TME BDE,aarav.joshi537@company.com,+91 7528976690
+EMP0538,Diya Verma,Hyderabad,JDA,JDA Corporate,2023-12-31,,JDA Lead,diya.verma538@company.com,+91 7205988231
+EMP0539,Rohan Patel,Pune,ME,Field Sales,2018-07-17,,Senior ME,rohan.patel539@company.com,+91 8908315331
+EMP0540,Sanya Patel,Kolkata,JDA,JDA Corporate,2023-04-28,,JDA Associate,sanya.patel540@company.com,+91 9985827033
+EMP0541,Rohan Sharma,Coimbatore,TME,Multiple team,2025-06-03,,TME Team Lead,rohan.sharma541@company.com,+91 9674896065
+EMP0542,Anika Mehta,Hyderabad,TME,BLANK,2023-09-27,,TME Tele-caller,anika.mehta542@company.com,+91 8214216328
+EMP0543,Vihaan Patel,Jaipur,JDA,JDA Partner,2024-10-30,2026-05-06,JDA Lead,vihaan.patel543@company.com,+91 7866179751
+EMP0544,Diya Banerjee,Coimbatore,TME,Bounce,2018-06-11,,TME BDE,diya.banerjee544@company.com,+91 9955813290
+EMP0545,Rajesh Roy,Delhi,TME,Corporate,2018-01-12,2018-07-28,TME Tele-caller,rajesh.roy545@company.com,+91 9465967350
+EMP0546,Rohan Roy,Chandigarh,ME,Field Sales,2023-09-27,,ME Executive,rohan.roy546@company.com,+91 8099048201
+EMP0547,Rahul Joshi,Jaipur,JDA,JDA Corporate,2020-12-17,,JDA Associate,rahul.joshi547@company.com,+91 7750338556
+EMP0548,Pooja Verma,Coimbatore,TME,Hot Data,2025-08-04,,TME Tele-caller,pooja.verma548@company.com,+91 7408015311
+EMP0549,Pooja Verma,Ahmedabad,ME,Merchant Onboarding,2025-06-10,,Senior ME,pooja.verma549@company.com,+91 8535568489
+EMP0550,Suresh Chatterjee,Mumbai,TME,DF,2026-03-22,,TME Team Lead,suresh.chatterjee550@company.com,+91 7785418196
+EMP0551,Vihaan Deshmukh,Hyderabad,ME,Corporate ME,2021-01-18,,ME Manager,vihaan.deshmukh551@company.com,+91 9054046672
+EMP0552,Vikram Banerjee,Pune,TME,trainee,2019-11-15,2023-10-25,TME Tele-caller,vikram.banerjee552@company.com,+91 7684598046
+EMP0553,Vihaan Banerjee,Mumbai,ME,Corporate ME,2024-05-19,,ME Executive,vihaan.banerjee553@company.com,+91 9625612966
+EMP0554,Sanya Chawla,Mumbai,ME,Field Sales,2025-09-04,,ME Manager,sanya.chawla554@company.com,+91 7561160362
+EMP0555,Saisha Roy,Bangalore,TME,Multiple team,2022-12-11,2024-06-13,TME Team Lead,saisha.roy555@company.com,+91 7053086688
+EMP0556,Priya Shah,Mumbai,ME,BLANK,2020-07-06,,ME Manager,priya.shah556@company.com,+91 8452990192
+EMP0557,Kavya Shah,Mumbai,JDA,JDA Direct,2022-11-08,,JDA Associate,kavya.shah557@company.com,+91 9069872193
+EMP0558,Diya Deshmukh,Chandigarh,JDA,JDA Direct,2018-02-17,,JDA Associate,diya.deshmukh558@company.com,+91 9171396180
+EMP0559,Pooja Roy,Jaipur,TME,Bounce,2018-11-03,,TME Team Lead,pooja.roy559@company.com,+91 8034622484
+EMP0560,Ananya Nair,Ahmedabad,TME,Revival (Expiry),2020-07-01,,TME Trainee,ananya.nair560@company.com,+91 8732061472
+EMP0561,Neha Joshi,Bangalore,TME,Online,2022-12-25,,TME Trainee,neha.joshi561@company.com,+91 7378042415
+EMP0562,Pooja Roy,Jaipur,JDA,JDA Corporate,2019-05-02,,JDA Lead,pooja.roy562@company.com,+91 9806215682
+EMP0563,Aarav Patel,Hyderabad,JDA,BLANK,2018-05-27,,JDA Associate,aarav.patel563@company.com,+91 7390393407
+EMP0564,Vikram Malhotra,Mumbai,JDA,JDA Corporate,2023-09-14,,JDA Lead,vikram.malhotra564@company.com,+91 9883960470
+EMP0565,Pari Rao,Delhi,ME,Field Sales,2020-07-02,,Senior ME,pari.rao565@company.com,+91 9405829565
+EMP0566,Amit Malhotra,Mumbai,ME,Corporate ME,2026-01-14,,ME Manager,amit.malhotra566@company.com,+91 8943612110
+EMP0567,Vihaan Patel,Pune,ME,Merchant Onboarding,2018-01-09,2022-09-19,ME Manager,vihaan.patel567@company.com,+91 8254059868
+EMP0568,Navya Shah,Delhi,ME,Field Sales,2018-07-07,,Senior ME,navya.shah568@company.com,+91 7603224661
+EMP0569,Neha Banerjee,Bangalore,TME,DF,2024-11-07,2025-07-27,TME Trainee,neha.banerjee569@company.com,+91 7925949882
+EMP0570,Pari Kumar,Delhi,ME,Field Sales,2026-06-29,,ME Manager,pari.kumar570@company.com,+91 9886826923
+EMP0571,Riya Patel,Jaipur,ME,Corporate ME,2025-05-21,,ME Manager,riya.patel571@company.com,+91 7578257249
+EMP0572,Saisha Sharma,Kolkata,TME,Super Cat,2018-07-18,,TME Trainee,saisha.sharma572@company.com,+91 9513074317
+EMP0573,Saisha Shah,Chandigarh,ME,BLANK,2019-12-13,,ME Executive,saisha.shah573@company.com,+91 7444760892
+EMP0574,Sanya Malhotra,Mumbai,TME,Hot Data,2023-08-27,,TME Trainee,sanya.malhotra574@company.com,+91 9615607979
+EMP0575,Rajesh Joshi,Coimbatore,TME,Multiple team,2021-11-05,,TME Trainee,rajesh.joshi575@company.com,+91 7572827654
+EMP0576,Arjun Banerjee,Mumbai,TME,Super Cat,2026-05-24,,TME Team Lead,arjun.banerjee576@company.com,+91 9377614706
+EMP0577,Rahul Kumar,Chennai,JDA,JDA Partner,2024-12-31,,JDA Lead,rahul.kumar577@company.com,+91 8483024614
+EMP0578,Rajesh Mehta,Pune,TME,Bounce,2023-08-26,,TME Team Lead,rajesh.mehta578@company.com,+91 7495661785
+EMP0579,Amit Chawla,Kolkata,ME,Corporate ME,2024-07-15,,ME Manager,amit.chawla579@company.com,+91 8793054056
+EMP0580,Rohan Kulkarni,Coimbatore,ME,Corporate ME,2018-02-22,,ME Executive,rohan.kulkarni580@company.com,+91 8635825546
+EMP0581,Arjun Verma,Pune,ME,Field Sales,2020-03-29,2024-09-07,ME Executive,arjun.verma581@company.com,+91 8231004412
+EMP0582,Rohan Nair,Chandigarh,TME,B2B BDE,2025-09-29,,TME BDE,rohan.nair582@company.com,+91 9324316421
+EMP0583,Vivaan Chawla,Jaipur,ME,Field Sales,2024-11-28,,ME Manager,vivaan.chawla583@company.com,+91 9413277601
+EMP0584,Pooja Joshi,Pune,ME,BLANK,2022-05-12,,ME Manager,pooja.joshi584@company.com,+91 8235398622
+EMP0585,Priya Verma,Hyderabad,TME,Multiple team,2022-09-03,,TME Team Lead,priya.verma585@company.com,+91 9371357111
+EMP0586,Vivaan Sharma,Coimbatore,JDA,JDA Partner,2024-12-16,,JDA Senior Executive,vivaan.sharma586@company.com,+91 7968723414
+EMP0587,Rajesh Chawla,Mumbai,JDA,JDA Partner,2026-02-17,,JDA Senior Executive,rajesh.chawla587@company.com,+91 8927645417
+EMP0588,Sai Gupta,Chandigarh,JDA,JDA Partner,2026-03-30,,JDA Senior Executive,sai.gupta588@company.com,+91 7174522691
+EMP0589,Aadhya Nair,Kolkata,JDA,JDA Corporate,2019-06-17,2024-03-29,JDA Senior Executive,aadhya.nair589@company.com,+91 7024245671
+EMP0590,Ananya Chatterjee,Chandigarh,JDA,JDA Direct,2019-09-22,,JDA Lead,ananya.chatterjee590@company.com,+91 7218422454
+EMP0591,Amit Malhotra,Pune,JDA,JDA Corporate,2023-07-03,,JDA Lead,amit.malhotra591@company.com,+91 8537965898
+EMP0592,Aditya Rao,Kolkata,TME,Corporate,2020-01-24,,TME BDE,aditya.rao592@company.com,+91 8786411073
+EMP0593,Navya Kulkarni,Hyderabad,JDA,JDA Direct,2021-12-02,2023-02-26,JDA Lead,navya.kulkarni593@company.com,+91 8425428846
+EMP0594,Ananya Chawla,Coimbatore,ME,Merchant Onboarding,2026-06-10,,Senior ME,ananya.chawla594@company.com,+91 9410914100
+EMP0595,Neha Sharma,Bangalore,TME,Super,2021-11-18,,TME BDE,neha.sharma595@company.com,+91 7171271484
+EMP0596,Rohan Rao,Hyderabad,ME,Field Sales,2022-04-30,2026-06-05,Senior ME,rohan.rao596@company.com,+91 7106110279
+EMP0597,Rajesh Shah,Delhi,TME,Revival (Expiry),2023-09-15,,TME Tele-caller,rajesh.shah597@company.com,+91 8273174184
+EMP0598,Suresh Kumar,Delhi,JDA,JDA Direct,2019-01-29,2023-06-15,JDA Lead,suresh.kumar598@company.com,+91 9290101581
+EMP0599,Aarav Gupta,Chennai,JDA,JDA Partner,2025-09-08,,JDA Associate,aarav.gupta599@company.com,+91 7882957524
+EMP0600,Navya Banerjee,Pune,JDA,JDA Direct,2026-05-18,,JDA Associate,navya.banerjee600@company.com,+91 8972357370
+EMP0601,Priya Rao,Ahmedabad,JDA,JDA Direct,2018-10-28,2023-04-26,JDA Senior Executive,priya.rao601@company.com,+91 9396953414
+EMP0602,Aditya Aggarwal,Chennai,ME,Key Accounts,2022-07-28,,ME Manager,aditya.aggarwal602@company.com,+91 8737091024
+EMP0603,Aadhya Rao,Ahmedabad,JDA,BLANK,2025-07-20,2025-08-16,JDA Lead,aadhya.rao603@company.com,+91 9655790301
+EMP0604,Aditya Aggarwal,Ahmedabad,JDA,JDA Direct,2022-01-05,,JDA Associate,aditya.aggarwal604@company.com,+91 8244838690
+EMP0605,Vikram Reddy,Mumbai,JDA,JDA Direct,2021-02-27,,JDA Senior Executive,vikram.reddy605@company.com,+91 8638158847
+EMP0606,Sanya Sharma,Jaipur,ME,Merchant Onboarding,2023-12-26,,Senior ME,sanya.sharma606@company.com,+91 9343868762
+EMP0607,Ishaan Mehta,Coimbatore,JDA,JDA Corporate,2018-02-15,,JDA Lead,ishaan.mehta607@company.com,+91 7607196157
+EMP0608,Vihaan Verma,Ahmedabad,ME,BLANK,2024-09-09,,ME Manager,vihaan.verma608@company.com,+91 7365617071
+EMP0609,Ishaan Kumar,Delhi,ME,Merchant Onboarding,2022-08-18,,ME Manager,ishaan.kumar609@company.com,+91 7611840071
+EMP0610,Sai Singh,Chennai,TME,SHT,2020-11-01,2021-11-22,TME Tele-caller,sai.singh610@company.com,+91 9357297588
+EMP0611,Pari Kulkarni,Bangalore,JDA,JDA Corporate,2025-07-14,2026-02-15,JDA Associate,pari.kulkarni611@company.com,+91 9493639344
+EMP0612,Saisha Rao,Delhi,TME,Bounce,2025-07-12,,TME Tele-caller,saisha.rao612@company.com,+91 8224654701
+EMP0613,Anika Gupta,Chennai,TME,Hot Data,2023-06-14,,TME Team Lead,anika.gupta613@company.com,+91 9978379982
+EMP0614,Riya Mehta,Mumbai,JDA,JDA Corporate,2021-07-19,,JDA Associate,riya.mehta614@company.com,+91 7020752792
+EMP0615,Ananya Joshi,Chennai,TME,Super Cat,2026-04-19,,TME Team Lead,ananya.joshi615@company.com,+91 8543980627
+EMP0616,Arjun Rao,Jaipur,TME,Online,2022-12-30,,TME Team Lead,arjun.rao616@company.com,+91 9091526171
+EMP0617,Navya Patel,Chandigarh,JDA,JDA Direct,2021-02-23,,JDA Associate,navya.patel617@company.com,+91 9313346852
+EMP0618,Reyansh Nair,Pune,ME,Field Sales,2026-02-27,2026-04-21,ME Manager,reyansh.nair618@company.com,+91 9712815143
+EMP0619,Aarav Aggarwal,Mumbai,TME,Multiple team,2024-08-13,2024-11-11,TME Team Lead,aarav.aggarwal619@company.com,+91 9334182974
+EMP0620,Suresh Kulkarni,Jaipur,TME,Super,2019-09-01,,TME BDE,suresh.kulkarni620@company.com,+91 9532315957
+EMP0621,Sneha Reddy,Chandigarh,JDA,BLANK,2023-08-15,,JDA Senior Executive,sneha.reddy621@company.com,+91 8562790683
+EMP0622,Kavya Sharma,Pune,JDA,JDA Partner,2024-11-20,,JDA Lead,kavya.sharma622@company.com,+91 7602887521
+EMP0623,Pari Singh,Chandigarh,ME,BLANK,2024-05-06,,ME Executive,pari.singh623@company.com,+91 9076631329
+EMP0624,Diya Verma,Chennai,ME,Corporate ME,2020-08-07,2022-09-17,ME Executive,diya.verma624@company.com,+91 7183860832
+EMP0625,Rohan Kumar,Kolkata,TME,trainee,2022-01-19,,TME Trainee,rohan.kumar625@company.com,+91 7199447370
+EMP0626,Vivaan Rao,Bangalore,ME,BLANK,2025-02-08,,ME Manager,vivaan.rao626@company.com,+91 8130933907
+EMP0627,Riya Kulkarni,Mumbai,ME,Merchant Onboarding,2022-03-23,,Senior ME,riya.kulkarni627@company.com,+91 9524061336
+EMP0628,Rahul Gupta,Kolkata,TME,DF,2022-03-22,,TME BDE,rahul.gupta628@company.com,+91 9217799930
+EMP0629,Sanya Chawla,Delhi,JDA,BLANK,2023-05-29,,JDA Associate,sanya.chawla629@company.com,+91 9155373421
+EMP0630,Suresh Mehta,Jaipur,ME,Merchant Onboarding,2020-07-31,2024-03-24,Senior ME,suresh.mehta630@company.com,+91 7908459040
+EMP0631,Arjun Singh,Chandigarh,TME,Hot Data,2024-10-01,,TME Tele-caller,arjun.singh631@company.com,+91 9839444315
+EMP0632,Ayaan Banerjee,Delhi,TME,Super Cat,2019-04-10,,TME Trainee,ayaan.banerjee632@company.com,+91 9057380250
+EMP0633,Reyansh Aggarwal,Chandigarh,ME,Corporate ME,2018-04-02,2019-01-03,ME Manager,reyansh.aggarwal633@company.com,+91 9544113848
+EMP0634,Sai Mehta,Pune,ME,BLANK,2018-06-10,,ME Executive,sai.mehta634@company.com,+91 7240140248
+EMP0635,Sai Nair,Chandigarh,JDA,BLANK,2024-09-20,,JDA Lead,sai.nair635@company.com,+91 7079972435
+EMP0636,Suresh Reddy,Bangalore,ME,Merchant Onboarding,2023-01-14,,Senior ME,suresh.reddy636@company.com,+91 9068750029
+EMP0637,Sai Joshi,Hyderabad,ME,BLANK,2019-08-08,,ME Executive,sai.joshi637@company.com,+91 9676674027
+EMP0638,Rohan Shah,Coimbatore,JDA,JDA Partner,2026-02-14,,JDA Senior Executive,rohan.shah638@company.com,+91 9562091291
+EMP0639,Riya Gupta,Chennai,ME,Corporate ME,2022-04-28,2022-06-15,ME Executive,riya.gupta639@company.com,+91 9245028124
+EMP0640,Pooja Shah,Pune,ME,Corporate ME,2019-09-05,,ME Executive,pooja.shah640@company.com,+91 9043842561
+EMP0641,Suresh Malhotra,Mumbai,JDA,JDA Direct,2023-12-17,,JDA Associate,suresh.malhotra641@company.com,+91 7400247855
+EMP0642,Saisha Mehta,Mumbai,ME,BLANK,2018-01-05,,ME Manager,saisha.mehta642@company.com,+91 9788429082
+EMP0643,Aadhya Shah,Hyderabad,JDA,JDA Corporate,2018-06-27,,JDA Senior Executive,aadhya.shah643@company.com,+91 7985635941
+EMP0644,Vikram Roy,Hyderabad,ME,Key Accounts,2024-08-09,,ME Manager,vikram.roy644@company.com,+91 9474420092
+EMP0645,Vihaan Banerjee,Chandigarh,JDA,JDA Corporate,2023-05-09,,JDA Associate,vihaan.banerjee645@company.com,+91 8216621076
+EMP0646,Anika Kulkarni,Hyderabad,TME,DF,2020-02-14,2024-04-30,TME Tele-caller,anika.kulkarni646@company.com,+91 9482435875
+EMP0647,Kavya Patel,Kolkata,ME,Field Sales,2022-03-17,,ME Manager,kavya.patel647@company.com,+91 8356787523
+EMP0648,Aadhya Chawla,Bangalore,TME,Bounce,2022-10-12,,TME Team Lead,aadhya.chawla648@company.com,+91 8122287361
+EMP0649,Pooja Kulkarni,Hyderabad,TME,SHT,2022-02-06,,TME Trainee,pooja.kulkarni649@company.com,+91 7874857628
+EMP0650,Aadhya Kulkarni,Kolkata,ME,Corporate ME,2020-01-03,,ME Manager,aadhya.kulkarni650@company.com,+91 9077734079
+EMP0651,Krishna Reddy,Mumbai,JDA,JDA Corporate,2025-11-29,,JDA Associate,krishna.reddy651@company.com,+91 9831598303
+EMP0652,Vihaan Joshi,Jaipur,ME,Merchant Onboarding,2019-02-15,2021-05-30,Senior ME,vihaan.joshi652@company.com,+91 9364706816
+EMP0653,Anika Verma,Chandigarh,ME,Corporate ME,2025-02-17,2025-09-06,ME Executive,anika.verma653@company.com,+91 9025801466
+EMP0654,Rajesh Malhotra,Hyderabad,TME,BLANK,2018-09-20,2020-11-02,TME Tele-caller,rajesh.malhotra654@company.com,+91 9615759047
+EMP0655,Vivaan Deshmukh,Hyderabad,ME,BLANK,2025-05-11,,ME Manager,vivaan.deshmukh655@company.com,+91 9566125120
+EMP0656,Vivaan Singh,Pune,JDA,BLANK,2022-12-04,,JDA Lead,vivaan.singh656@company.com,+91 9225451403
+EMP0657,Ishaan Kumar,Ahmedabad,ME,BLANK,2023-09-23,,ME Executive,ishaan.kumar657@company.com,+91 9642220886
+EMP0658,Sai Verma,Delhi,ME,Merchant Onboarding,2025-05-06,2026-04-08,ME Executive,sai.verma658@company.com,+91 8185139825
+EMP0659,Amit Deshmukh,Delhi,TME,Super,2022-06-07,,TME BDE,amit.deshmukh659@company.com,+91 9223687972
+EMP0660,Aarav Gupta,Bangalore,ME,BLANK,2021-03-11,,ME Manager,aarav.gupta660@company.com,+91 9503675679
+EMP0661,Diya Chawla,Coimbatore,ME,Merchant Onboarding,2024-10-19,,Senior ME,diya.chawla661@company.com,+91 8734979825
+EMP0662,Riya Sharma,Coimbatore,TME,Bounce,2022-07-26,,TME Tele-caller,riya.sharma662@company.com,+91 9161095131
+EMP0663,Ishaan Rao,Bangalore,TME,trainee,2023-10-04,,TME Team Lead,ishaan.rao663@company.com,+91 9981531341
+EMP0664,Pari Deshmukh,Mumbai,JDA,BLANK,2020-09-23,,JDA Senior Executive,pari.deshmukh664@company.com,+91 9927426836
+EMP0665,Pari Aggarwal,Ahmedabad,JDA,BLANK,2019-04-22,2021-06-28,JDA Lead,pari.aggarwal665@company.com,+91 7946534877
+EMP0666,Rohan Joshi,Delhi,JDA,BLANK,2021-12-17,,JDA Associate,rohan.joshi666@company.com,+91 8131078331
+EMP0667,Ayaan Reddy,Bangalore,JDA,BLANK,2025-07-22,,JDA Senior Executive,ayaan.reddy667@company.com,+91 7326541305
+EMP0668,Navya Singh,Jaipur,JDA,JDA Corporate,2021-12-19,2025-03-22,JDA Senior Executive,navya.singh668@company.com,+91 7785053225
+EMP0669,Sneha Kumar,Jaipur,JDA,JDA Partner,2020-08-19,,JDA Senior Executive,sneha.kumar669@company.com,+91 7888107487
+EMP0670,Ayaan Kumar,Chennai,ME,BLANK,2021-12-29,2022-08-19,ME Executive,ayaan.kumar670@company.com,+91 7337101561
+EMP0671,Rohan Roy,Mumbai,JDA,JDA Direct,2024-01-27,,JDA Senior Executive,rohan.roy671@company.com,+91 8594276982
+EMP0672,Anika Rao,Jaipur,TME,SHT,2021-01-30,,TME Team Lead,anika.rao672@company.com,+91 8708879427
+EMP0673,Ayaan Aggarwal,Chandigarh,JDA,JDA Direct,2023-11-24,,JDA Senior Executive,ayaan.aggarwal673@company.com,+91 9322580659
+EMP0674,Vivaan Shah,Delhi,ME,Corporate ME,2025-09-12,,Senior ME,vivaan.shah674@company.com,+91 7516977385
+EMP0675,Priya Shah,Jaipur,ME,Key Accounts,2025-09-24,,ME Executive,priya.shah675@company.com,+91 8629630857
+EMP0676,Riya Patel,Delhi,TME,Hot Data,2024-11-14,,TME BDE,riya.patel676@company.com,+91 9356061869
+EMP0677,Krishna Joshi,Coimbatore,JDA,BLANK,2024-11-16,2025-12-12,JDA Senior Executive,krishna.joshi677@company.com,+91 8820820806
+EMP0678,Reyansh Banerjee,Delhi,ME,Key Accounts,2022-06-29,2023-07-17,ME Manager,reyansh.banerjee678@company.com,+91 7563238419
+EMP0679,Riya Joshi,Bangalore,TME,Super Cat,2021-01-10,,TME Trainee,riya.joshi679@company.com,+91 8635881694
+EMP0680,Reyansh Mehta,Chandigarh,TME,Online,2018-02-09,2020-12-13,TME BDE,reyansh.mehta680@company.com,+91 9708629635
+EMP0681,Kavya Kulkarni,Delhi,TME,trainee,2023-06-17,,TME Tele-caller,kavya.kulkarni681@company.com,+91 8711123163
+EMP0682,Vihaan Singh,Ahmedabad,ME,Merchant Onboarding,2020-11-07,,ME Manager,vihaan.singh682@company.com,+91 7413613460
+EMP0683,Pari Rao,Coimbatore,JDA,JDA Corporate,2022-01-15,,JDA Senior Executive,pari.rao683@company.com,+91 8478071244
+EMP0684,Aarav Banerjee,Bangalore,TME,Hot Data,2025-08-15,,TME BDE,aarav.banerjee684@company.com,+91 9477568014
+EMP0685,Riya Kulkarni,Chandigarh,TME,trainee,2021-03-11,,TME Trainee,riya.kulkarni685@company.com,+91 8919550221
+EMP0686,Suresh Gupta,Hyderabad,ME,BLANK,2021-03-19,,ME Executive,suresh.gupta686@company.com,+91 7719731446
+EMP0687,Rahul Rao,Hyderabad,ME,BLANK,2024-05-30,,ME Executive,rahul.rao687@company.com,+91 7339783148
+EMP0688,Sai Rao,Chennai,ME,Key Accounts,2021-07-21,,ME Manager,sai.rao688@company.com,+91 8148785172
+EMP0689,Anika Deshmukh,Coimbatore,TME,Online,2022-01-27,,TME Trainee,anika.deshmukh689@company.com,+91 8778069478
+EMP0690,Sai Singh,Ahmedabad,JDA,JDA Partner,2026-02-28,,JDA Lead,sai.singh690@company.com,+91 7343875431
+EMP0691,Reyansh Singh,Hyderabad,ME,Field Sales,2019-01-27,2021-10-07,ME Manager,reyansh.singh691@company.com,+91 7231178500
+EMP0692,Aarav Deshmukh,Kolkata,ME,Field Sales,2019-03-02,2020-01-29,ME Executive,aarav.deshmukh692@company.com,+91 9812484901
+EMP0693,Rajesh Deshmukh,Coimbatore,ME,Merchant Onboarding,2020-10-10,,Senior ME,rajesh.deshmukh693@company.com,+91 9690714075
+EMP0694,Arjun Mehta,Kolkata,JDA,JDA Partner,2018-04-28,2020-05-12,JDA Senior Executive,arjun.mehta694@company.com,+91 9045069031
+EMP0695,Pari Kulkarni,Coimbatore,JDA,BLANK,2019-07-08,,JDA Lead,pari.kulkarni695@company.com,+91 9316222488
+EMP0696,Sai Aggarwal,Mumbai,TME,Online,2025-01-28,,TME Trainee,sai.aggarwal696@company.com,+91 9248242739
+EMP0697,Rahul Kulkarni,Coimbatore,ME,Key Accounts,2023-05-27,,ME Executive,rahul.kulkarni697@company.com,+91 8897775581
+EMP0698,Ishaan Chawla,Hyderabad,ME,Key Accounts,2019-09-30,2019-10-15,ME Manager,ishaan.chawla698@company.com,+91 7585405992
+EMP0699,Diya Reddy,Jaipur,JDA,JDA Direct,2025-09-18,,JDA Senior Executive,diya.reddy699@company.com,+91 8286817379
+EMP0700,Aarav Banerjee,Coimbatore,ME,BLANK,2020-08-05,,ME Manager,aarav.banerjee700@company.com,+91 8604788242
+EMP0701,Reyansh Banerjee,Kolkata,ME,Corporate ME,2022-06-05,2026-06-23,ME Manager,reyansh.banerjee701@company.com,+91 9774509349
+EMP0702,Sanya Deshmukh,Chennai,JDA,JDA Corporate,2018-11-21,,JDA Associate,sanya.deshmukh702@company.com,+91 9218823320
+EMP0703,Amit Malhotra,Pune,ME,Key Accounts,2021-03-12,,ME Manager,amit.malhotra703@company.com,+91 8154581796
+EMP0704,Aadhya Kumar,Bangalore,JDA,JDA Partner,2019-07-14,2023-02-22,JDA Senior Executive,aadhya.kumar704@company.com,+91 9653127632
+EMP0705,Pari Nair,Mumbai,JDA,BLANK,2020-02-09,2020-12-31,JDA Associate,pari.nair705@company.com,+91 9297681898
+EMP0706,Aarav Singh,Bangalore,TME,DF,2021-01-07,2023-07-08,TME Tele-caller,aarav.singh706@company.com,+91 7999913493
+EMP0707,Aditya Mehta,Ahmedabad,ME,Corporate ME,2020-06-08,2022-03-23,Senior ME,aditya.mehta707@company.com,+91 8595138315
+EMP0708,Pari Verma,Delhi,TME,BLANK,2026-06-02,,TME Tele-caller,pari.verma708@company.com,+91 8144624141
+EMP0709,Amit Deshmukh,Bangalore,ME,BLANK,2023-04-10,,Senior ME,amit.deshmukh709@company.com,+91 8638862478
+EMP0710,Neha Sharma,Bangalore,TME,trainee,2026-01-06,,TME Trainee,neha.sharma710@company.com,+91 8061553531
+EMP0711,Sneha Verma,Chennai,TME,Online,2026-03-31,,TME BDE,sneha.verma711@company.com,+91 9030770268
+EMP0712,Sanya Reddy,Delhi,ME,Merchant Onboarding,2025-01-21,,ME Manager,sanya.reddy712@company.com,+91 9360427902
+EMP0713,Kavya Patel,Coimbatore,ME,Corporate ME,2025-02-28,,ME Executive,kavya.patel713@company.com,+91 9863432302
+EMP0714,Reyansh Patel,Chennai,ME,Corporate ME,2021-08-22,2026-02-18,Senior ME,reyansh.patel714@company.com,+91 9511253899
+EMP0715,Vihaan Deshmukh,Chennai,ME,Field Sales,2018-06-22,,ME Manager,vihaan.deshmukh715@company.com,+91 9041272017
+EMP0716,Priya Malhotra,Chandigarh,TME,Hot Data,2019-01-02,2021-11-05,TME Tele-caller,priya.malhotra716@company.com,+91 9946109800
+EMP0717,Anika Rao,Pune,TME,B2B BDE,2018-09-02,,TME BDE,anika.rao717@company.com,+91 9303619991
+EMP0718,Vikram Patel,Chandigarh,TME,Online,2020-08-11,2023-10-13,TME Team Lead,vikram.patel718@company.com,+91 8884283304
+EMP0719,Sneha Kumar,Ahmedabad,JDA,BLANK,2022-01-07,,JDA Senior Executive,sneha.kumar719@company.com,+91 7169602003
+EMP0720,Saisha Chatterjee,Kolkata,TME,DF,2024-02-02,,TME BDE,saisha.chatterjee720@company.com,+91 9433965438
+EMP0721,Sai Kulkarni,Delhi,TME,Hot Data,2026-03-19,,TME BDE,sai.kulkarni721@company.com,+91 7295822679
+EMP0722,Kavya Mehta,Jaipur,JDA,JDA Corporate,2020-12-14,,JDA Senior Executive,kavya.mehta722@company.com,+91 7003091620
+EMP0723,Amit Shah,Hyderabad,JDA,JDA Partner,2018-03-18,,JDA Senior Executive,amit.shah723@company.com,+91 9663727197
+EMP0724,Ayaan Rao,Bangalore,TME,Super,2024-01-17,,TME BDE,ayaan.rao724@company.com,+91 9250862526
+EMP0725,Rohan Roy,Kolkata,ME,Merchant Onboarding,2024-11-16,,ME Manager,rohan.roy725@company.com,+91 8383082793
+EMP0726,Vihaan Patel,Kolkata,TME,Super,2018-10-01,2019-07-08,TME BDE,vihaan.patel726@company.com,+91 7134319747
+EMP0727,Reyansh Patel,Jaipur,JDA,JDA Partner,2019-02-09,2022-09-30,JDA Senior Executive,reyansh.patel727@company.com,+91 9825750278
+EMP0728,Saisha Shah,Mumbai,TME,Super Cat,2024-08-14,,TME BDE,saisha.shah728@company.com,+91 9602550993
+EMP0729,Priya Gupta,Ahmedabad,JDA,JDA Partner,2025-05-09,,JDA Associate,priya.gupta729@company.com,+91 9010298703
+EMP0730,Vikram Verma,Delhi,JDA,BLANK,2022-02-20,,JDA Associate,vikram.verma730@company.com,+91 9649708468
+EMP0731,Krishna Shah,Ahmedabad,JDA,JDA Direct,2021-05-29,2022-08-29,JDA Lead,krishna.shah731@company.com,+91 7417124022
+EMP0732,Vihaan Joshi,Kolkata,TME,Multiple team,2020-02-16,2023-11-07,TME BDE,vihaan.joshi732@company.com,+91 9448250186
+EMP0733,Rahul Singh,Kolkata,TME,Super Cat,2024-04-05,,TME Tele-caller,rahul.singh733@company.com,+91 9742870469
+EMP0734,Riya Chawla,Pune,ME,Corporate ME,2025-11-17,,ME Executive,riya.chawla734@company.com,+91 7716440566
+EMP0735,Vikram Singh,Kolkata,ME,Corporate ME,2023-08-30,2024-08-02,ME Manager,vikram.singh735@company.com,+91 9576618444
+EMP0736,Pari Chawla,Delhi,TME,Revival (Expiry),2021-08-22,,TME Trainee,pari.chawla736@company.com,+91 9719748617
+EMP0737,Aadhya Rao,Mumbai,ME,Merchant Onboarding,2024-04-25,,Senior ME,aadhya.rao737@company.com,+91 9363257229
+EMP0738,Rajesh Nair,Delhi,TME,Online,2023-01-07,,TME Tele-caller,rajesh.nair738@company.com,+91 7148876024
+EMP0739,Ishaan Malhotra,Ahmedabad,ME,BLANK,2019-07-08,,Senior ME,ishaan.malhotra739@company.com,+91 7028212913
+EMP0740,Ishaan Joshi,Chennai,ME,Key Accounts,2018-03-30,,ME Manager,ishaan.joshi740@company.com,+91 8185226852
+EMP0741,Rajesh Kulkarni,Kolkata,ME,BLANK,2024-05-26,,ME Executive,rajesh.kulkarni741@company.com,+91 7404960131
+EMP0742,Vivaan Chatterjee,Delhi,ME,Merchant Onboarding,2019-07-21,2022-11-09,ME Executive,vivaan.chatterjee742@company.com,+91 8000702246
+EMP0743,Krishna Reddy,Bangalore,TME,SHT,2022-06-26,,TME BDE,krishna.reddy743@company.com,+91 7331578205
+EMP0744,Sneha Rao,Jaipur,ME,Merchant Onboarding,2023-06-23,,ME Manager,sneha.rao744@company.com,+91 9474899565
+EMP0745,Neha Patel,Mumbai,JDA,JDA Corporate,2018-06-03,,JDA Lead,neha.patel745@company.com,+91 8638728074
+EMP0746,Aditya Verma,Delhi,TME,Hot Data,2022-11-14,,TME Tele-caller,aditya.verma746@company.com,+91 7973744985
+EMP0747,Sneha Malhotra,Ahmedabad,ME,Corporate ME,2018-08-10,2018-11-17,Senior ME,sneha.malhotra747@company.com,+91 9318980522
+EMP0748,Riya Mehta,Delhi,ME,BLANK,2025-10-29,2026-02-24,ME Manager,riya.mehta748@company.com,+91 8687418351
+EMP0749,Pari Malhotra,Mumbai,TME,Revival (Expiry),2019-01-04,2020-09-03,TME Trainee,pari.malhotra749@company.com,+91 7635708419
+EMP0750,Arjun Rao,Bangalore,TME,Online,2024-05-29,,TME Trainee,arjun.rao750@company.com,+91 8127677925
+EMP0751,Aditya Deshmukh,Kolkata,JDA,BLANK,2025-10-29,,JDA Senior Executive,aditya.deshmukh751@company.com,+91 9402158803
+EMP0752,Reyansh Roy,Hyderabad,TME,Super,2024-05-29,,TME BDE,reyansh.roy752@company.com,+91 8040735415
+EMP0753,Aditya Nair,Hyderabad,TME,Hot Data,2025-09-05,,TME Tele-caller,aditya.nair753@company.com,+91 7483312111
+EMP0754,Rohan Banerjee,Hyderabad,ME,Key Accounts,2021-11-27,2023-11-17,ME Manager,rohan.banerjee754@company.com,+91 9814963909
+EMP0755,Aarav Reddy,Chandigarh,JDA,JDA Corporate,2024-11-29,,JDA Senior Executive,aarav.reddy755@company.com,+91 9676546979
+EMP0756,Arjun Chatterjee,Ahmedabad,TME,Corporate,2020-03-28,,TME BDE,arjun.chatterjee756@company.com,+91 7368570209
+EMP0757,Vihaan Verma,Chennai,TME,SHT,2019-08-28,,TME Team Lead,vihaan.verma757@company.com,+91 7058984033
+EMP0758,Ananya Patel,Coimbatore,ME,Corporate ME,2023-04-14,2024-06-30,ME Manager,ananya.patel758@company.com,+91 9310715848
+EMP0759,Reyansh Kumar,Kolkata,TME,Revival (Expiry),2026-06-01,,TME BDE,reyansh.kumar759@company.com,+91 9985307816
+EMP0760,Priya Sharma,Hyderabad,TME,SHT,2025-06-10,,TME Team Lead,priya.sharma760@company.com,+91 7731517326
+EMP0761,Vivaan Reddy,Chennai,JDA,JDA Corporate,2018-08-06,,JDA Associate,vivaan.reddy761@company.com,+91 7286035346
+EMP0762,Sanya Nair,Pune,ME,Key Accounts,2019-03-18,2024-02-11,ME Manager,sanya.nair762@company.com,+91 8660104622
+EMP0763,Ayaan Deshmukh,Kolkata,JDA,JDA Direct,2021-07-16,,JDA Lead,ayaan.deshmukh763@company.com,+91 9283035614
+EMP0764,Aditya Singh,Chennai,TME,Revival (Expiry),2023-02-19,,TME Tele-caller,aditya.singh764@company.com,+91 7170735270
+EMP0765,Ayaan Shah,Coimbatore,JDA,JDA Corporate,2023-06-30,,JDA Associate,ayaan.shah765@company.com,+91 7078908105
+EMP0766,Diya Chawla,Delhi,ME,Key Accounts,2020-08-25,,ME Manager,diya.chawla766@company.com,+91 8184888162
+EMP0767,Vikram Verma,Pune,TME,DF,2022-05-05,,TME Tele-caller,vikram.verma767@company.com,+91 9383446351
+EMP0768,Krishna Joshi,Chandigarh,TME,Hot Data,2022-05-29,,TME Tele-caller,krishna.joshi768@company.com,+91 8641567077
+EMP0769,Kavya Malhotra,Pune,ME,Merchant Onboarding,2022-09-06,2023-07-30,Senior ME,kavya.malhotra769@company.com,+91 8341673745
+EMP0770,Rajesh Malhotra,Delhi,TME,Online,2024-01-30,,TME BDE,rajesh.malhotra770@company.com,+91 9495507871
+EMP0771,Navya Kumar,Chandigarh,JDA,JDA Corporate,2025-09-21,,JDA Lead,navya.kumar771@company.com,+91 7580905051
+EMP0772,Aadhya Mehta,Pune,TME,SHT,2019-10-10,2022-12-09,TME Tele-caller,aadhya.mehta772@company.com,+91 7790854733
+EMP0773,Ananya Mehta,Ahmedabad,JDA,JDA Corporate,2022-08-23,,JDA Senior Executive,ananya.mehta773@company.com,+91 8902689772
+EMP0774,Sneha Nair,Chandigarh,ME,Merchant Onboarding,2019-03-14,2019-05-21,ME Manager,sneha.nair774@company.com,+91 9649765075
+EMP0775,Krishna Malhotra,Mumbai,TME,SHT,2020-08-03,,TME BDE,krishna.malhotra775@company.com,+91 9952265565
+EMP0776,Aarav Chawla,Bangalore,JDA,BLANK,2019-07-04,,JDA Lead,aarav.chawla776@company.com,+91 9013323898
+EMP0777,Priya Chawla,Chandigarh,JDA,BLANK,2023-07-06,,JDA Associate,priya.chawla777@company.com,+91 7830044665
+EMP0778,Ayaan Verma,Hyderabad,TME,trainee,2018-03-03,,TME Trainee,ayaan.verma778@company.com,+91 7955863041
+EMP0779,Sneha Kumar,Chennai,TME,BLANK,2019-12-27,,TME Trainee,sneha.kumar779@company.com,+91 9650249767
+EMP0780,Saisha Rao,Jaipur,TME,Corporate,2022-10-18,,TME Tele-caller,saisha.rao780@company.com,+91 9611039285
+EMP0781,Sneha Deshmukh,Delhi,TME,Multiple team,2024-11-09,,TME Tele-caller,sneha.deshmukh781@company.com,+91 9236170837
+EMP0782,Vihaan Chatterjee,Jaipur,ME,Field Sales,2020-10-03,,Senior ME,vihaan.chatterjee782@company.com,+91 7168584421
+EMP0783,Navya Deshmukh,Kolkata,ME,Field Sales,2020-02-17,2022-05-27,Senior ME,navya.deshmukh783@company.com,+91 8227993812
+EMP0784,Pari Singh,Hyderabad,ME,Key Accounts,2024-11-16,,ME Manager,pari.singh784@company.com,+91 9220367731
+EMP0785,Suresh Mehta,Jaipur,JDA,BLANK,2019-01-06,,JDA Associate,suresh.mehta785@company.com,+91 7772112249
+EMP0786,Amit Aggarwal,Kolkata,TME,Bounce,2022-05-30,,TME Trainee,amit.aggarwal786@company.com,+91 7106996713
+EMP0787,Sai Chatterjee,Mumbai,ME,Merchant Onboarding,2023-02-06,2024-12-15,ME Manager,sai.chatterjee787@company.com,+91 9785614544
+EMP0788,Rajesh Singh,Bangalore,ME,Field Sales,2019-04-13,,ME Manager,rajesh.singh788@company.com,+91 8558830012
+EMP0789,Aditya Shah,Hyderabad,ME,BLANK,2024-11-12,,Senior ME,aditya.shah789@company.com,+91 9363717591
+EMP0790,Sanya Verma,Chandigarh,TME,Hot Data,2024-05-05,,TME BDE,sanya.verma790@company.com,+91 7696317695
+EMP0791,Pooja Mehta,Chandigarh,JDA,JDA Direct,2022-09-15,,JDA Senior Executive,pooja.mehta791@company.com,+91 8240302958
+EMP0792,Rahul Singh,Bangalore,ME,Merchant Onboarding,2020-04-10,2024-08-09,Senior ME,rahul.singh792@company.com,+91 7052431950
+EMP0793,Pari Roy,Jaipur,ME,BLANK,2018-01-24,,Senior ME,pari.roy793@company.com,+91 8021679756
+EMP0794,Reyansh Aggarwal,Pune,TME,Online,2023-02-02,,TME Tele-caller,reyansh.aggarwal794@company.com,+91 9582205491
+EMP0795,Anika Sharma,Chennai,JDA,JDA Corporate,2024-12-13,,JDA Associate,anika.sharma795@company.com,+91 7210104660
+EMP0796,Sai Mehta,Ahmedabad,TME,Super,2021-11-30,,TME Tele-caller,sai.mehta796@company.com,+91 9864728338
+EMP0797,Riya Malhotra,Coimbatore,TME,Hot Data,2018-12-26,2021-05-12,TME BDE,riya.malhotra797@company.com,+91 7692929517
+EMP0798,Rohan Reddy,Mumbai,ME,BLANK,2024-06-02,,ME Executive,rohan.reddy798@company.com,+91 8955661068
+EMP0799,Sneha Aggarwal,Delhi,TME,B2B BDE,2019-01-17,,TME Team Lead,sneha.aggarwal799@company.com,+91 8582993601
+EMP0800,Suresh Deshmukh,Bangalore,TME,trainee,2022-10-17,,TME Tele-caller,suresh.deshmukh800@company.com,+91 8257706935
