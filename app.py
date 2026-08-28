@@ -68,7 +68,7 @@ st.markdown("""
         color: #0F172A !important;
     }
 
-    /* HIGH-CONTRAST ACCESSIBILITY KEYBOARD FOCUS RINGS ACROSS ENTIRE DASHBOARD */
+    /* HIGH-CONTRAST ACCESSIBILITY KEYBOARD FOCUS RINGS MATCHING FILTER CARD CURVES 100% */
     :focus-visible,
     button:focus-visible,
     div[role="button"]:focus-visible,
@@ -79,13 +79,13 @@ st.markdown("""
     .stTabs button:focus-visible,
     div[data-testid="stTabs"] button:focus-visible,
     .stTabs div[data-testid="stRadio"] label:focus-visible {
-        outline: 3.5px solid #5E2D91 !important;
-        outline-offset: 3px !important;
-        box-shadow: 0 0 0 6px rgba(94, 45, 145, 0.3) !important;
+        outline: 3px solid #5E2D91 !important;
+        outline-offset: 2px !important;
+        box-shadow: 0 0 0 4px rgba(94, 45, 145, 0.25) !important;
         border-radius: 10px !important;
     }
 
-    /* Executive Command Hero Header (Silky Smooth Imperial Purple Gradient - 67% Proportional Scale) */
+    /* Executive Command Hero Header (Silky Smooth Imperial Purple Gradient) */
     .command-hero-header {
         position: relative;
         background: linear-gradient(135deg, #4A1D75 0%, #5E2D91 40%, #7B4BB3 75%, #3B1C63 100%) !important;
@@ -107,7 +107,7 @@ st.markdown("""
         margin-top: 0.3rem !important;
     }
 
-    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (67% Proportional Scale) */
+    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (MATCHED TO KEYBOARD FOCUS INDICATOR) */
     div[data-testid="stPopover"] {
         width: 100% !important;
         margin-bottom: 1.0rem !important;
@@ -115,16 +115,17 @@ st.markdown("""
     div[data-testid="stPopover"] button,
     button[data-testid="stPopoverButton"],
     button[data-testid="stBaseButton-secondary"] {
-        border-radius: 11px !important;
-        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05) !important;
-        padding: 0.65rem 0.9rem !important;
+        border-radius: 10px !important;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
+        padding: 0.48rem 0.8rem !important;
+        min-height: 36px !important;
         width: 100% !important;
         transition: all 0.25s ease !important;
     }
     div[data-testid="stPopover"] button:hover,
     button[data-testid="stPopoverButton"]:hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12) !important;
+        box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12) !important;
     }
     div[data-testid="stPopover"] button *,
     button[data-testid="stPopoverButton"] *,
@@ -133,7 +134,7 @@ st.markdown("""
     button[data-testid="stPopoverButton"] div,
     button[data-testid="stPopoverButton"] svg {
         font-weight: 850 !important;
-        font-size: 0.95rem !important;
+        font-size: 0.88rem !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
