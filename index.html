@@ -317,9 +317,9 @@
 
     <!-- 4 Scope Filter Header Cards -->
     <div class="filter-header-grid">
-        <div class="filter-card-trigger" onclick="togglePopover('pop-time')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-time')">
             <span>🗓️ <span id="txt-time">Time Period (Aug 2026)</span></span> <span>▾</span>
-            <div class="popover-menu" id="pop-time">
+            <div class="popover-menu" id="pop-time" onclick="event.stopPropagation()">
                 <div class="popover-option" onclick="selectFilter('time', 'Aug 2026')">🗓️ Aug 2026 (MTD)</div>
                 <div class="popover-option" onclick="selectFilter('time', 'Q3 2026')">📊 Q3 2026 (QTD)</div>
                 <div class="popover-option" onclick="selectFilter('time', 'YTD 2026')">📅 YTD 2026</div>
@@ -327,9 +327,9 @@
             </div>
         </div>
 
-        <div class="filter-card-trigger" onclick="togglePopover('pop-emp')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-emp')">
             <span>👤 <span id="txt-emp">Employee (All EmpTypes)</span></span> <span>▾</span>
-            <div class="popover-menu" id="pop-emp">
+            <div class="popover-menu" id="pop-emp" onclick="event.stopPropagation()">
                 <div class="popover-option" onclick="selectFilter('emp', 'All EmpTypes')">👥 All EmpTypes</div>
                 <div class="popover-option" onclick="selectFilter('emp', 'JDA Only')">🌱 JDA Only</div>
                 <div class="popover-option" onclick="selectFilter('emp', 'ME Only')">⚡ ME Only</div>
@@ -337,9 +337,9 @@
             </div>
         </div>
 
-        <div class="filter-card-trigger" onclick="togglePopover('pop-branch')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-branch')">
             <span>🏢 <span id="txt-branch">Branch (All 11 Cities)</span></span> <span>▾</span>
-            <div class="popover-menu" id="pop-branch">
+            <div class="popover-menu" id="pop-branch" onclick="event.stopPropagation()">
                 <div class="popover-option" onclick="selectFilter('branch', 'All 11 Cities')">🌐 All 11 Cities</div>
                 <div class="popover-option" onclick="selectFilter('branch', 'Bangalore')">🏢 Bangalore</div>
                 <div class="popover-option" onclick="selectFilter('branch', 'Mumbai')">🏢 Mumbai</div>
@@ -349,9 +349,9 @@
             </div>
         </div>
 
-        <div class="filter-card-trigger" onclick="togglePopover('pop-team')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-team')">
             <span>👥 <span id="txt-team">Team (All Teams)</span></span> <span>▾</span>
-            <div class="popover-menu" id="pop-team">
+            <div class="popover-menu" id="pop-team" onclick="event.stopPropagation()">
                 <div class="popover-option" onclick="selectFilter('team', 'All Teams')">🚀 All Teams</div>
                 <div class="popover-option" onclick="selectFilter('team', 'Field Sales')">💼 Field Sales</div>
                 <div class="popover-option" onclick="selectFilter('team', 'Corporate')">🏛️ Corporate</div>
@@ -466,21 +466,50 @@
     </div>
 
     <script>
-        function togglePopover(popId) {
-            event.stopPropagation();
-            document.querySelectorAll('.popover-menu').forEach(m => {
-                if (m.id !== popId) m.classList.remove('open');
+        function togglePopover(e, popId) {
+            if (e && e.stopPropagation) { e.stopPropagation(); }
+            var targetPop = document.getElementById(popId);
+            var isAlreadyOpen = targetPop ? targetPop.classList.contains('open') : false;
+            
+            document.querySelectorAll('.popover-menu').forEach(function(m) {
+                m.classList.remove('open');
             });
-            document.getElementById(popId).classList.toggle('open');
+            
+            if (!isAlreadyOpen && targetPop) {
+                targetPop.classList.add('open');
+            }
         }
 
         function selectFilter(type, val) {
             document.getElementById('txt-' + type).innerText = type.charAt(0).toUpperCase() + type.slice(1) + ' (' + val + ')';
-            document.querySelectorAll('.popover-menu').forEach(m => m.classList.remove('open'));
+            document.querySelectorAll('.popover-menu').forEach(function(m) { m.classList.remove('open'); });
+            
+            // Dynamic metric update feedback
+            if (type === 'emp' && val === 'JDA Only') {
+                document.getElementById('kpi-hc').innerText = '162';
+                document.getElementById('kpi-jda').innerText = '162';
+                document.getElementById('kpi-me').innerText = '0';
+                document.getElementById('kpi-tme').innerText = '0';
+            } else if (type === 'emp' && val === 'ME Only') {
+                document.getElementById('kpi-hc').innerText = '190';
+                document.getElementById('kpi-jda').innerText = '0';
+                document.getElementById('kpi-me').innerText = '190';
+                document.getElementById('kpi-tme').innerText = '0';
+            } else if (type === 'emp' && val === 'TME Only') {
+                document.getElementById('kpi-hc').innerText = '247';
+                document.getElementById('kpi-jda').innerText = '0';
+                document.getElementById('kpi-me').innerText = '0';
+                document.getElementById('kpi-tme').innerText = '247';
+            } else if (type === 'emp' && val === 'All EmpTypes') {
+                document.getElementById('kpi-hc').innerText = '599';
+                document.getElementById('kpi-jda').innerText = '162';
+                document.getElementById('kpi-me').innerText = '190';
+                document.getElementById('kpi-tme').innerText = '247';
+            }
         }
 
         window.onclick = function() {
-            document.querySelectorAll('.popover-menu').forEach(m => m.classList.remove('open'));
+            document.querySelectorAll('.popover-menu').forEach(function(m) { m.classList.remove('open'); });
         };
 
         function switchTab(tabId, btn) {
