@@ -22,6 +22,18 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
+    /* HIDE ALL STREAMLIT WATERMARKS, FOOTERS, HEADERS, MENU & DEPLOY BUTTONS */
+    #MainMenu { visibility: hidden !important; display: none !important; }
+    header { visibility: hidden !important; display: none !important; }
+    footer { visibility: hidden !important; display: none !important; }
+    div[data-testid="stDecoration"] { display: none !important; }
+    div[data-testid="stHeader"] { display: none !important; }
+    div[data-testid="stStatusWidget"] { display: none !important; }
+    .viewerBadge_container__1QSob { display: none !important; }
+    div[class*="viewerBadge"] { display: none !important; }
+    div[class*="stAppHeader"] { display: none !important; }
+    button[title="View app in Streamlit Community Cloud"] { display: none !important; }
+
     html, body {
         scroll-behavior: smooth !important;
     }
