@@ -80,9 +80,9 @@ st.markdown("""
     div[data-testid="stTabs"] button:focus-visible,
     .stTabs div[data-testid="stRadio"] label:focus-visible {
         outline: 3px solid #5E2D91 !important;
-        outline-offset: 2px !important;
-        box-shadow: 0 0 0 4px rgba(94, 45, 145, 0.25) !important;
-        border-radius: 10px !important;
+        outline-offset: 2.5px !important;
+        box-shadow: 0 0 0 5px rgba(94, 45, 145, 0.25) !important;
+        border-radius: 11px !important;
     }
 
     /* Executive Command Hero Header (Silky Smooth Imperial Purple Gradient) */
@@ -107,25 +107,25 @@ st.markdown("""
         margin-top: 0.3rem !important;
     }
 
-    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (REDUCED 0.76rem FONT SIZE) */
+    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (ENLARGED EXECUTIVE SIZE: 0.92rem FONT, 42px HEIGHT) */
     div[data-testid="stPopover"] {
         width: 100% !important;
-        margin-bottom: 0.8rem !important;
+        margin-bottom: 1.0rem !important;
     }
     div[data-testid="stPopover"] button,
     button[data-testid="stPopoverButton"],
     button[data-testid="stBaseButton-secondary"] {
-        border-radius: 9px !important;
-        box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05) !important;
-        padding: 0.35rem 0.6rem !important;
-        min-height: 32px !important;
+        border-radius: 11px !important;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
+        padding: 0.55rem 0.95rem !important;
+        min-height: 42px !important;
         width: 100% !important;
         transition: all 0.25s ease !important;
     }
     div[data-testid="stPopover"] button:hover,
     button[data-testid="stPopoverButton"]:hover {
-        transform: translateY(-1.5px) !important;
-        box-shadow: 0 5px 14px rgba(15, 23, 42, 0.12) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14) !important;
     }
     div[data-testid="stPopover"] button *,
     button[data-testid="stPopoverButton"] *,
@@ -133,8 +133,8 @@ st.markdown("""
     button[data-testid="stPopoverButton"] span,
     button[data-testid="stPopoverButton"] div,
     button[data-testid="stPopoverButton"] svg {
-        font-weight: 800 !important;
-        font-size: 0.76rem !important;
+        font-weight: 850 !important;
+        font-size: 0.92rem !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
