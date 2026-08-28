@@ -169,19 +169,14 @@ st.markdown("""
         font-weight: 900 !important;
     }
 
-    /* AGGRESSIVE COMPACT POPOVER CONTAINER BOX (REDUCED WIDTH & HEIGHT) */
-    div[data-testid="stPopoverBody"],
-    div[data-baseweb="popover"],
-    div[data-portal-id] div[role="dialog"] {
-        width: 210px !important;
-        max-width: 210px !important;
-        min-width: 190px !important;
+    /* RESTORE ORIGINAL MATCHING WIDTH, REDUCE VERTICAL LENGTH & HEIGHT ONLY */
+    div[data-testid="stPopoverBody"] {
         background: #FFFFFF !important;
-        border: 1.5px solid #5E2D91 !important;
-        border-top: 3px solid #7B4BB3 !important;
-        border-radius: 9px !important;
-        box-shadow: 0 10px 25px rgba(94, 45, 145, 0.22) !important;
-        padding: 0.5rem 0.6rem !important;
+        border: 2px solid #5E2D91 !important;
+        border-top: 3.5px solid #7B4BB3 !important;
+        border-radius: 11px !important;
+        box-shadow: 0 12px 30px rgba(94, 45, 145, 0.25) !important;
+        padding: 0.35rem 0.65rem !important;
         overflow: visible !important;
     }
 
