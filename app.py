@@ -2398,3 +2398,10 @@ with main_tab3:
                 )
 
     render_download_section("tab3_drilldown_matrices")
+
+# Vercel Serverless Top-Level Handlers Export
+def handler(req=None, res=None):
+    return "Workforce Intelligence Executive Dashboard Suite"
+
+app = handler
+application = handler
