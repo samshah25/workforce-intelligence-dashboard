@@ -169,14 +169,14 @@ st.markdown("""
         font-weight: 850 !important;
     }
 
-    /* POPOVER BODY CONTAINER - CONTAIN PERIOD CHIP FULLY INSIDE WHITE CARD */
+    /* POPOVER BODY CONTAINER - FIT ALL TEXT CLEANLY INSIDE WHITE CARD */
     div[data-testid="stPopoverBody"] {
         background: #FFFFFF !important;
         border: 2px solid #5E2D91 !important;
         border-top: 3.5px solid #7B4BB3 !important;
         border-radius: 11px !important;
         box-shadow: 0 12px 30px rgba(94, 45, 145, 0.25) !important;
-        padding: 0.45rem 0.65rem 0.65rem 0.65rem !important;
+        padding: 0.5rem 0.75rem 1.1rem 0.75rem !important;
         overflow: visible !important;
     }
 
@@ -247,20 +247,18 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-    /* PERIOD CHIP STYLED TO FIT CLEANLY INSIDE POPOVER BOX */
+    /* PERIOD CHIP - CLEAN NEUTRAL IMPERIAL PURPLE TEXT INSIDE POPOVER BOX WITH NO OUTSIDE BLEED OR BLUE BOX */
     .period-chip {
-        display: inline-block !important;
-        font-size: 0.68rem !important;
+        display: block !important;
+        font-size: 0.72rem !important;
         font-weight: 750 !important;
-        padding: 2px 6px !important;
-        margin-top: 4px !important;
+        color: #5E2D91 !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 4px 0px 2px 0px !important;
+        margin-top: 6px !important;
         margin-bottom: 2px !important;
-        border-radius: 5px !important;
-        background: #E0F2FE !important;
-        color: #0284C7 !important;
-        border: 1px solid #7DD3FC !important;
         white-space: nowrap !important;
-        box-sizing: border-box !important;
     }
 
     /* 5 ARTISTIC EXECUTIVE GLASS & SHIMMER KPI CARDS (67% Proportional Scale) */
