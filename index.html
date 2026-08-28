@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workforce Intelligence Executive Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        :root {
+            --purple-main: #5E2D91;
+            --purple-dark: #4A1D75;
+            --purple-light: #7B4BB3;
+            --cyan-accent: #0284C7;
+            --emerald-accent: #059669;
+            --amber-accent: #D97706;
+            --rose-accent: #7E22CE;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+            background-image: 
+                radial-gradient(at 12% 5%, rgba(233, 213, 255, 0.55) 0px, transparent 45%),
+                radial-gradient(at 88% 12%, rgba(224, 242, 254, 0.55) 0px, transparent 50%),
+                radial-gradient(at 50% 45%, rgba(243, 232, 255, 0.4) 0px, transparent 60%),
+                radial-gradient(at 20% 88%, rgba(209, 250, 229, 0.35) 0px, transparent 45%);
+            background-attachment: fixed;
+            color: #0F172A;
+            padding: 2.2rem;
+        }
+
+        /* Focus rings for keyboard accessibility */
+        :focus-visible {
+            outline: 3.5px solid var(--purple-main) !important;
+            outline-offset: 3px !important;
+            border-radius: 10px !important;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #4A1D75 0%, #5E2D91 40%, #7B4BB3 75%, #3B1C63 100%);
+            padding: 2.4rem 3.2rem;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 20px 50px rgba(94, 45, 145, 0.38);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-banner h1 {
+            font-size: 2.4rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        .header-banner p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 0.4rem;
+        }
+
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .kpi-card {
+            border-radius: 20px;
+            padding: 1.6rem;
+            background: white;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.32s ease;
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 75%);
+            pointer-events: none;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 16px 36px rgba(94, 45, 145, 0.18);
+        }
+
+        .kpi-card.hc { border-top: 5px solid var(--cyan-accent); background: linear-gradient(135deg, #FFF 35%, #E0F2FE 100%); }
+        .kpi-card.jda { border-top: 5px solid var(--emerald-accent); background: linear-gradient(135deg, #FFF 35%, #D1FAE5 100%); }
+        .kpi-card.me { border-top: 5px solid var(--amber-accent); background: linear-gradient(135deg, #FFF 35%, #FEF3C7 100%); }
+        .kpi-card.tme { border-top: 5px solid var(--rose-accent); background: linear-gradient(135deg, #FFF 35%, #F3E8FF 100%); }
+
+        .kpi-val {
+            font-size: 3.2rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 0.4rem;
+        }
+
+        .kpi-card.hc .kpi-val { color: var(--cyan-accent); }
+        .kpi-card.jda .kpi-val { color: var(--emerald-accent); }
+        .kpi-card.me .kpi-val { color: var(--amber-accent); }
+        .kpi-card.tme .kpi-val { color: var(--rose-accent); }
+
+        .kpi-title {
+            font-size: 0.95rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #475569;
+        }
+
+        .parent-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .parent-tab-btn {
+            font-size: 1.85rem;
+            font-weight: 900;
+            padding: 16px 36px;
+            min-height: 64px;
+            border-radius: 18px;
+            border: 2px solid #D8B4FE;
+            background: white;
+            color: var(--purple-main);
+            cursor: pointer;
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease;
+        }
+
+        .parent-tab-btn.active {
+            background: var(--purple-main);
+            color: white;
+            border-color: var(--purple-main);
+            box-shadow: 0 10px 28px rgba(94, 45, 145, 0.4);
+            transform: translateY(-2px) scale(1.015);
+        }
+
+        .child-filter-bar {
+            display: flex;
+            gap: 6px;
+            background: var(--purple-main);
+            padding: 6px 8px;
+            border-radius: 14px;
+            width: fit-content;
+            margin-bottom: 1.5rem;
+            transition: margin-left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .child-pill {
+            font-size: 1.12rem;
+            font-weight: 800;
+            padding: 6px 18px;
+            border-radius: 8.5px;
+            color: white;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.28s ease;
+        }
+
+        .child-pill.active {
+            background: white;
+            color: var(--purple-main);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+            transform: translateY(-1.5px) scale(1.025);
+        }
+
+        .tab-panel {
+            display: none;
+            animation: panelSlideIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .tab-panel.active { display: block; }
+
+        @keyframes panelSlideIn {
+            from { opacity: 0; transform: translateX(24px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .card-box {
+            background: white;
+            border-radius: 18px;
+            padding: 1.8rem;
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+            border: 1.5px solid #CBD5E1;
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 1.05rem;
+        }
+
+        th {
+            background: linear-gradient(90deg, #5E2D91 0%, #0F172A 100%);
+            color: white;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 800;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #E2E8F0;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) td { background: #F8FAFC; }
+        tr:hover td { background: #F1F5F9; }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>⚡ Workforce Intelligence Executive Command</h1>
+        <p>Real-time Employee Headcount, Active ME/TME/JDA Analytics & Tenure Intelligence</p>
+    </div>
+
+    <!-- Executive KPI Cards -->
+    <div class="kpi-container">
+        <div class="kpi-card hc">
+            <div class="kpi-val" id="kpi-hc">350</div>
+            <div class="kpi-title">TOTAL HEADCOUNT</div>
+        </div>
+        <div class="kpi-card jda">
+            <div class="kpi-val" id="kpi-jda">120</div>
+            <div class="kpi-title">ACTIVE JDA</div>
+        </div>
+        <div class="kpi-card me">
+            <div class="kpi-val" id="kpi-me">145</div>
+            <div class="kpi-title">ACTIVE ME</div>
+        </div>
+        <div class="kpi-card tme">
+            <div class="kpi-val" id="kpi-tme">85</div>
+            <div class="kpi-title">ACTIVE TME</div>
+        </div>
+    </div>
+
+    <!-- Master Parent Navigation Tabs -->
+    <div class="parent-tabs" role="tablist">
+        <button class="parent-tab-btn active" onclick="switchTab('headcount', this)" tabindex="0">📊 Employee Headcount</button>
+        <button class="parent-tab-btn" onclick="switchTab('tenure', this)" tabindex="0">⏳ Tenure Breakdown</button>
+        <button class="parent-tab-btn" onclick="switchTab('drilldown', this)" tabindex="0">🔍 Employee Drill-Down</button>
+    </div>
+
+    <!-- Child Filter Bar -->
+    <div class="child-filter-bar" id="child-filter-bar">
+        <button class="child-pill active" onclick="switchChildFilter('pan_india', this)">Pan India / Branch Summary</button>
+        <button class="child-pill" onclick="switchChildFilter('team_type', this)">Team Type Summary</button>
+    </div>
+
+    <!-- Tab Panels -->
+    <div id="panel-headcount" class="tab-panel active">
+        <div class="card-box">
+            <h2>🏢 City & Branch Headcount Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>City / Branch</th>
+                        <th>Active Headcount</th>
+                        <th>Active JDA</th>
+                        <th>Active ME</th>
+                        <th>Active TME</th>
+                        <th>Share %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>Bangalore</b></td><td>64</td><td>22</td><td>26</td><td>16</td><td><b>18.3%</b></td></tr>
+                    <tr><td><b>Mumbai</b></td><td>58</td><td>20</td><td>24</td><td>14</td><td><b>16.6%</b></td></tr>
+                    <tr><td><b>Delhi</b></td><td>52</td><td>18</td><td>22</td><td>12</td><td><b>14.9%</b></td></tr>
+                    <tr><td><b>Hyderabad</b></td><td>44</td><td>15</td><td>18</td><td>11</td><td><b>12.6%</b></td></tr>
+                    <tr><td><b>Pune</b></td><td>38</td><td>13</td><td>16</td><td>9</td><td><b>10.9%</b></td></tr>
+                    <tr><td><b>Chennai</b></td><td>34</td><td>11</td><td>14</td><td>9</td><td><b>9.7%</b></td></tr>
+                    <tr><td><b>Ahmedabad</b></td><td>30</td><td>10</td><td>13</td><td>7</td><td><b>8.6%</b></td></tr>
+                    <tr style="background:#E0F2FE; font-weight:800; color:#0284C7;"><td>TOTAL (Pan India)</td><td>350</td><td>120</td><td>145</td><td>85</td><td>100.0%</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="panel-tenure" class="tab-panel">
+        <div class="card-box">
+            <h2>⏳ Tenure Distribution & Experience Metrics</h2>
+            <div id="tenureChart" style="height:400px;"></div>
+        </div>
+    </div>
+
+    <div id="panel-drilldown" class="tab-panel">
+        <div class="card-box">
+            <h2>🔍 Active Employee Roster (Searchable)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Emp Code</th><th>Employee Name</th><th>Branch</th><th>Type</th><th>Team</th><th>Designation</th><th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>EMP1001</b></td><td>Aarav Sharma</td><td>Bangalore</td><td><b>JDA</b></td><td>Field Sales</td><td>Senior Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td><b>EMP1002</b></td><td>Priya Patel</td><td>Mumbai</td><td><b>ME</b></td><td>Corporate</td><td>Manager</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td><b>EMP1003</b></td><td>Rohan Verma</td><td>Delhi</td><td><b>TME</b></td><td>Merchant Onboarding</td><td>Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td><b>EMP1004</b></td><td>Ananya Iyer</td><td>Chennai</td><td><b>JDA</b></td><td>Key Accounts</td><td>Senior Executive</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                    <tr><td><b>EMP1005</b></td><td>Vikram Singh</td><td>Hyderabad</td><td><b>ME</b></td><td>B2B BDE</td><td>Associate</td><td style="color:#059669; font-weight:800;">Active</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId, btn) {
+            document.querySelectorAll('.parent-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('panel-' + tabId).classList.add('active');
+            
+            if (tabId === 'tenure') { renderChart(); }
+        }
+
+        function switchChildFilter(filterId, btn) {
+            document.querySelectorAll('.child-pill').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        function renderChart() {
+            var data = [{
+                x: ['0-3 Months', '3-6 Months', '6-12 Months', '1-2 Years', '2+ Years'],
+                y: [65, 85, 110, 55, 35],
+                type: 'bar',
+                marker: { color: ['#5E2D91', '#7B4BB3', '#0284C7', '#059669', '#D97706'] }
+            }];
+            var layout = {
+                title: 'Employee Count by Tenure Bucket',
+                margin: { t: 40, b: 40, l: 40, r: 40 },
+                font: { family: 'Plus Jakarta Sans' }
+            };
+            Plotly.newPlot('tenureChart', data, layout);
+        }
+
+        // Full Keyboard Accessibility Engine
+        document.addEventListener('keydown', function(e) {
+            var activeEl = document.activeElement;
+            if (e.key === 'ArrowDown') {
+                if (activeEl && activeEl.classList.contains('parent-tab-btn')) {
+                    e.preventDefault();
+                    var firstPill = document.querySelector('.child-pill');
+                    if (firstPill) firstPill.focus();
+                }
+            } else if (e.key === 'ArrowUp') {
+                if (activeEl && activeEl.classList.contains('child-pill')) {
+                    e.preventDefault();
+                    var activeTab = document.querySelector('.parent-tab-btn.active');
+                    if (activeTab) activeTab.focus();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
