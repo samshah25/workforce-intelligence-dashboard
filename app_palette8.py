@@ -169,17 +169,32 @@ st.markdown("""
         font-weight: 900 !important;
     }
 
-    /* ULTRA-COMPACT EXECUTIVE POPOVER DROPDOWN CONTAINER BOX */
-    div[data-testid="stPopoverBody"] {
+    /* AGGRESSIVE COMPACT POPOVER CONTAINER BOX (REDUCED WIDTH & HEIGHT) */
+    div[data-testid="stPopoverBody"],
+    div[data-baseweb="popover"],
+    div[data-portal-id] div[role="dialog"] {
+        width: 210px !important;
+        max-width: 210px !important;
+        min-width: 190px !important;
         background: #FFFFFF !important;
-        border: 2px solid #5E2D91 !important;
-        border-top: 3.5px solid #7B4BB3 !important;
-        border-radius: 11px !important;
-        box-shadow: 0 12px 30px rgba(94, 45, 145, 0.25) !important;
-        padding: 0.75rem 0.85rem !important;
-        max-width: 250px !important;
+        border: 1.5px solid #5E2D91 !important;
+        border-top: 3px solid #7B4BB3 !important;
+        border-radius: 9px !important;
+        box-shadow: 0 10px 25px rgba(94, 45, 145, 0.22) !important;
+        padding: 0.5rem 0.6rem !important;
         overflow: visible !important;
     }
+
+    /* REDUCE VERTICAL SPACING & MARGINS INSIDE POPOVER */
+    div[data-testid="stPopoverBody"] div[data-testid="stVerticalBlock"],
+    div[data-testid="stPopoverBody"] div[data-testid="stVerticalBlock"] > div,
+    div[data-testid="stPopoverBody"] div[data-testid="stSelectbox"] {
+        gap: 0.25rem !important;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    /* REDUCE ALL LABELS & TEXT SIZES INSIDE POPOVER */
     div[data-testid="stPopoverBody"] label,
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"],
     div[data-testid="stPopoverBody"] label p,
@@ -187,51 +202,60 @@ st.markdown("""
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"] p,
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"] span {
         color: #5E2D91 !important;
-        font-weight: 850 !important;
-        font-size: 0.78rem !important;
+        font-weight: 800 !important;
+        font-size: 0.70rem !important;
         letter-spacing: -0.2px !important;
-        margin-bottom: 0.25rem !important;
+        margin-bottom: 0.15rem !important;
+        line-height: 1.1 !important;
     }
 
-    /* COMPACT ULTRA-SLEEK POPOVER SELECTBOX INPUTS & DROPDOWN ITEMS */
+    /* COMPACT ULTRA-SLEEK POPOVER SELECTBOX INPUTS (26px HEIGHT) */
     div[data-testid="stPopoverBody"] div[data-baseweb="select"],
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] > div {
-        border-radius: 8px !important;
-        border: 1.5px solid #CBD5E1 !important;
+        border-radius: 6px !important;
+        border: 1px solid #CBD5E1 !important;
         outline: none !important;
         box-shadow: none !important;
         background: #F8FAFC !important;
-        min-height: 32px !important;
-        height: 32px !important;
+        min-height: 26px !important;
+        height: 26px !important;
+        max-height: 26px !important;
         padding-top: 0px !important;
         padding-bottom: 0px !important;
+        padding-left: 4px !important;
+        padding-right: 4px !important;
     }
     div[data-testid="stPopoverBody"] div[data-baseweb="select"]:focus-within,
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] > div:focus-within {
         border-color: #5E2D91 !important;
-        box-shadow: 0 0 0 3px rgba(94, 45, 145, 0.2) !important;
+        box-shadow: 0 0 0 2px rgba(94, 45, 145, 0.2) !important;
     }
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] *,
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] p,
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] span,
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"] div,
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] input {
-        font-size: 0.80rem !important;
-        font-weight: 750 !important;
-        line-height: 1.2 !important;
+        font-size: 0.72rem !important;
+        font-weight: 700 !important;
+        line-height: 1.1 !important;
         outline: none !important;
         border-color: transparent !important;
     }
+
+    /* REDUCE DROPDOWN OPTION ITEMS */
+    div[data-baseweb="menu"] ul,
     div[data-baseweb="menu"] ul li,
     div[data-baseweb="menu"] ul li * {
-        font-size: 0.80rem !important;
-        padding: 4px 8px !important;
-        font-weight: 750 !important;
+        font-size: 0.72rem !important;
+        padding: 2px 6px !important;
+        min-height: 24px !important;
+        font-weight: 700 !important;
     }
     .period-chip {
-        font-size: 0.75rem !important;
-        padding: 4px 8px !important;
-        margin-top: 6px !important;
-        border-radius: 6px !important;
+        font-size: 0.68rem !important;
+        padding: 2px 6px !important;
+        margin-top: 4px !important;
+        border-radius: 5px !important;
     }
 
     /* 5 ARTISTIC EXECUTIVE GLASS & SHIMMER KPI CARDS (67% Proportional Scale) */
