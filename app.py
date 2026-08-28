@@ -173,9 +173,10 @@ st.markdown("""
         background: #FFFFFF !important;
         border: 2px solid #5E2D91 !important;
         border-top: 4px solid #7B4BB3 !important;
-        border-radius: 13px !important;
-        box-shadow: 0 12px 30px rgba(94, 45, 145, 0.22) !important;
-        padding: 1.0rem !important;
+        border-radius: 14px !important;
+        box-shadow: 0 16px 40px rgba(94, 45, 145, 0.28) !important;
+        padding: 1.2rem !important;
+        overflow: visible !important;
     }
     div[data-testid="stPopoverBody"] label,
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"],
@@ -187,6 +188,26 @@ st.markdown("""
         font-weight: 850 !important;
         font-size: 0.88rem !important;
         letter-spacing: -0.2px !important;
+    }
+
+    /* REMOVE UNWANTED RED/PURPLE CURVE BORDER CLIPPING INSIDE POPOVER SELECTBOXES */
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"],
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"] > div {
+        border-radius: 10px !important;
+        border: 1.5px solid #CBD5E1 !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background: #F8FAFC !important;
+    }
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"]:focus-within,
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"] > div:focus-within {
+        border-color: #5E2D91 !important;
+        box-shadow: 0 0 0 3px rgba(94, 45, 145, 0.2) !important;
+    }
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"] *,
+    div[data-testid="stPopoverBody"] div[data-baseweb="select"] input {
+        outline: none !important;
+        border-color: transparent !important;
     }
 
     /* 5 ARTISTIC EXECUTIVE GLASS & SHIMMER KPI CARDS (67% Proportional Scale) */
