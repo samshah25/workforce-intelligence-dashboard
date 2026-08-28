@@ -34,6 +34,22 @@ st.markdown("""
     div[class*="stAppHeader"] { display: none !important; }
     button[title="View app in Streamlit Community Cloud"] { display: none !important; }
 
+    /* REDUCE TOP PADDING & MOVE ENTIRE WEBSITE UP TO THE VERY TOP EDGE */
+    .block-container,
+    div[data-testid="block-container"],
+    .main .block-container,
+    section.main > div {
+        padding-top: 0.6rem !important;
+        padding-bottom: 1.5rem !important;
+        margin-top: 0px !important;
+    }
+    div[data-testid="stHeader"],
+    header[data-testid="stHeader"] {
+        height: 0px !important;
+        min-height: 0px !important;
+        display: none !important;
+    }
+
     html, body {
         scroll-behavior: smooth !important;
     }
