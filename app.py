@@ -415,7 +415,7 @@ st.markdown("""
         transition: margin-left 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
     }
 
-    /* UNSELECTED PARENT TAB BUTTONS (HUGE COMMANDING EXECUTIVE SCALE - SMOOTH SLIDE & SPRING TRANSITIONS) */
+    /* UNSELECTED PARENT TAB BUTTONS (REFINED EXECUTIVE COMPACT SCALE: 1.05rem FONT) */
     .stTabs button,
     .stTabs button[role="tab"],
     .stTabs [data-baseweb="tab"],
@@ -427,19 +427,19 @@ st.markdown("""
         background: #FFFFFF !important;
         background-color: #FFFFFF !important;
         border: 2px solid #D8B4FE !important;
-        border-radius: 18px !important;
-        padding: 16px 36px !important;
-        min-height: 64px !important;
+        border-radius: 10px !important;
+        padding: 8px 18px !important;
+        min-height: 38px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         margin: 0 !important;
         cursor: pointer !important;
-        box-shadow: 0 6px 18px rgba(94, 45, 145, 0.08) !important;
+        box-shadow: 0 4px 12px rgba(94, 45, 145, 0.08) !important;
         transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
     }
 
-    /* ALL PARENT TAB TEXT (67% PROPORTIONAL SCALE: 1.25rem FONT) */
+    /* ALL PARENT TAB TEXT (REFINED 1.05rem FONT) */
     .stTabs button *,
     .stTabs button p,
     .stTabs button span,
@@ -456,8 +456,8 @@ st.markdown("""
     div[data-testid="stTabs"] [data-baseweb="tab"] p,
     div[data-testid="stTabs"] [data-baseweb="tab"] span,
     div[data-testid="stTabs"] [data-baseweb="tab"] div {
-        font-size: 1.25rem !important;
-        font-weight: 900 !important;
+        font-size: 1.05rem !important;
+        font-weight: 850 !important;
         color: #5E2D91 !important;
         fill: #5E2D91 !important;
         background: transparent !important;
@@ -473,14 +473,14 @@ st.markdown("""
         background-color: #F3E8FF !important;
         border-color: #5E2D91 !important;
         transform: translateY(-2px) !important;
-        box-shadow: 0 8px 20px rgba(94, 45, 145, 0.15) !important;
+        box-shadow: 0 6px 16px rgba(94, 45, 145, 0.15) !important;
     }
     .stTabs button[role="tab"]:hover *,
     div[data-testid="stTabs"] button[role="tab"]:hover * {
         color: #4A1E7A !important;
     }
 
-    /* ACTIVE PARENT TAB BUTTON (SOLID ROYAL PURPLE #5E2D91 BACKGROUND - 67% SCALE: 1.25rem) */
+    /* ACTIVE PARENT TAB BUTTON (SOLID ROYAL PURPLE #5E2D91 BACKGROUND - REFINED SCALE: 1.05rem) */
     .stTabs button[aria-selected="true"],
     .stTabs [data-baseweb="tab"][aria-selected="true"],
     .stTabs [data-testid="stTab"][aria-selected="true"],
@@ -491,11 +491,11 @@ st.markdown("""
         background: #5E2D91 !important;
         background-color: #5E2D91 !important;
         border: 2px solid #5E2D91 !important;
-        border-radius: 12px !important;
-        box-shadow: 0 8px 22px rgba(94, 45, 145, 0.4) !important;
+        border-radius: 10px !important;
+        box-shadow: 0 6px 20px rgba(94, 45, 145, 0.38) !important;
     }
 
-    /* ACTIVE PARENT TAB TEXT (CRISP SOLID WHITE #FFFFFF - 67% SCALE: 1.25rem FONT) */
+    /* ACTIVE PARENT TAB TEXT (CRISP SOLID WHITE #FFFFFF - REFINED 1.05rem FONT) */
     .stTabs button[aria-selected="true"] *,
     .stTabs button[aria-selected="true"] p,
     .stTabs button[aria-selected="true"] span,
@@ -514,8 +514,8 @@ st.markdown("""
     div[data-testid="stTabs"] [data-baseweb="tab"][aria-selected="true"] div {
         color: #FFFFFF !important;
         background: transparent !important;
-        font-size: 1.25rem !important;
-        font-weight: 900 !important;
+        font-size: 1.05rem !important;
+        font-weight: 850 !important;
     }
 
     /* Completely Remove Streamlit Tab List Gray Bottom Border Line & Underlines */
@@ -581,31 +581,31 @@ st.markdown("""
         box-shadow: none !important;
     }
 
-    /* CHILD FILTER SEGMENTED BAR CONTAINER (SOLID PURPLE TRACK - REFINED BALANCED SCALE) */
+    /* CHILD FILTER SEGMENTED BAR CONTAINER (REFINED COMPACT PURPLE TRACK) */
     .stTabs div[data-testid="stRadio"] div[role="radiogroup"] {
-        gap: 5px !important;
+        gap: 4px !important;
         display: flex !important;
         flex-wrap: wrap !important;
         align-items: center !important;
         background: #5E2D91 !important;
-        padding: 4px 5px !important;
-        border-radius: 12px !important;
+        padding: 3px 4px !important;
+        border-radius: 9px !important;
         border: 1.5px solid #4A1E7A !important;
-        margin-top: 5px !important;
-        margin-bottom: 5px !important;
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
         width: fit-content !important;
-        box-shadow: 0 2.5px 10px rgba(94, 45, 145, 0.25) !important;
+        box-shadow: 0 2px 8px rgba(94, 45, 145, 0.22) !important;
     }
 
-    /* UNSELECTED CHILD FILTER OPTIONS (REFINED FONT: 1.12rem - SMOOTH PILL SLIDE TRANSITION) */
+    /* UNSELECTED CHILD FILTER OPTIONS (REFINED ULTRA-COMPACT 0.78rem FONT) */
     .stTabs div[data-testid="stRadio"] div[role="radiogroup"] label {
-        font-size: 1.12rem !important;
+        font-size: 0.78rem !important;
         font-weight: 800 !important;
         color: rgba(255, 255, 255, 0.95) !important;
         background: transparent !important;
         border: 1px solid transparent !important;
-        border-radius: 8.5px !important;
-        padding: 6px 18px !important;
+        border-radius: 5.5px !important;
+        padding: 4px 11px !important;
         opacity: 0.95 !important;
         box-shadow: none !important;
         transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease !important;
@@ -624,7 +624,7 @@ st.markdown("""
         padding: 0 !important;
         margin: 0 !important;
         color: rgba(255, 255, 255, 0.95) !important;
-        font-size: 1.12rem !important;
+        font-size: 0.78rem !important;
         font-weight: 800 !important;
         white-space: nowrap !important;
         display: inline !important;
@@ -633,22 +633,22 @@ st.markdown("""
     .stTabs div[data-testid="stRadio"] div[role="radiogroup"] label:hover {
         opacity: 1.0 !important;
         background: rgba(255, 255, 255, 0.2) !important;
-        border-radius: 8.5px !important;
+        border-radius: 5.5px !important;
         transform: translateY(-1px) !important;
     }
 
-    /* ACTIVE SELECTED CHILD FILTER OPTION (SOLID WHITE PILL WITH PURPLE TEXT & ACTIVE SPRING SLIDE TRANSFORM) */
+    /* ACTIVE SELECTED CHILD FILTER OPTION (SOLID WHITE PILL WITH PURPLE TEXT - 0.78rem FONT) */
     .stTabs div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) {
         background: #FFFFFF !important;
         background-color: #FFFFFF !important;
         color: #5E2D91 !important;
         font-weight: 850 !important;
         opacity: 1.0 !important;
-        border-radius: 8.5px !important;
-        padding: 6px 18px !important;
+        border-radius: 5.5px !important;
+        padding: 4px 11px !important;
         border: 1px solid #FFFFFF !important;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important;
-        transform: translateY(-1.5px) scale(1.025) !important;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18) !important;
+        transform: translateY(-1px) scale(1.02) !important;
         transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease !important;
     }
     .stTabs div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) p,
@@ -657,7 +657,7 @@ st.markdown("""
         color: #5E2D91 !important;
         fill: #5E2D91 !important;
         background: transparent !important;
-        font-size: 1.12rem !important;
+        font-size: 0.78rem !important;
         font-weight: 850 !important;
     }
 
