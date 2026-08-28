@@ -251,15 +251,33 @@ st.markdown("""
     .metric-val-blue { font-size: 2.15rem !important; font-weight: 900 !important; color: #D97706 !important; line-height: 1.05 !important; }
     .badge-bg-blue { background: rgba(254, 243, 199, 0.9) !important; color: #D97706 !important; border: 1px solid #FCD34D !important; font-weight: 850 !important; }
 
-    /* 🟣 Card 4: Active TME (67% Scale) */
+    /* 🟣 Card 4: Active TME / Exited (67% Scale) */
     .kpi-rose {
         background: linear-gradient(135deg, #FFFFFF 35%, #F3E8FF 80%, #E9D5FF 100%) !important;
         border: 1.5px solid #C084FC !important;
         border-top: 4px solid #7E22CE !important;
         box-shadow: 0 6px 18px rgba(126, 34, 206, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
     }
+    .kpi-rose:hover {
+        transform: translateY(-4px) scale(1.015) !important;
+        box-shadow: 0 12px 28px rgba(126, 34, 206, 0.22) !important;
+    }
     .metric-val-rose { font-size: 2.15rem !important; font-weight: 900 !important; color: #7E22CE !important; line-height: 1.05 !important; }
     .badge-bg-rose { background: rgba(243, 232, 255, 0.9) !important; color: #7E22CE !important; border: 1px solid #C084FC !important; font-weight: 850 !important; }
+
+    /* 🌸 Card 5: MoM % Change / QtQ Growth (Artistic Rose Quartz Persona) */
+    .kpi-cyan {
+        background: linear-gradient(135deg, #FFFFFF 35%, #FCE7F3 80%, #FBCFE8 100%) !important;
+        border: 1.5px solid #F472B6 !important;
+        border-top: 4px solid #DB2777 !important;
+        box-shadow: 0 6px 18px rgba(219, 39, 119, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+    }
+    .kpi-cyan:hover {
+        transform: translateY(-4px) scale(1.015) !important;
+        box-shadow: 0 12px 28px rgba(219, 39, 119, 0.22) !important;
+    }
+    .metric-val-cyan { font-size: 2.15rem !important; font-weight: 900 !important; color: #DB2777 !important; line-height: 1.05 !important; }
+    .badge-bg-cyan { background: rgba(252, 231, 243, 0.9) !important; color: #DB2777 !important; border: 1px solid #F472B6 !important; font-weight: 850 !important; }
 
     .metric-lbl-exec {
         font-size: 0.82rem !important;
