@@ -107,25 +107,25 @@ st.markdown("""
         margin-top: 0.3rem !important;
     }
 
-    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (MATCHED TO KEYBOARD FOCUS INDICATOR) */
+    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (REDUCED 0.76rem FONT SIZE) */
     div[data-testid="stPopover"] {
         width: 100% !important;
-        margin-bottom: 1.0rem !important;
+        margin-bottom: 0.8rem !important;
     }
     div[data-testid="stPopover"] button,
     button[data-testid="stPopoverButton"],
     button[data-testid="stBaseButton-secondary"] {
-        border-radius: 10px !important;
-        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05) !important;
-        padding: 0.48rem 0.8rem !important;
-        min-height: 36px !important;
+        border-radius: 9px !important;
+        box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05) !important;
+        padding: 0.35rem 0.6rem !important;
+        min-height: 32px !important;
         width: 100% !important;
         transition: all 0.25s ease !important;
     }
     div[data-testid="stPopover"] button:hover,
     button[data-testid="stPopoverButton"]:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12) !important;
+        transform: translateY(-1.5px) !important;
+        box-shadow: 0 5px 14px rgba(15, 23, 42, 0.12) !important;
     }
     div[data-testid="stPopover"] button *,
     button[data-testid="stPopoverButton"] *,
@@ -133,8 +133,8 @@ st.markdown("""
     button[data-testid="stPopoverButton"] span,
     button[data-testid="stPopoverButton"] div,
     button[data-testid="stPopoverButton"] svg {
-        font-weight: 850 !important;
-        font-size: 0.88rem !important;
+        font-weight: 800 !important;
+        font-size: 0.76rem !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
@@ -153,9 +153,9 @@ st.markdown("""
             linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%) !important;
         background-color: #E2E8F0 !important;
         border: 1.5px solid #CBD5E1 !important;
-        border-top: 4px solid #1E293B !important;
+        border-top: 3.5px solid #1E293B !important;
         color: #0F172A !important;
-        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
+        box-shadow: 0 3px 10px rgba(15, 23, 42, 0.08) !important;
     }
     div[data-testid="column"] div[data-testid="stPopover"] button *,
     div[data-testid="column"] button[data-testid="stPopoverButton"] *,
@@ -166,17 +166,17 @@ st.markdown("""
     button[data-testid="stPopoverButton"] * {
         color: #0F172A !important;
         fill: #0F172A !important;
-        font-weight: 900 !important;
+        font-weight: 850 !important;
     }
 
-    /* RESTORE ORIGINAL MATCHING WIDTH, REDUCE VERTICAL LENGTH & HEIGHT ONLY */
+    /* POPOVER BODY CONTAINER - CONTAIN PERIOD CHIP FULLY INSIDE WHITE CARD */
     div[data-testid="stPopoverBody"] {
         background: #FFFFFF !important;
         border: 2px solid #5E2D91 !important;
         border-top: 3.5px solid #7B4BB3 !important;
         border-radius: 11px !important;
         box-shadow: 0 12px 30px rgba(94, 45, 145, 0.25) !important;
-        padding: 0.35rem 0.65rem !important;
+        padding: 0.45rem 0.65rem 0.65rem 0.65rem !important;
         overflow: visible !important;
     }
 
@@ -184,7 +184,7 @@ st.markdown("""
     div[data-testid="stPopoverBody"] div[data-testid="stVerticalBlock"],
     div[data-testid="stPopoverBody"] div[data-testid="stVerticalBlock"] > div,
     div[data-testid="stPopoverBody"] div[data-testid="stSelectbox"] {
-        gap: 0.25rem !important;
+        gap: 0.2rem !important;
         margin-bottom: 0px !important;
         padding-bottom: 0px !important;
     }
@@ -198,9 +198,9 @@ st.markdown("""
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"] span {
         color: #5E2D91 !important;
         font-weight: 800 !important;
-        font-size: 0.70rem !important;
+        font-size: 0.68rem !important;
         letter-spacing: -0.2px !important;
-        margin-bottom: 0.15rem !important;
+        margin-bottom: 0.1rem !important;
         line-height: 1.1 !important;
     }
 
@@ -230,7 +230,7 @@ st.markdown("""
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] span,
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] div,
     div[data-testid="stPopoverBody"] div[data-baseweb="select"] input {
-        font-size: 0.72rem !important;
+        font-size: 0.70rem !important;
         font-weight: 700 !important;
         line-height: 1.1 !important;
         outline: none !important;
@@ -241,16 +241,26 @@ st.markdown("""
     div[data-baseweb="menu"] ul,
     div[data-baseweb="menu"] ul li,
     div[data-baseweb="menu"] ul li * {
-        font-size: 0.72rem !important;
+        font-size: 0.70rem !important;
         padding: 2px 6px !important;
         min-height: 24px !important;
         font-weight: 700 !important;
     }
+
+    /* PERIOD CHIP STYLED TO FIT CLEANLY INSIDE POPOVER BOX */
     .period-chip {
+        display: inline-block !important;
         font-size: 0.68rem !important;
+        font-weight: 750 !important;
         padding: 2px 6px !important;
         margin-top: 4px !important;
+        margin-bottom: 2px !important;
         border-radius: 5px !important;
+        background: #E0F2FE !important;
+        color: #0284C7 !important;
+        border: 1px solid #7DD3FC !important;
+        white-space: nowrap !important;
+        box-sizing: border-box !important;
     }
 
     /* 5 ARTISTIC EXECUTIVE GLASS & SHIMMER KPI CARDS (67% Proportional Scale) */
