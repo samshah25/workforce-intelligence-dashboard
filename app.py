@@ -57,46 +57,46 @@ st.markdown("""
         border-radius: 10px !important;
     }
 
-    /* Executive Command Hero Header (Silky Smooth Imperial Purple Gradient) */
+    /* Executive Command Hero Header (Silky Smooth Imperial Purple Gradient - 67% Proportional Scale) */
     .command-hero-header {
         position: relative;
         background: linear-gradient(135deg, #4A1D75 0%, #5E2D91 40%, #7B4BB3 75%, #3B1C63 100%) !important;
-        padding: 2.4rem 3.2rem;
-        border-radius: 20px;
+        padding: 1.4rem 2.2rem !important;
+        border-radius: 14px !important;
         color: #FFFFFF !important;
-        margin-bottom: 2rem;
-        box-shadow: 0 20px 50px rgba(94, 45, 145, 0.38), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+        margin-bottom: 1.4rem !important;
+        box-shadow: 0 14px 35px rgba(94, 45, 145, 0.38), inset 0 1px 2px rgba(255, 255, 255, 0.3);
         border: 1.5px solid rgba(255, 255, 255, 0.28);
         overflow: hidden;
     }
-    .command-hero-header::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 4.5px;
-        background: linear-gradient(90deg, #5E2D91 0%, #9B59B6 35%, #C58BA5 70%, #7B4BB3 100%);
+    .command-hero-header h1 {
+        font-size: 1.65rem !important;
+        font-weight: 900 !important;
+        margin: 0 !important;
+    }
+    .command-hero-header p {
+        font-size: 0.88rem !important;
+        margin-top: 0.3rem !important;
     }
 
-    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (NON-PURPLE HARMONIOUS PASTEL CORNER WASHES) */
+    /* 4-CATEGORY DROPDOWN POPOVER HEADER TRIGGERS (67% Proportional Scale) */
     div[data-testid="stPopover"] {
         width: 100% !important;
-        margin-bottom: 1.5rem !important;
+        margin-bottom: 1.0rem !important;
     }
     div[data-testid="stPopover"] button,
     button[data-testid="stPopoverButton"],
     button[data-testid="stBaseButton-secondary"] {
-        border-radius: 16px !important;
+        border-radius: 11px !important;
         box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05) !important;
-        padding: 0.95rem 1.2rem !important;
+        padding: 0.65rem 0.9rem !important;
         width: 100% !important;
         transition: all 0.25s ease !important;
     }
     div[data-testid="stPopover"] button:hover,
     button[data-testid="stPopoverButton"]:hover {
-        transform: translateY(-3px) !important;
-        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12) !important;
     }
     div[data-testid="stPopover"] button *,
     button[data-testid="stPopoverButton"] *,
@@ -105,7 +105,7 @@ st.markdown("""
     button[data-testid="stPopoverButton"] div,
     button[data-testid="stPopoverButton"] svg {
         font-weight: 850 !important;
-        font-size: 1.3rem !important;
+        font-size: 0.95rem !important;
         white-space: nowrap !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
@@ -124,7 +124,7 @@ st.markdown("""
             linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%) !important;
         background-color: #E2E8F0 !important;
         border: 1.5px solid #CBD5E1 !important;
-        border-top: 5px solid #1E293B !important;
+        border-top: 4px solid #1E293B !important;
         color: #0F172A !important;
         box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
     }
@@ -140,14 +140,14 @@ st.markdown("""
         font-weight: 900 !important;
     }
 
-    /* Floating Popover Container Body Titles & Widget Section Labels (#5E2D91 Imperial Purple) */
+    /* Floating Popover Container Body Titles & Widget Section Labels */
     div[data-testid="stPopoverBody"] {
         background: #FFFFFF !important;
         border: 2px solid #5E2D91 !important;
-        border-top: 5px solid #7B4BB3 !important;
-        border-radius: 18px !important;
-        box-shadow: 0 16px 40px rgba(94, 45, 145, 0.22) !important;
-        padding: 1.4rem !important;
+        border-top: 4px solid #7B4BB3 !important;
+        border-radius: 13px !important;
+        box-shadow: 0 12px 30px rgba(94, 45, 145, 0.22) !important;
+        padding: 1.0rem !important;
     }
     div[data-testid="stPopoverBody"] label,
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"],
@@ -157,14 +157,14 @@ st.markdown("""
     div[data-testid="stPopoverBody"] [data-testid="stWidgetLabel"] span {
         color: #5E2D91 !important;
         font-weight: 850 !important;
-        font-size: 1.15rem !important;
+        font-size: 0.88rem !important;
         letter-spacing: -0.2px !important;
     }
 
-    /* 5 ARTISTIC EXECUTIVE GLASS & SHIMMER KPI CARDS WITH CORNER WATERMARKS */
+    /* 5 ARTISTIC EXECUTIVE GLASS & SHIMMER KPI CARDS (67% Proportional Scale) */
     .metric-card-exec {
-        border-radius: 20px !important;
-        padding: 1.6rem 1.4rem 1.4rem 1.6rem !important;
+        border-radius: 14px !important;
+        padding: 1.1rem 1.0rem 1.0rem 1.1rem !important;
         text-align: left !important;
         position: relative !important;
         overflow: hidden !important;
@@ -174,10 +174,10 @@ st.markdown("""
     .metric-card-exec::before {
         content: '';
         position: absolute;
-        top: -30px;
-        right: -30px;
-        width: 120px;
-        height: 120px;
+        top: -20px;
+        right: -20px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 75%);
         pointer-events: none;
@@ -193,153 +193,108 @@ st.markdown("""
         pointer-events: none;
     }
 
-    /* 🔵 Card 1: Headcount (Artistic Ocean Cyan Persona) */
+    /* 🔵 Card 1: Headcount (67% Scale) */
     .kpi-emerald {
         background: linear-gradient(135deg, #FFFFFF 35%, #E0F2FE 80%, #BAE6FD 100%) !important;
         border: 1.5px solid #7DD3FC !important;
-        border-top: 5px solid #0284C7 !important;
-        box-shadow: 0 8px 24px rgba(2, 132, 199, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+        border-top: 4px solid #0284C7 !important;
+        box-shadow: 0 6px 18px rgba(2, 132, 199, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
     }
-    .kpi-emerald:hover {
-        transform: translateY(-6px) scale(1.02) !important;
-        box-shadow: 0 16px 36px rgba(2, 132, 199, 0.22), inset 0 1px 1px rgba(255, 255, 255, 1.0) !important;
-    }
-    .metric-val-emerald { font-size: 3.2rem !important; font-weight: 900 !important; color: #0284C7 !important; line-height: 1.05 !important; text-shadow: 0 2px 4px rgba(2, 132, 199, 0.12) !important; }
+    .metric-val-emerald { font-size: 2.15rem !important; font-weight: 900 !important; color: #0284C7 !important; line-height: 1.05 !important; }
     .badge-bg-emerald { background: rgba(224, 242, 254, 0.9) !important; color: #0284C7 !important; border: 1px solid #7DD3FC !important; font-weight: 850 !important; }
 
-    /* 🟢 Card 2: Active JDA / Joiners (Artistic Nordic Emerald Persona) */
+    /* 🟢 Card 2: Active JDA (67% Scale) */
     .kpi-orange {
         background: linear-gradient(135deg, #FFFFFF 35%, #D1FAE5 80%, #A7F3D0 100%) !important;
         border: 1.5px solid #6EE7B7 !important;
-        border-top: 5px solid #059669 !important;
-        box-shadow: 0 8px 24px rgba(5, 150, 105, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+        border-top: 4px solid #059669 !important;
+        box-shadow: 0 6px 18px rgba(5, 150, 105, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
     }
-    .kpi-orange:hover {
-        transform: translateY(-6px) scale(1.02) !important;
-        box-shadow: 0 16px 36px rgba(5, 150, 105, 0.22), inset 0 1px 1px rgba(255, 255, 255, 1.0) !important;
-    }
-    .metric-val-orange { font-size: 3.2rem !important; font-weight: 900 !important; color: #059669 !important; line-height: 1.05 !important; text-shadow: 0 2px 4px rgba(5, 150, 105, 0.12) !important; }
+    .metric-val-orange { font-size: 2.15rem !important; font-weight: 900 !important; color: #059669 !important; line-height: 1.05 !important; }
     .badge-bg-orange { background: rgba(209, 250, 229, 0.9) !important; color: #059669 !important; border: 1px solid #6EE7B7 !important; font-weight: 850 !important; }
 
-    /* 🟠 Card 3: Active ME / YoY (Artistic Sunrise Amber Persona) */
+    /* 🟠 Card 3: Active ME (67% Scale) */
     .kpi-blue {
         background: linear-gradient(135deg, #FFFFFF 35%, #FEF3C7 80%, #FDE68A 100%) !important;
         border: 1.5px solid #FCD34D !important;
-        border-top: 5px solid #D97706 !important;
-        box-shadow: 0 8px 24px rgba(217, 119, 6, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+        border-top: 4px solid #D97706 !important;
+        box-shadow: 0 6px 18px rgba(217, 119, 6, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
     }
-    .kpi-blue:hover {
-        transform: translateY(-6px) scale(1.02) !important;
-        box-shadow: 0 16px 36px rgba(217, 119, 6, 0.22), inset 0 1px 1px rgba(255, 255, 255, 1.0) !important;
-    }
-    .metric-val-blue { font-size: 3.2rem !important; font-weight: 900 !important; color: #D97706 !important; line-height: 1.05 !important; text-shadow: 0 2px 4px rgba(217, 119, 6, 0.12) !important; }
+    .metric-val-blue { font-size: 2.15rem !important; font-weight: 900 !important; color: #D97706 !important; line-height: 1.05 !important; }
     .badge-bg-blue { background: rgba(254, 243, 199, 0.9) !important; color: #D97706 !important; border: 1px solid #FCD34D !important; font-weight: 850 !important; }
 
-    /* 🟣 Card 4: Active TME / Exited (Artistic Royal Amethyst Persona) */
+    /* 🟣 Card 4: Active TME (67% Scale) */
     .kpi-rose {
         background: linear-gradient(135deg, #FFFFFF 35%, #F3E8FF 80%, #E9D5FF 100%) !important;
         border: 1.5px solid #C084FC !important;
-        border-top: 5px solid #7E22CE !important;
-        box-shadow: 0 8px 24px rgba(126, 34, 206, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+        border-top: 4px solid #7E22CE !important;
+        box-shadow: 0 6px 18px rgba(126, 34, 206, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
     }
-    .kpi-rose:hover {
-        transform: translateY(-6px) scale(1.02) !important;
-        box-shadow: 0 16px 36px rgba(126, 34, 206, 0.22), inset 0 1px 1px rgba(255, 255, 255, 1.0) !important;
-    }
-    .metric-val-rose { font-size: 3.2rem !important; font-weight: 900 !important; color: #7E22CE !important; line-height: 1.05 !important; text-shadow: 0 2px 4px rgba(126, 34, 206, 0.12) !important; }
+    .metric-val-rose { font-size: 2.15rem !important; font-weight: 900 !important; color: #7E22CE !important; line-height: 1.05 !important; }
     .badge-bg-rose { background: rgba(243, 232, 255, 0.9) !important; color: #7E22CE !important; border: 1px solid #C084FC !important; font-weight: 850 !important; }
 
-    /* 🌸 Card 5: MoM / QtQ Growth (Artistic Rose Quartz Persona) */
-    .kpi-cyan {
-        background: linear-gradient(135deg, #FFFFFF 35%, #FCE7F3 80%, #FBCFE8 100%) !important;
-        border: 1.5px solid #F472B6 !important;
-        border-top: 5px solid #DB2777 !important;
-        box-shadow: 0 8px 24px rgba(219, 39, 119, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
-    }
-    .kpi-cyan:hover {
-        transform: translateY(-6px) scale(1.02) !important;
-        box-shadow: 0 16px 36px rgba(219, 39, 119, 0.22), inset 0 1px 1px rgba(255, 255, 255, 1.0) !important;
-    }
-    .metric-val-cyan { font-size: 3.2rem !important; font-weight: 900 !important; color: #DB2777 !important; line-height: 1.05 !important; text-shadow: 0 2px 4px rgba(219, 39, 119, 0.12) !important; }
-    .badge-bg-cyan { background: rgba(252, 231, 243, 0.9) !important; color: #DB2777 !important; border: 1px solid #F472B6 !important; font-weight: 850 !important; }
-
     .metric-lbl-exec {
-        font-size: 1.1rem !important;
+        font-size: 0.82rem !important;
         color: #475569 !important;
         font-weight: 850 !important;
-        margin-top: 6px !important;
+        margin-top: 4px !important;
         text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
+        letter-spacing: 0.4px !important;
     }
     .metric-badge-exec {
         display: inline-block !important;
-        font-size: 0.92rem !important;
+        font-size: 0.72rem !important;
         font-weight: 800 !important;
-        padding: 4px 14px !important;
-        border-radius: 12px !important;
-        margin-top: 8px !important;
+        padding: 3px 10px !important;
+        border-radius: 10px !important;
+        margin-top: 6px !important;
     }
 
-    /* Executive Tables (Midnight Sapphire Header) */
+    /* Executive Tables (67% Scale) */
     .custom-table-card {
         background: #FFFFFF !important;
-        border-radius: 16px !important;
-        padding: 1.4rem !important;
+        border-radius: 12px !important;
+        padding: 1.0rem !important;
         border: 1.5px solid #CBD5E1 !important;
-        box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04) !important;
-        margin-bottom: 2rem !important;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04) !important;
+        margin-bottom: 1.5rem !important;
         overflow-x: auto !important;
     }
     .custom-table {
         width: 100% !important;
         border-collapse: separate !important;
         border-spacing: 0 !important;
-        border-radius: 12px !important;
+        border-radius: 9px !important;
         overflow: hidden !important;
-        font-size: 1.1rem !important;
+        font-size: 0.88rem !important;
     }
     .custom-table th {
         background: linear-gradient(90deg, #5E2D91 0%, #0F172A 100%) !important;
         color: #FFFFFF !important;
         font-weight: 800 !important;
-        padding: 16px 20px !important;
+        padding: 10px 14px !important;
         text-align: center !important;
         border-bottom: 2px solid #38BDF8 !important;
-        font-size: 1.1rem !important;
+        font-size: 0.88rem !important;
         text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
+        letter-spacing: 0.4px !important;
     }
     .custom-table td {
-        padding: 14px 20px !important;
+        padding: 9px 14px !important;
         text-align: center !important;
         border-bottom: 1px solid #E2E8F0 !important;
         color: #0F172A !important;
         font-weight: 750 !important;
-        font-size: 1.1rem !important;
-    }
-    .custom-table tr:nth-child(odd) td {
-        background-color: #FFFFFF !important;
-    }
-    .custom-table tr:nth-child(even) td {
-        background-color: #F8FAFC !important;
-    }
-    .custom-table tr:hover td {
-        background-color: #E0F2FE !important;
-        color: #0369A1 !important;
+        font-size: 0.88rem !important;
     }
     .custom-table tr.total-row td {
         background-color: #E0F2FE !important;
         color: #0369A1 !important;
         font-weight: 850 !important;
-        font-size: 1.15rem !important;
+        font-size: 0.92rem !important;
         border-top: 2px solid #0284C7 !important;
     }
 
-    /* Export & Download Section */
-    .export-footer {
-        background-color: #F8FAFC !important;
-        backdrop-filter: blur(12px);
-        border: 1.5px solid #CBD5E1;
         border-top: 4px solid #0F172A;
         border-radius: 20px;
         padding: 2.0rem 2.6rem;
@@ -484,7 +439,7 @@ st.markdown("""
         transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
     }
 
-    /* ALL PARENT TAB TEXT (BOTH SELECTED & NON-SELECTED HUGE 1.85rem FONT) */
+    /* ALL PARENT TAB TEXT (67% PROPORTIONAL SCALE: 1.25rem FONT) */
     .stTabs button *,
     .stTabs button p,
     .stTabs button span,
@@ -501,7 +456,7 @@ st.markdown("""
     div[data-testid="stTabs"] [data-baseweb="tab"] p,
     div[data-testid="stTabs"] [data-baseweb="tab"] span,
     div[data-testid="stTabs"] [data-baseweb="tab"] div {
-        font-size: 1.85rem !important;
+        font-size: 1.25rem !important;
         font-weight: 900 !important;
         color: #5E2D91 !important;
         fill: #5E2D91 !important;
@@ -525,7 +480,7 @@ st.markdown("""
         color: #4A1E7A !important;
     }
 
-    /* ACTIVE PARENT TAB BUTTON (SOLID ROYAL PURPLE #5E2D91 BACKGROUND - HUGE COMMANDING SCALE: 1.85rem) */
+    /* ACTIVE PARENT TAB BUTTON (SOLID ROYAL PURPLE #5E2D91 BACKGROUND - 67% SCALE: 1.25rem) */
     .stTabs button[aria-selected="true"],
     .stTabs [data-baseweb="tab"][aria-selected="true"],
     .stTabs [data-testid="stTab"][aria-selected="true"],
@@ -536,11 +491,11 @@ st.markdown("""
         background: #5E2D91 !important;
         background-color: #5E2D91 !important;
         border: 2px solid #5E2D91 !important;
-        border-radius: 18px !important;
-        box-shadow: 0 10px 28px rgba(94, 45, 145, 0.4) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 8px 22px rgba(94, 45, 145, 0.4) !important;
     }
 
-    /* ACTIVE PARENT TAB TEXT (CRISP SOLID WHITE #FFFFFF - HUGE COMMANDING FONT: 1.85rem) */
+    /* ACTIVE PARENT TAB TEXT (CRISP SOLID WHITE #FFFFFF - 67% SCALE: 1.25rem FONT) */
     .stTabs button[aria-selected="true"] *,
     .stTabs button[aria-selected="true"] p,
     .stTabs button[aria-selected="true"] span,
@@ -559,7 +514,7 @@ st.markdown("""
     div[data-testid="stTabs"] [data-baseweb="tab"][aria-selected="true"] div {
         color: #FFFFFF !important;
         background: transparent !important;
-        font-size: 1.85rem !important;
+        font-size: 1.25rem !important;
         font-weight: 900 !important;
     }
 
