@@ -22,17 +22,44 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-    /* HIDE ALL STREAMLIT WATERMARKS, FOOTERS, HEADERS, MENU & DEPLOY BUTTONS */
-    #MainMenu { visibility: hidden !important; display: none !important; }
-    header { visibility: hidden !important; display: none !important; }
-    footer { visibility: hidden !important; display: none !important; }
-    div[data-testid="stDecoration"] { display: none !important; }
-    div[data-testid="stHeader"] { display: none !important; }
-    div[data-testid="stStatusWidget"] { display: none !important; }
-    .viewerBadge_container__1QSob { display: none !important; }
-    div[class*="viewerBadge"] { display: none !important; }
-    div[class*="stAppHeader"] { display: none !important; }
-    button[title="View app in Streamlit Community Cloud"] { display: none !important; }
+    /* ABSOLUTE MOBILE & DESKTOP FOOTER, WATERMARK, HEADER & MENU REMOVAL */
+    #MainMenu, 
+    header, 
+    footer, 
+    .stAppFooter,
+    [data-testid="stFooter"],
+    [data-testid="stHeader"],
+    [data-testid="stDecoration"],
+    [data-testid="stStatusWidget"],
+    [data-testid="stToolbar"],
+    [data-testid="stActionButton"],
+    [data-testid="stElementToolbar"],
+    [data-testid="stBottomBlockContainer"],
+    .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1y-5g,
+    div[class*="viewerBadge"],
+    div[class*="stAppHeader"],
+    div[class*="stFooter"],
+    footer[class*="stFooter"],
+    a[href*="streamlit.io"],
+    a[href*="streamlit.app"],
+    .stDeployButton,
+    button[title="View app in Streamlit Community Cloud"],
+    button[title*="Streamlit"],
+    div[class*="stDeployButton"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0px !important;
+        min-height: 0px !important;
+        max-height: 0px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        pointer-events: none !important;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+    }
 
     /* REDUCE TOP PADDING & MOVE ENTIRE WEBSITE UP TO THE VERY TOP EDGE */
     .block-container,
@@ -979,6 +1006,23 @@ components.html("""
             setTimeout(forcePageToTopOnRefresh, 50);
             setTimeout(forcePageToTopOnRefresh, 150);
             setTimeout(forcePageToTopOnRefresh, 400);
+
+            // AGGRESSIVE MOBILE FOOTER & WATERMARK REMOVER FOR ALL PHONES & TABLETS
+            function removeMobileFooters() {
+                try {
+                    var footers = targetDoc.querySelectorAll('footer, [data-testid="stFooter"], .stAppFooter, div[class*="stFooter"], div[class*="viewerBadge"], a[href*="streamlit.io"], a[href*="streamlit.app"], .stDeployButton, [data-testid="stToolbar"]');
+                    footers.forEach(function(f) {
+                        f.style.setProperty('display', 'none', 'important');
+                        f.remove();
+                    });
+                    var headers = targetDoc.querySelectorAll('header, [data-testid="stHeader"], [data-testid="stDecoration"]');
+                    headers.forEach(function(h) {
+                        h.style.setProperty('display', 'none', 'important');
+                        h.style.setProperty('height', '0px', 'important');
+                    });
+                } catch(err) {}
+            }
+            setInterval(removeMobileFooters, 100);
 
             function alignChildFilterBar() {
                 try {
