@@ -451,8 +451,8 @@ st.markdown("""
         border: none !important;
         box-shadow: none !important;
         padding: 0 !important;
-        margin-top: 1.5rem !important;
-        margin-bottom: 1.5rem !important;
+        margin-top: 0.4rem !important;
+        margin-bottom: 0.6rem !important;
     }
 
     div[data-testid="stTabContent"] {
@@ -468,14 +468,14 @@ st.markdown("""
     div[data-testid="stTabs"] [role="tablist"],
     div[data-testid="stTabs"] [data-baseweb="tab-list"],
     div[role="tablist"] {
-        gap: 12px !important;
+        gap: 10px !important;
         background: transparent !important;
         background-color: transparent !important;
         border: none !important;
         border-radius: 0 !important;
         padding: 0 !important;
-        margin-top: 0.8rem !important;
-        margin-bottom: 0.4rem !important;
+        margin-top: 0.2rem !important;
+        margin-bottom: 0.25rem !important;
         box-shadow: none !important;
         width: fit-content !important;
         max-width: 100% !important;
@@ -519,7 +519,7 @@ st.markdown("""
         border-radius: 0 !important;
         padding: 0 !important;
         margin-top: 0 !important;
-        margin-bottom: 1.2rem !important;
+        margin-bottom: 0.45rem !important;
         box-shadow: none !important;
         width: fit-content !important;
         max-width: 100% !important;
