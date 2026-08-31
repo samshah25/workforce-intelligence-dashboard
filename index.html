@@ -34,7 +34,10 @@
             padding: 0.6rem 1.8rem 2rem 1.8rem;
         }
 
-        :focus-visible {
+        :focus-visible,
+        button:focus-visible,
+        select:focus-visible,
+        input:focus-visible {
             outline: 3px solid var(--purple-main) !important;
             outline-offset: 2.5px !important;
             box-shadow: 0 0 0 5px rgba(94, 45, 145, 0.25) !important;
@@ -112,7 +115,7 @@
             border-top: 3.5px solid var(--purple-light);
             border-radius: 11px;
             box-shadow: 0 12px 30px rgba(94, 45, 145, 0.25);
-            padding: 0.5rem 0.75rem 0.9rem 0.75rem;
+            padding: 0.5rem 0.75rem 1.1rem 0.75rem;
             overflow: visible;
         }
 
@@ -127,7 +130,7 @@
             color: var(--purple-main);
             font-weight: 800;
             font-size: 0.68rem;
-            margin-bottom: 0.15rem;
+            margin-bottom: 0.1rem;
             text-transform: uppercase;
         }
 
@@ -137,7 +140,7 @@
             border-radius: 6px;
             border: 1px solid #CBD5E1;
             background: #F8FAFC;
-            font-size: 0.72rem;
+            font-size: 0.70rem;
             font-weight: 700;
             padding: 0 4px;
             color: #0F172A;
@@ -158,7 +161,8 @@
             background: transparent;
             border: none;
             padding: 4px 0px 2px 0px;
-            margin-top: 4px;
+            margin-top: 6px;
+            margin-bottom: 2px;
             white-space: nowrap;
         }
 
@@ -415,7 +419,7 @@
 
     <!-- 4 Scope Filter Header Cards -->
     <div class="filter-header-grid">
-        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-time')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-time')" tabindex="0">
             <span>🗓️ <span id="txt-time">Time Period (Aug 2026)</span></span> <span>▾</span>
             <div class="popover-menu" id="pop-time" onclick="event.stopPropagation()">
                 <div class="popover-group">
@@ -445,11 +449,20 @@
                         <option value="April">April</option>
                     </select>
                 </div>
+                <div class="popover-group" id="grp-quarter" style="display:none;">
+                    <label>Quarter</label>
+                    <select id="sel-quarter" onchange="applyFilters()">
+                        <option value="Q3 (Jul-Sep)" selected>Q3 (Jul-Sep)</option>
+                        <option value="Q2 (Apr-Jun)">Q2 (Apr-Jun)</option>
+                        <option value="Q1 (Jan-Mar)">Q1 (Jan-Mar)</option>
+                        <option value="Q4 (Oct-Dec)">Q4 (Oct-Dec)</option>
+                    </select>
+                </div>
                 <div class="period-chip" id="txt-period-chip">📅 01 Aug 2026 to 31 Aug 2026</div>
             </div>
         </div>
 
-        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-emp')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-emp')" tabindex="0">
             <span>👤 <span id="txt-emp">Employee (All EmpTypes)</span></span> <span>▾</span>
             <div class="popover-menu" id="pop-emp" onclick="event.stopPropagation()">
                 <div class="popover-group">
@@ -464,7 +477,7 @@
             </div>
         </div>
 
-        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-branch')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-branch')" tabindex="0">
             <span>🏢 <span id="txt-branch">Branch (All 11 Cities)</span></span> <span>▾</span>
             <div class="popover-menu" id="pop-branch" onclick="event.stopPropagation()">
                 <div class="popover-group">
@@ -484,7 +497,7 @@
             </div>
         </div>
 
-        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-team')">
+        <div class="filter-card-trigger" onclick="togglePopover(event, 'pop-team')" tabindex="0">
             <span>👥 <span id="txt-team">Team (All Teams)</span></span> <span>▾</span>
             <div class="popover-menu" id="pop-team" onclick="event.stopPropagation()">
                 <div class="popover-group">
@@ -503,27 +516,27 @@
 
     <!-- Executive KPI Cards -->
     <div class="kpi-container">
-        <div class="kpi-card-exec emerald">
+        <div class="kpi-card-exec emerald" id="kpi-card-1">
             <div class="metric-val" id="kpi-val-1">599</div>
             <div class="kpi-lbl" id="kpi-lbl-1">HEADCOUNT</div>
             <div class="badge-pill" id="kpi-badge-1">■ Total Active</div>
         </div>
-        <div class="kpi-card-exec orange">
+        <div class="kpi-card-exec orange" id="kpi-card-2">
             <div class="metric-val" id="kpi-val-2">162</div>
             <div class="kpi-lbl" id="kpi-lbl-2">ACTIVE JDA</div>
             <div class="badge-pill" id="kpi-badge-2">■ Active JDA</div>
         </div>
-        <div class="kpi-card-exec blue">
+        <div class="kpi-card-exec blue" id="kpi-card-3">
             <div class="metric-val" id="kpi-val-3">190</div>
             <div class="kpi-lbl" id="kpi-lbl-3">ACTIVE ME</div>
             <div class="badge-pill" id="kpi-badge-3">■ Active ME</div>
         </div>
-        <div class="kpi-card-exec rose">
+        <div class="kpi-card-exec rose" id="kpi-card-4">
             <div class="metric-val" id="kpi-val-4">247</div>
             <div class="kpi-lbl" id="kpi-lbl-4">ACTIVE TME</div>
             <div class="badge-pill" id="kpi-badge-4">■ Active TME</div>
         </div>
-        <div class="kpi-card-exec cyan">
+        <div class="kpi-card-exec cyan" id="kpi-card-5">
             <div class="metric-val" id="kpi-val-5">+12.3%</div>
             <div class="kpi-lbl" id="kpi-lbl-5">YOY % CHANGE</div>
             <div class="badge-pill" id="kpi-badge-5">■ Year-over-Year</div>
@@ -539,23 +552,23 @@
 
     <!-- Child Segmented Control Bar (Headcount Tab) -->
     <div class="child-filter-bar" id="child-bar-headcount">
-        <button class="child-pill active" onclick="switchHeadcountSubView('branch', this)">Pan India / Branch Summary</button>
-        <button class="child-pill" onclick="switchHeadcountSubView('team', this)">Team Type Summary</button>
+        <button class="child-pill active" onclick="switchHeadcountSubView('branch', this)" tabindex="0">Pan India / Branch Summary</button>
+        <button class="child-pill" onclick="switchHeadcountSubView('team', this)" tabindex="0">Team Type Summary</button>
     </div>
 
     <!-- Child Segmented Control Bar (Tenure Tab) -->
     <div class="child-filter-bar" id="child-bar-tenure" style="display:none;">
-        <button class="child-pill active" onclick="switchTenureSubView('overall', this)">Overall Tenure</button>
-        <button class="child-pill" onclick="switchTenureSubView('branch', this)">Branch-Wise Tenure</button>
-        <button class="child-pill" onclick="switchTenureSubView('team', this)">Team-Wise Tenure</button>
+        <button class="child-pill active" onclick="switchTenureSubView('overall', this)" tabindex="0">Overall Tenure</button>
+        <button class="child-pill" onclick="switchTenureSubView('branch', this)" tabindex="0">Branch-Wise Tenure</button>
+        <button class="child-pill" onclick="switchTenureSubView('team', this)" tabindex="0">Team-Wise Tenure</button>
     </div>
 
     <!-- Child Segmented Control Bar (Drill-Down Tab) -->
     <div class="child-filter-bar" id="child-bar-drilldown" style="display:none;">
-        <button class="child-pill active" onclick="switchDrillSubView('list', this)">🔍 Searchable Employee List</button>
-        <button class="child-pill" onclick="switchDrillSubView('branch', this)">🏢 Branch List</button>
-        <button class="child-pill" onclick="switchDrillSubView('team', this)">👥 Team List</button>
-        <button class="child-pill" onclick="switchDrillSubView('exited', this)">🚪 Exited Employees</button>
+        <button class="child-pill active" onclick="switchDrillSubView('list', this)" tabindex="0">🔍 Searchable Employee List</button>
+        <button class="child-pill" onclick="switchDrillSubView('branch', this)" tabindex="0">🏢 Branch List</button>
+        <button class="child-pill" onclick="switchDrillSubView('team', this)" tabindex="0">👥 Team List</button>
+        <button class="child-pill" onclick="switchDrillSubView('exited', this)" tabindex="0">🚪 Exited Employees</button>
     </div>
 
     <!-- Tab Panel 1: Headcount -->
@@ -614,7 +627,7 @@
     </div>
 
     <script>
-        // Sample City Data Registry
+        // Sample City Data Registry matching app_palette8.py
         var branchData = [
             { city: 'Bangalore', total: 110, jda: 30, me: 35, tme: 45 },
             { city: 'Mumbai', total: 98, jda: 26, me: 31, tme: 41 },
@@ -665,6 +678,27 @@
         function onTimeModeChange() {
             var mode = document.getElementById('sel-time-mode').value;
             document.getElementById('txt-time').innerText = 'Time Period (' + mode + ')';
+            
+            if (mode === 'Quarterly') {
+                document.getElementById('grp-month').style.display = 'none';
+                document.getElementById('grp-quarter').style.display = 'block';
+                document.getElementById('txt-period-chip').innerText = '📊 01 Jul 2026 to 30 Sep 2026';
+            } else if (mode === 'Yearly') {
+                document.getElementById('grp-month').style.display = 'none';
+                document.getElementById('grp-quarter').style.display = 'none';
+                document.getElementById('txt-period-chip').innerText = '📆 01 Jan 2026 to 31 Dec 2026';
+            } else if (mode === 'Today') {
+                document.getElementById('grp-month').style.display = 'none';
+                document.getElementById('grp-quarter').style.display = 'none';
+                document.getElementById('grp-year').style.display = 'none';
+                document.getElementById('txt-period-chip').innerText = '📍 Today (28 Aug 2026)';
+            } else {
+                document.getElementById('grp-month').style.display = 'block';
+                document.getElementById('grp-quarter').style.display = 'none';
+                document.getElementById('grp-year').style.display = 'block';
+                document.getElementById('txt-period-chip').innerText = '📅 01 Aug 2026 to 31 Aug 2026';
+            }
+
             applyFilters();
         }
 
@@ -848,22 +882,65 @@
         renderHeadcountTable();
         renderRosterTable();
 
-        // Keyboard Navigation Engine
+        // 100% Keyboard Navigation & Accessibility Engine
         document.addEventListener('keydown', function(e) {
             var activeEl = document.activeElement;
+
+            // ARROW DOWN: Move focus from active Parent Tab button down to active Child Pill
             if (e.key === 'ArrowDown') {
-                if (activeEl && activeEl.classList.contains('parent-tab-btn')) {
-                    e.preventDefault();
-                    var activePill = document.querySelector('.child-filter-bar:not([style*="display: none"]) .child-pill.active');
-                    if (activePill) activePill.focus();
+                var isParentTab = activeEl && activeEl.classList.contains('parent-tab-btn');
+                if (isParentTab) {
+                    var activeChildBar = document.querySelector('.child-filter-bar:not([style*="display: none"])');
+                    if (activeChildBar) {
+                        var activePill = activeChildBar.querySelector('.child-pill.active') || activeChildBar.querySelector('.child-pill');
+                        if (activePill) {
+                            e.preventDefault();
+                            activePill.focus();
+                        }
+                    }
                 }
-            } else if (e.key === 'ArrowUp') {
-                if (activeEl && activeEl.classList.contains('child-pill')) {
-                    e.preventDefault();
-                    var activeTab = document.querySelector('.parent-tab-btn.active');
-                    if (activeTab) activeTab.focus();
+            } 
+            // ARROW UP: Move focus from active Child Pill back up to active Parent Tab button
+            else if (e.key === 'ArrowUp') {
+                var isChildPill = activeEl && activeEl.classList.contains('child-pill');
+                if (isChildPill) {
+                    var activeParentTab = document.querySelector('.parent-tab-btn.active');
+                    if (activeParentTab) {
+                        e.preventDefault();
+                        activeParentTab.focus();
+                    }
                 }
-            } else if (e.key === 'Escape') {
+            }
+            // ARROW RIGHT & LEFT: Navigate parent tabs or child pills seamlessly
+            else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                var isParentTab = activeEl && activeEl.classList.contains('parent-tab-btn');
+                var isChildPill = activeEl && activeEl.classList.contains('child-pill');
+
+                if (isParentTab) {
+                    var allTabs = Array.from(document.querySelectorAll('.parent-tab-btn'));
+                    var currIdx = allTabs.indexOf(activeEl);
+                    if (currIdx !== -1) {
+                        e.preventDefault();
+                        var nextIdx = (e.key === 'ArrowRight') ? (currIdx + 1) % allTabs.length : (currIdx - 1 + allTabs.length) % allTabs.length;
+                        allTabs[nextIdx].focus();
+                        allTabs[nextIdx].click();
+                    }
+                } else if (isChildPill) {
+                    var activeChildBar = activeEl.closest('.child-filter-bar');
+                    if (activeChildBar) {
+                        var allPills = Array.from(activeChildBar.querySelectorAll('.child-pill'));
+                        var currIdx = allPills.indexOf(activeEl);
+                        if (currIdx !== -1) {
+                            e.preventDefault();
+                            var nextIdx = (e.key === 'ArrowRight') ? (currIdx + 1) % allPills.length : (currIdx - 1 + allPills.length) % allPills.length;
+                            allPills[nextIdx].focus();
+                            allPills[nextIdx].click();
+                        }
+                    }
+                }
+            }
+            // ESCAPE KEY: Close open popovers cleanly
+            else if (e.key === 'Escape') {
                 document.querySelectorAll('.popover-menu').forEach(function(m) { m.classList.remove('open'); });
             }
         });
