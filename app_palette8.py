@@ -22,7 +22,7 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-    /* ABSOLUTE MOBILE & DESKTOP FOOTER, WATERMARK, HEADER & MENU REMOVAL */
+    /* SAFE, PRECISE STREAMLIT BADGE & FOOTER HIDING */
     #MainMenu, 
     header, 
     footer, 
@@ -30,35 +30,17 @@ st.markdown("""
     [data-testid="stFooter"],
     [data-testid="stHeader"],
     [data-testid="stDecoration"],
-    [data-testid="stStatusWidget"],
-    [data-testid="stToolbar"],
-    [data-testid="stActionButton"],
-    [data-testid="stElementToolbar"],
-    [data-testid="stBottomBlockContainer"],
     .viewerBadge_container__1QSob,
-    .styles_viewerBadge__1y-5g,
     div[class*="viewerBadge"],
-    div[class*="stAppHeader"],
-    div[class*="stFooter"],
-    footer[class*="stFooter"],
     a[href*="streamlit.io"],
     a[href*="streamlit.app"],
     .stDeployButton,
-    button[title="View app in Streamlit Community Cloud"],
-    button[title*="Streamlit"],
-    div[class*="stDeployButton"] {
+    button[title="View app in Streamlit Community Cloud"] {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
         height: 0px !important;
         min-height: 0px !important;
-        max-height: 0px !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        pointer-events: none !important;
-        position: absolute !important;
-        top: -9999px !important;
-        left: -9999px !important;
     }
 
     /* REDUCE TOP PADDING & MOVE ENTIRE WEBSITE UP TO THE VERY TOP EDGE */
@@ -1007,63 +989,16 @@ components.html("""
             setTimeout(forcePageToTopOnRefresh, 150);
             setTimeout(forcePageToTopOnRefresh, 400);
 
-            // INJECT ABSOLUTE MOBILE BADGE REMOVER CSS DIRECTLY INTO PARENT DOCUMENT HEAD
-            var styleId = 'hide-streamlit-cloud-mobile-badge';
-            if (!targetDoc.getElementById(styleId)) {
-                var styleEl = targetDoc.createElement('style');
-                styleEl.id = styleId;
-                styleEl.innerHTML = `
-                    div[class*="viewerBadge"],
-                    div[class*="styles_viewerBadge"],
-                    div[class*="viewerBadge_container"],
-                    a[href*="streamlit.io"],
-                    a[href*="streamlit.app"],
-                    [data-testid="stStatusWidget"],
-                    [data-testid="stAppHeader"],
-                    [data-testid="stFooter"],
-                    [data-testid="stToolbar"],
-                    [data-testid="stBottomBlockContainer"],
-                    footer,
-                    .stAppFooter,
-                    div[class*="stFooter"],
-                    footer[class*="stFooter"],
-                    div[class*="stDeployButton"],
-                    button[title*="Streamlit"] {
-                        display: none !important;
-                        visibility: hidden !important;
-                        opacity: 0 !important;
-                        height: 0px !important;
-                        min-height: 0px !important;
-                        max-height: 0px !important;
-                        margin: 0 !important;
-                        padding: 0 !important;
-                        pointer-events: none !important;
-                        position: absolute !important;
-                        top: -9999px !important;
-                        left: -9999px !important;
-                    }
-                `;
-                if (targetDoc.head) targetDoc.head.appendChild(styleEl);
-            }
-
-            // AGGRESSIVE MOBILE FOOTER & WATERMARK REMOVER FOR ALL PHONES & TABLETS
+            // SAFE TARGETED BADGE REMOVER (ONLY FOOTER & VIEWER BADGES)
             function removeMobileFooters() {
                 try {
-                    var footers = targetDoc.querySelectorAll('footer, [data-testid="stFooter"], .stAppFooter, div[class*="stFooter"], div[class*="viewerBadge"], div[class*="styles_viewerBadge"], div[class*="viewerBadge_container"], a[href*="streamlit.io"], a[href*="streamlit.app"], .stDeployButton, [data-testid="stToolbar"], [data-testid="stStatusWidget"]');
-                    footers.forEach(function(f) {
-                        f.style.setProperty('display', 'none', 'important');
-                        f.style.setProperty('visibility', 'hidden', 'important');
-                        try { f.remove(); } catch(e) {}
-                    });
-                    var headers = targetDoc.querySelectorAll('header, [data-testid="stHeader"], [data-testid="stDecoration"]');
-                    headers.forEach(function(h) {
-                        h.style.setProperty('display', 'none', 'important');
-                        h.style.setProperty('height', '0px', 'important');
+                    var badges = targetDoc.querySelectorAll('footer, [data-testid="stFooter"], .stAppFooter, div[class*="viewerBadge"], a[href*="streamlit.io"], a[href*="streamlit.app"]');
+                    badges.forEach(function(b) {
+                        b.style.setProperty('display', 'none', 'important');
                     });
                 } catch(err) {}
             }
-            setInterval(removeMobileFooters, 50);
-            removeMobileFooters();
+            setInterval(removeMobileFooters, 300);
 
             function alignChildFilterBar() {
                 try {
